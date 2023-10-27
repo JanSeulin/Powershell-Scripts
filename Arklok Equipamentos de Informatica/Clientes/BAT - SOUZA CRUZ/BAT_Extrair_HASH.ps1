@@ -13,6 +13,7 @@ if (($CHECK1 -eq 1) -or ($CHECK2 -eq 1)) {
   exit
 }
 
+# TESTA SE PASTA HWID JÁ EXISTE, SE NÃO CRIA
 $PATH = Test-Path -Path "C:\HWID"
 if (-Not $PATH){
 	New-Item -Type Directory -Path "C:\HWID"
@@ -20,13 +21,12 @@ if (-Not $PATH){
 
 Set-Location -Path "C:\HWID"
 
-$INSTALL_LOOP = $true;
-$RETRIES_INSTALL = 0;
-
 Write-Host -ForegroundColor Green "`nPor gentileza, aguarde a instalação dos pacotes..."
 Write-Host -ForegroundColor Green "Pressione ENTER se solicitado qualquer confirmação durante esse processo.`n"
 
 # INSTALAÇÃO DOS PACOTES E LOOP DE TENTATIVAS
+$INSTALL_LOOP = $true;
+$RETRIES_INSTALL = 0;
 while ($INSTALL_LOOP -eq $true) {
   try {
     Install-PackageProvider NuGet -Force -ErrorAction Stop;
@@ -35,6 +35,8 @@ while ($INSTALL_LOOP -eq $true) {
     $INSTALL_LOOP = $false;
   } catch {
     $RETRIES_INSTALL++
+
+    # APÓS 2 TENTATIVAS DE INSTALAÇÃO DOS PACOTES SEM SUCESSO, APRESENTAR OPÇÕES DE SOLUÇÃO PARA USUÁRIO
     if ($RETRIES_INSTALL -eq 2) {
       Start-Sleep -Seconds 2
       $key = ""
@@ -76,6 +78,7 @@ Write-Host "`n"
 
 $PATRIMONIO = ""
 
+# LOOP DE INSERÇÃO DO PATRIMÕNIO ATÉ QU O MESMO SEJA VÁLIDO + FORMATAÇÃO PARA CONSISTÊNCIA
 while ($PATRIMONIO.length -lt 4 ) {
   $PATRIMONIO = Read-Host 'Digite o patrimônio da máquina'
   $PATRIMONIO = $PATRIMONIO -replace '\s', ''
@@ -83,16 +86,17 @@ while ($PATRIMONIO.length -lt 4 ) {
   if ($PATRIMONIO.length -lt 4) { Write-Host -ForegroundColor Yellow "O patrimônio deve conter no mínimo 4 dígitos."}
 }
 
+# EXECUÇÃO DO SCRIPT DE ACORDO COM PATRIMONIO SELECIONADO PELO USUÁRIO
 $STRINGHWID = "AutoPilotHWID" + $PATRIMONIO + ".csv"
 Get-WindowsAutoPilotInfo.ps1 -OutputFile $STRINGHWID
 
 $DATE = Get-Date -Format "dd-MM"
-# $TEST_HASH_FOLDER = Test-Path "$PENDRIVE_DRIVE_LETTER\HASH $DATE"
 
-# NETWORK SHARE
+# ABRE CONEXÃO COM O SERVIDOR P/ ARMAZENAMENTO DO ARQUIVO
 $net = new-object -ComObject WScript.Network
 $net.MapNetworkDrive("u:", "\\172.18.3.4\d$", $false, "arkserv\jan", "Lucy@505")
 
+# SELECIONA CAMINHO DAS HASH E CRIA/TESTA CAMINHO COMPLETO SE AINDA NÃO EXISTE
 $HASH_PATH = "U:\SERVIDOR DEPLOYMENT\MDT01\HASH"
 $HASH_TEST_PATH = Test-Path $HASH_PATH
 $HASH_PATH_FOLDER = "$HASH_PATH\$DATE"
@@ -107,6 +111,7 @@ if ($HASH_TEST_PATH) {
   Set-Location "U:\SERVIDOR DEPLOYMENT\MDT01\HASH\$DATE\"
   $FILE_COPIED_SUCCESSFULY = Test-Path -Path $STRINGHWID
 
+  # VALIDAÇÃO SE CÓPIA FOI BEM SUCEDIDA
   if ($FILE_COPIED_SUCCESSFULY) {
     Write-Host -ForegroundColor Green "`nArquivo copiado com sucesso ao servidor."
   } else {
@@ -114,10 +119,12 @@ if ($HASH_TEST_PATH) {
     explorer "C:\HWID"
   }
 
+  # CASO NÃO SEJA POSSÍVEL A CÓPIA AO SERVIDOR, A PASTA HWID SERÁ ABERTA PARA CÓPIA MANUAL
 } else {
   explorer "C:\HWID"
 }
 
+# FECHA CONEXÃO COM SERVIDOR E REABILITA O QUICKEDIT DO POWERSHELL
 $net.RemoveNetworkDrive("U:");
 Set-ItemProperty -Path 'HKCU:\Console' -Name 'QuickEdit' -Value 0x00000001
 Set-ItemProperty -Path 'HKCU:\Console\%SystemRoot%_System32_WindowsPowerShell_v1.0_Powershell.exe' -Name 'QuickEdit' -Value 0x00000001
