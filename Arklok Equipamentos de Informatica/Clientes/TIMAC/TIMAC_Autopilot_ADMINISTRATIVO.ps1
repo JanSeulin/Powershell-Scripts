@@ -1,5 +1,24 @@
 $host.ui.RawUI.WindowTitle = "TIMAC AUTOPILOT - PERFIL ADMINISTRATIVO"
 
+# FUNÇÃO PARA MOSTRAR CRÉDITOS NO FIM DA EXECUÇÃO
+function RunCredits {
+  Write-Host -ForegroundColor Cyan "**************************************"
+  Start-Sleep -Milliseconds 250
+  Write-Host -ForegroundColor Cyan "*                                    *"
+  Start-Sleep -Milliseconds 250
+  Write-Host -ForegroundColor Cyan "* Criado por: Jan Seulin             *"
+  Start-Sleep -Milliseconds 250
+  Write-Host -ForegroundColor Cyan "* Setor: Imagem                      *"
+  Start-Sleep -Milliseconds 250
+  Write-Host -ForegroundColor Cyan "* Arklok Equipamentos de Informática *"
+  Start-Sleep -Milliseconds 250
+  Write-Host -ForegroundColor Cyan "*                                    *"
+  Start-Sleep -Milliseconds 250
+  Write-Host -ForegroundColor Cyan "**************************************"
+  Start-Sleep -Milliseconds 250
+  Write-Host "`n"
+}
+
 # DESABILITAR QUICK EDIT DO POWERSHELL (PARA MOUSE NÃO INTERROMPER EXECUÇÃO DO SCRIPT)
 $CHECK1 = Get-ItemProperty -Path 'HKCU:\Console\%SystemRoot%_System32_WindowsPowerShell_v1.0_Powershell.exe' | Select-Object -ExpandProperty QuickEdit
 $CHECK2 = Get-ItemProperty -Path 'HKCU:\Console\%SystemRoot%_SysWOW64_WindowsPowerShell_v1.0_powershell.exe' | Select-Object -ExpandProperty QuickEdit
@@ -118,21 +137,7 @@ if (($CHECK_IMPORT_SUCCESS) -and !($CHECK_IF_ASSIGNED_0_SECONDS) -and !($CHECK_I
 
     if ($KEY_RESTART -eq "r") {
       Clear-Host
-      Write-Host -ForegroundColor Cyan "**************************************"
-      Start-Sleep -Milliseconds 250
-      Write-Host -ForegroundColor Cyan "*                                    *"
-      Start-Sleep -Milliseconds 250
-      Write-Host -ForegroundColor Cyan "* Criado por: Jan Seulin             *"
-      Start-Sleep -Milliseconds 250
-      Write-Host -ForegroundColor Cyan "* Setor: Imagem                      *"
-      Start-Sleep -Milliseconds 250
-      Write-Host -ForegroundColor Cyan "* Arklok Equipamentos de Informática *"
-      Start-Sleep -Milliseconds 250
-      Write-Host -ForegroundColor Cyan "*                                    *"
-      Start-Sleep -Milliseconds 250
-      Write-Host -ForegroundColor Cyan "**************************************"
-      Start-Sleep -Milliseconds 250
-      Write-Host "`n"
+      RunCredits
 
       Write-Host "Reiniciando..."
       Start-Sleep -Seconds 5
@@ -156,21 +161,7 @@ if (($CHECK_IMPORT_SUCCESS) -and !($CHECK_IF_ASSIGNED_0_SECONDS) -and !($CHECK_I
     if ($KEY_FAIL -eq "r") {
       Clear-Host
       Remove-Item -Path "C:\PerfLogs\Transcript.txt"
-      Write-Host -ForegroundColor Cyan "**************************************"
-      Start-Sleep -Milliseconds 250
-      Write-Host -ForegroundColor Cyan "*                                    *"
-      Start-Sleep -Milliseconds 250
-      Write-Host -ForegroundColor Cyan "* Criado por: Jan Seulin             *"
-      Start-Sleep -Milliseconds 250
-      Write-Host -ForegroundColor Cyan "* Setor: Imagem                      *"
-      Start-Sleep -Milliseconds 250
-      Write-Host -ForegroundColor Cyan "* Arklok Equipamentos de Informática *"
-      Start-Sleep -Milliseconds 250
-      Write-Host -ForegroundColor Cyan "*                                    *"
-      Start-Sleep -Milliseconds 250
-      Write-Host -ForegroundColor Cyan "**************************************"
-      Start-Sleep -Milliseconds 250
-      Write-Host "`n"
+      RunCredits
 
       Write-Host "Reiniciando Script..."
       Start-Sleep -Seconds 5
@@ -179,21 +170,7 @@ if (($CHECK_IMPORT_SUCCESS) -and !($CHECK_IF_ASSIGNED_0_SECONDS) -and !($CHECK_I
     } elseif ($KEY_FAIL -eq "e") {
       Clear-Host
       Remove-Item -Path "C:\PerfLogs\Transcript.txt"
-      Write-Host -ForegroundColor Cyan "**************************************"
-      Start-Sleep -Milliseconds 250
-      Write-Host -ForegroundColor Cyan "*                                    *"
-      Start-Sleep -Milliseconds 250
-      Write-Host -ForegroundColor Cyan "* Criado por: Jan Seulin             *"
-      Start-Sleep -Milliseconds 250
-      Write-Host -ForegroundColor Cyan "* Setor: Imagem                      *"
-      Start-Sleep -Milliseconds 250
-      Write-Host -ForegroundColor Cyan "* Arklok Equipamentos de Informática *"
-      Start-Sleep -Milliseconds 250
-      Write-Host -ForegroundColor Cyan "*                                    *"
-      Start-Sleep -Milliseconds 250
-      Write-Host -ForegroundColor Cyan "**************************************"
-      Start-Sleep -Milliseconds 250
-      Write-Host "`n"
+      RunCredits
 
       Write-Host "Encerrando..."
       Start-Sleep -Seconds 5
