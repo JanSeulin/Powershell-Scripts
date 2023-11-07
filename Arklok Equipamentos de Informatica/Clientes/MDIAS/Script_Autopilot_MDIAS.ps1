@@ -152,7 +152,11 @@ Set-ItemProperty -Path 'HKCU:\Console\%SystemRoot%_SysWOW64_WindowsPowerShell_v1
 Write-Host "`n"
 
 if (($CHECK_IMPORT_SUCCESS) -and !($CHECK_IF_ALREADY_ASSIGNED_OTHER_TENANT) -and !($CHECK_IF_ALREADY_ASSIGNED)) {
-  Write-Host -ForegroundColor Green "Processo de importação finalizado com sucesso."
+  Write-Host -ForegroundColor Green "Processo de importação finalizado com sucesso.`n"
+
+  net use \\172.18.3.4\d$ /user:arkserv\jan Lucy@505
+
+  & "\\172.18.3.4\d$\Servidor Deployment\MDT01\Scripts\Gerar_Log\Gerar_Log_Autopilot.exe"
 
   $KEY_RESTART = ""
 
@@ -170,7 +174,6 @@ if (($CHECK_IMPORT_SUCCESS) -and !($CHECK_IF_ALREADY_ASSIGNED_OTHER_TENANT) -and
       Start-Sleep -Seconds 5
 
       Remove-Item -Path "C:\PerfLogs\Transcript.txt"
-      Restart-Computer
     }
   }
 } else {

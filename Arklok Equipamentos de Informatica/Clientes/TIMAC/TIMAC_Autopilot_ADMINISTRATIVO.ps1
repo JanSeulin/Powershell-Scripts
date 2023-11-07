@@ -125,7 +125,11 @@ Set-ItemProperty -Path 'HKCU:\Console\%SystemRoot%_System32_WindowsPowerShell_v1
 Set-ItemProperty -Path 'HKCU:\Console\%SystemRoot%_SysWOW64_WindowsPowerShell_v1.0_powershell.exe' -Name 'QuickEdit' -Value 0x00000001
 
 if (($CHECK_IMPORT_SUCCESS) -and !($CHECK_IF_ASSIGNED_0_SECONDS) -and !($CHECK_IF_ALREADY_ASSIGNED)) {
-  Write-Host -ForegroundColor Green "Processo de IMPORT e ASSIGNMENT finalizados com sucesso."
+  Write-Host -ForegroundColor Green "Processo de IMPORT e ASSIGNMENT finalizados com sucesso.`n"
+
+  net use \\172.18.3.4\d$ /user:arkserv\jan Lucy@505
+
+  & "\\172.18.3.4\d$\Servidor Deployment\MDT01\Scripts\Gerar_Log\Gerar_Log_Autopilot.exe"
 
   $KEY_RESTART = ""
 

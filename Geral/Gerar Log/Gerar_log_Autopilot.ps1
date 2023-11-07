@@ -219,7 +219,8 @@ Function New-WPFMessageBox {
 <Window
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      x:Name="Window" Title="" SizeToContent="WidthAndHeight" WindowStyle="None" ResizeMode="NoResize" AllowsTransparency="True" Background="Transparent" Opacity="1" Topmost="True" Top="-10">
+      x:Name="Window" Title="" SizeToContent="WidthAndHeight" WindowStyle="None" ResizeMode="NoResize" AllowsTransparency="True" Background="Transparent" Opacity="1" Topmost="True" Top="0"
+      WindowStartupLocation="CenterScreen">
   <Window.Resources>
       <Style TargetType="{x:Type Button}">
           <Setter Property="Template">
@@ -269,11 +270,11 @@ Function New-WPFMessageBox {
 "@
 
 [XML]$ButtonXaml = @"
-<Button xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Width="Auto" Height="30" FontFamily="Segui" FontSize="16" Background="Transparent" Foreground="White" BorderThickness="1" Margin="10" Padding="20,0,20,0" HorizontalAlignment="Right" Cursor="Hand"/>
+<Button xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Width="Auto" Height="30" FontFamily="Segui" FontSize="24" Background="Transparent" Foreground="White" BorderThickness="1" Margin="10" Padding="20,0,20,0" HorizontalAlignment="Right" Cursor="Hand"/>
 "@
 
 [XML]$ButtonTextXaml = @"
-<TextBlock xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontFamily="$($PSBoundParameters.FontFamily)" FontSize="16" Background="Transparent" Foreground="$($PSBoundParameters.ButtonTextForeground)" Padding="20,5,20,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+<TextBlock xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontFamily="$($PSBoundParameters.FontFamily)" FontSize="24" Background="Transparent" Foreground="$($PSBoundParameters.ButtonTextForeground)" Padding="20,5,20,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 "@
 
 [XML]$ContentTextXaml = @"
@@ -291,10 +292,10 @@ Function New-WPFMessageBox {
       $ButtonText.Text = "$Content"
       $Button.Content = $ButtonText
       $Button.Add_MouseEnter({
-          $This.Content.FontSize = "17"
+          $This.Content.FontSize = "25"
       })
       $Button.Add_MouseLeave({
-          $This.Content.FontSize = "16"
+          $This.Content.FontSize = "24"
       })
       $Button.Add_Click({
           # New-Variable -Name WPFMessageBoxOutput -Value $($This.Content.Text) -Option ReadOnly -Scope Script -Force
@@ -476,9 +477,169 @@ Function New-WPFMessageBox {
   }
 }
 
+# New-WPFMessageBox @Params_Setor
 
-############################ HARDWARE INFO ########################
-### MODELO NOTEBOOK ###
+$SETOR = "PRODUCAO"
+
+net use \\172.18.3.4\d$ /user:arkserv\jan Lucy@505
+
+[string[]]$LISTA_PRODUCAO = Get-Content -Path '\\172.18.3.4\d$\Logs\PRODUCAO\Lista_Funcionarios.txt'
+# [string[]]$LISTA_RMA = Get-Content -Path '\\172.18.3.4\d$\Logs\RMA\Lista_Funcionarios.txt'
+
+# MÉTODO ALTERNATIVO (Talvez mais eficaz, necessita teste)
+# $LISTA_PRODUCAO = [IO.File]::ReadAllLines("\\172.18.3.4\d$\Logs\PRODUCAO\Lista_Funcionarios.txt")
+# $LISTA_RMA = [IO.File]::ReadAllLines("\\172.18.3.4\d$\Logs\RMA\Lista_Funcionarios.txt")
+
+
+# $LISTA_PRODUCAO = @(
+#   "Ana Clara"
+#   "Eliane Vieira"
+#   "Erick Rodrigues"
+#   "Joao Paulo"
+#   "Luiz Henrique"
+#   "Pedro Gauger"
+#   "Taina Silva"
+#   "Tauane Abreu"
+#   "Zenaide Alves"
+# )
+
+# $LISTA_RMA = @(
+#   "Andre Luiz"
+#   "Dyego Fernandes"
+#   "Gabriel Andrew"
+#   "Gleison Carlos"
+#   "Icaro Leandro"
+#   "Jean Douglas"
+#   "Jefferson da Silva"
+#   "Joao Augusto"
+#   "Joao Bosco"
+#   "Jose Ricardo"
+#   "Leonardo Roberto"
+#   "Luiz Filipe"
+#   "Patrick dos Santos"
+#   "Ricardo Kunzendorff"
+#   "Robson da Silva"
+#   "Rodrigo Marques"
+#   "Vinicius Alves"
+#   "Volglas de Almeida"
+# )
+
+$LISTA_AUTOPILOT = @(
+  "MDIAS (Autopilot)"
+  "TIMAC (Autopilot)"
+)
+
+# $STACKPANEL_AUTOPILOT =
+$STACKPANEL_AUTOPILOT = New-Object System.Windows.Controls.StackPanel
+$ComboBox_Autopilot = New-Object System.Windows.Controls.ComboBox
+$ComboBox_Autopilot.Background = "White"
+$ComboBox_Autopilot.Margin = "10,10,10,0"
+$ComboBox_Autopilot.FontSize = 16
+$ComboBox_Autopilot.ItemsSource = $LISTA_AUTOPILOT
+
+$RANDOM_INT_AUTOPILOT = Get-Random -Maximum ($ComboBox_Autopilot.ItemsSource | Measure-Object).Count
+$ComboBox_Autopilot.SelectedIndex = $RANDOM_INT_AUTOPILOT
+
+# Create a textblock
+$TextBlock_AUTOPILOT = New-Object System.Windows.Controls.TextBlock
+$TextBlock_AUTOPILOT.Text = "Selecione o cliente na lista abaixo:"
+$TextBlock_AUTOPILOT.Margin = 10
+$TextBlock_AUTOPILOT.FontSize = 16
+
+$TextBlock_AUTOPILOT, $ComboBox_Autopilot | ForEach-Object {
+  $STACKPANEL_AUTOPILOT.AddChild($PSItem)
+}
+
+$Params_AUTOPILOT=@{
+  Content=$STACKPANEL_AUTOPILOT
+  Title="Cliente Autopilot"
+  TitleBackground="DarkRed"
+  TitleFontSize=20
+  TitleFontWeight='Bold'
+  TitleTextForeground='White'
+  ButtonType='None'
+  ButtonTextForeground="DarkRed"
+  CustomButtons="Confirmar"
+  BorderThickness=2
+  ShadowDepth=4
+  ContentFontSize=1
+}
+
+New-WPFMessageBox @Params_AUTOPILOT
+
+if ($WPFMessageBoxOutput -eq "Confirmar") {
+  $CLIENTE = $ComboBox_Autopilot.SelectedValue
+}
+
+Write-Host $CLIENTE
+
+#####
+$StackPanel_COLABORADOR = New-Object System.Windows.Controls.StackPanel
+$ComboBox = New-Object System.Windows.Controls.ComboBox
+$ComboBox.Margin = "10,10,10,0"
+$ComboBox.Background = "White"
+$ComboBox.FontSize = 16
+$ComboBox.ItemsSource = $LISTA_PRODUCAO
+
+$RANDOM_INT = Get-Random -Maximum ($ComboBox.ItemsSource | Measure-Object).Count
+$ComboBox.SelectedIndex = $RANDOM_INT
+
+# Create a textblock
+$TextBlock = New-Object System.Windows.Controls.TextBlock
+$TextBlock.Text = "Selecione seu nome na lista abaixo:"
+$TextBlock.Margin = 10
+$TextBlock.FontSize = 16
+
+$TextBlock, $ComboBox | ForEach-Object {
+  $StackPanel_COLABORADOR.AddChild($PSItem)
+}
+
+$Params_COLABORADOR=@{
+  Content=$StackPanel_COLABORADOR
+  Title="Colaborador"
+  TitleBackground="DarkRed"
+  TitleFontSize=20
+  TitleFontWeight='Bold'
+  TitleTextForeground='White'
+  ButtonType='None'
+  ButtonTextForeground="DarkRed"
+  CustomButtons="Confirmar"
+  BorderThickness=2
+  ShadowDepth=4
+  ContentFontSize=1
+}
+
+# $ComboBox | Select-Object *
+
+New-WPFMessageBox @Params_COLABORADOR
+
+if ($WPFMessageBoxOutput -eq "Confirmar") {
+  $COLABORADOR = $ComboBox.SelectedValue
+}
+
+Write-Host "`n"
+
+# $DAY = Get-Date -Format "dd - dddd"
+$DAY_MONTH = Get-Date -Format "dd - MM"
+$MONTH_YEAR = Get-Date -Format "MM-yyyy"
+$HOUR_MINUTE = Get-Date -Format "HH:mm"
+
+# "\\172.18.3.4\d$\Logs\$SETOR\$MONTH_YEAR"
+$TEST_PATH = Test-Path "\\172.18.3.4\d$\Logs\$SETOR\$MONTH_YEAR"
+$TEST_FILE_PATH = Test-Path "\\172.18.3.4\d$\Logs\$SETOR\$MONTH_YEAR\$MONTH_YEAR.csv"
+
+if (!$TEST_PATH) {
+  New-Item -Type Directory -Path "\\172.18.3.4\d$\Logs\$SETOR\$MONTH_YEAR"
+}
+
+if (!$TEST_FILE_PATH) {
+  Set-Location -Path "\\172.18.3.4\d$\Logs\$SETOR\$MONTH_YEAR"
+  New-Item ".\$MONTH_YEAR.csv"
+}
+
+$FULL_PATH = "\\172.18.3.4\d$\Logs\$SETOR\$MONTH_YEAR\$MONTH_YEAR.csv"
+$LINES = (Get-Content $FULL_PATH | Measure-Object).Count
+
 $COMPUTER_SYSTEM = Get-CimInstance Win32_ComputerSystem
 $NOTEBOOK_MANUFACTURER = $COMPUTER_SYSTEM | Select-Object -ExpandProperty Manufacturer
 $NOTEBOOK_MODEL = $COMPUTER_SYSTEM | Select-Object -ExpandProperty SystemFamily
@@ -495,211 +656,68 @@ if ($NOTEBOOK_MANUFACTURER -like "*Dell*") {
   $NOTEBOOK_MODEL = $COMPUTER_SYSTEM | Select-Object -ExpandProperty Model
 }
 
-### CPU ###
-$CPU_BASE = Get-CimInstance -ClassName Win32_Processor
-$CPU = $CPU_BASE | Select-Object -ExpandProperty Name
-$CPU_CORES = $CPU_BASE | Select-Object -ExpandProperty NumberOfCores
-$CPU_THREADS = $CPU_BASE | Select-Object -ExpandProperty NumberOfLogicalProcessors
-$CPU_SPEED = $CPU_BASE | Select-Object -ExpandProperty MaxClockSpeed
+$NOTEBOOK_STRING = $NOTEBOOK_MANUFACTURER + " " + $NOTEBOOK_MODEL
 
-### MEMORIA ####
 $MEMORY = Get-CimInstance Win32_PhysicalMemory
 $MEMORY_SIZE = ($MEMORY | Measure-Object -Property capacity -Sum).sum /1gb
-$MEMORY_SLOTS = ($MEMORY | Select-Object BankLabel | Measure-Object).Count
-$TOTAL_NUMBER_OF_SLOTS = Get-CimInstance Win32_PhysicalMemoryArray | Select-Object -ExpandProperty MemoryDevices
+$MEMORY_STRING = [string]($MEMORY_SIZE) + " GB"
 
-$SLOT_SIZE_STRING = ""
-$COUNT = 1
-
-foreach ($MEMORY_ITEM in $MEMORY) {
-  $SIZE = [string]($MEMORY_ITEM | Measure-Object -Property capacity -Sum).sum /1gb
-
-  if ($MEMORY_ITEM -eq $MEMORY[-1]) {
-    $SLOT_SIZE_STRING += "Slot $COUNT`: $SIZE GB"
-  } else {
-    $SLOT_SIZE_STRING += "Slot $COUNT`: $SIZE GB - "
-  }
-
-  $COUNT++
-}
-
-$MEMORY_VOLTAGE = ($MEMORY  | Select-Object -ExpandProperty ConfiguredVoltage)
-$MEMORY_VOLTAGE = ($MEMORY_VOLTAGE -split '\n')[0]
-
-$MEMORY_SPEED = $MEMORY  | Select-Object -ExpandProperty Speed
-$MEMORY_SPEED = ($MEMORY_SPEED -split '\n')[0]
-
-# ARMAZENAMENTO FÓRMULA ATUAL - PERMITE MÚLTIPLOS HDS SEREM EXIBIDOS CORRETAMENTE
 $STORAGE_BASE = Get-CimInstance Win32_DiskDrive
+$STORAGE_STRING = [string][math]::Round((($STORAGE_BASE | Where-Object -Property MediaType -ne "Removable Media" | Measure-Object -Property Size -sum).sum)/1GB, 2) + " GB"
 
-# ADICIONA TIPO DE MEMÓRIA DE ACORDO COM VOLTAGEM
-switch ($MEMORY_VOLTAGE){
-  1100 { $MEMORY_TYPE = "DDR5"}
-  1200 { $MEMORY_TYPE = "DDR4" }
-  1500 { $MEMORY_TYPE = "DDR3" }
-  1800 { $MEMORY_TYPE = "DDR2" }
-  2500 { $MEMORY_TYPE = "DDR1" }
-}
+$SERIAL = Get-CimInstance Win32_Bios | Select-Object -ExpandProperty SerialNumber
 
-#### IMAGEM ARKLOK ####
-$SOURCE_IMG = "Z:\Scripts\Info_Sistema\Logo\Arklok_Slogan.png"
-# $SOURCE_IMG_DEV="C:\Images\Arklok_Slogan.png"
-$IMAGE = New-Object System.Windows.Controls.Image
-$IMAGE.Source = $SOURCE_IMG
-$Image.Height = 100
-$Image.Width = 400
-$Image.Margin = "0,25,0,0"
-
-# NOTEBOOK MODELO
-$NOTEBOOK_BLOCK = New-Object System.Windows.Controls.TextBlock
-$NOTEBOOK_BLOCK.Text = "$NOTEBOOK_MANUFACTURER $NOTEBOOK_MODEL"
-$NOTEBOOK_BLOCK.margin = "0,5,0,5"
-$NOTEBOOK_BLOCK.FontSize = "17"
-$NOTEBOOK_BLOCK.HorizontalAlignment = "center"
-$NOTEBOOK_BLOCK.FontWeight = "Bold"
-$NOTEBOOK_BLOCK.Foreground = "DarkRed"
-
-# CPU TÍTULO
-$CPU_BLOCK_LABEL = New-Object System.Windows.Controls.TextBlock
-$CPU_BLOCK_LABEL.Text = "PROCESSADOR"
-$CPU_BLOCK_LABEL.margin = "5,5,5,5"
-$CPU_BLOCK_LABEL.FontSize = "16"
-$CPU_BLOCK_LABEL.FontWeight = "Bold"
-
-# CPU MODELO
-$CPU_BLOCK = New-Object System.Windows.Controls.TextBlock
-$CPU_BLOCK.Text = "Modelo: $CPU"
-$CPU_BLOCK.margin = "15,-5,15,0"
-$CPU_BLOCK.FontSize = "16"
-
-# CPU NÚCLEOS
-$CPU_CORES_BLOCK = New-Object System.Windows.Controls.TextBlock
-$CPU_CORES_BLOCK.Text = "Nucleos: $CPU_CORES, Threads: $CPU_THREADS"
-$CPU_CORES_BLOCK.margin = "15,0,15,0"
-$CPU_CORES_BLOCK.FontSize = "16"
-
-# CPU FREQUENCIA
-$CPU_SPEED_BLOCK = New-Object System.Windows.Controls.TextBlock
-$CPU_SPEED_BLOCK.Text = "Frequencia: $CPU_SPEED mhz"
-$CPU_SPEED_BLOCK.margin = "15,0,15,0"
-$CPU_SPEED_BLOCK.FontSize = "16"
-
-# MEMÓRIA TITULO
-$MEMORY_BLOCK_LABEL = New-Object System.Windows.Controls.TextBlock
-$MEMORY_BLOCK_LABEL.Text = "MEMORIA RAM"
-$MEMORY_BLOCK_LABEL.margin = "5,5,5,5"
-$MEMORY_BLOCK_LABEL.FontSize = "16"
-$MEMORY_BLOCK_LABEL.FontWeight = "Bold"
-
-# MEMÓRIA TAMANHO E TIPO
-$MEMORY_BLOCK = New-Object System.Windows.Controls.TextBlock
-$MEMORY_BLOCK.Text = "Total: $MEMORY_SIZE GB $MEMORY_TYPE"
-$MEMORY_BLOCK.margin = "15,-5,15,0"
-$MEMORY_BLOCK.FontSize = "16"
-
-# MEMÓRIA SLOTS
-$MEMORY_SLOTS_BLOCK = New-Object System.Windows.Controls.TextBlock
-
-$MEMORY_SLOTS_BLOCK.margin = "15,0,15,0"
-$MEMORY_SLOTS_BLOCK.FontSize = "16"
-
-$MEMORY_SLOTS_BLOCK = New-Object System.Windows.Controls.TextBlock
-$MEMORY_SLOTS_BLOCK.Text = "Slots em uso: $MEMORY_SLOTS de $TOTAL_NUMBER_OF_SLOTS"
-if ($NOTEBOOK_MANUFACTURER -eq "Samsung") {
-  $MEMORY_SLOTS_BLOCK.Text = "Slots em uso: $MEMORY_SLOTS"
-}
-$MEMORY_SLOTS_BLOCK.margin = "15,0,15,0"
-$MEMORY_SLOTS_BLOCK.FontSize = "16"
-
-# MEMÓRIA FREQUENCIA
-$MEMORY_SPEED_BLOCK = New-Object System.Windows.Controls.TextBlock
-$MEMORY_SPEED_BLOCK.Text = "Frequencia: $MEMORY_SPEED mhz"
-$MEMORY_SPEED_BLOCK.margin = "15,0,15,0"
-$MEMORY_SPEED_BLOCK.FontSize = "16"
-
-# ARMAZENAMENTO TÍTULO
-$STORAGE_BLOCK_LABEL = New-Object System.Windows.Controls.TextBlock
-$STORAGE_BLOCK_LABEL.Text = "ARMAZENAMENTO"
-$STORAGE_BLOCK_LABEL.margin = "5,5,5,0"
-$STORAGE_BLOCK_LABEL.FontSize = "16"
-$STORAGE_BLOCK_LABEL.FontWeight = "Bold"
-
-# PAINEL
-$StackPanel = New-Object System.Windows.Controls.StackPanel
-
-$StackPanel.AddChild($NOTEBOOK_BLOCK)
-
-# ADD CPU AO PAINEL
-$StackPanel.AddChild($CPU_BLOCK_LABEL)
-$StackPanel.AddChild($CPU_BLOCK)
-$StackPanel.AddChild($CPU_CORES_BLOCK)
-$StackPanel.AddChild($CPU_SPEED_BLOCK)
-
-# ADD MEMÓRIA AO PAINEL
-$StackPanel.AddChild($MEMORY_BLOCK_LABEL)
-$StackPanel.AddChild($MEMORY_BLOCK)
-$StackPanel.AddChild($MEMORY_SLOTS_BLOCK)
-
-# TAMANHO CADA SLOT, SE HOUVER MAIS DE UM
-if ($MEMORY_SLOTS -gt 1) {
-  $MEMORY_SLOTS_SIZE_BLOCK = New-Object System.Windows.Controls.TextBlock
-  $MEMORY_SLOTS_SIZE_BLOCK.Text = $SLOT_SIZE_STRING
-  $MEMORY_SLOTS_SIZE_BLOCK.margin = "15,0,15,0"
-  $MEMORY_SLOTS_SIZE_BLOCK.FontSize = "16"
-
-  $StackPanel.AddChild($MEMORY_SLOTS_SIZE_BLOCK)
-}
-
-$StackPanel.AddChild($MEMORY_SPEED_BLOCK)
-
-# ADD ARMAZENAMENTO AO PAINEL
-$StackPanel.AddChild($STORAGE_BLOCK_LABEL)
-
-# ARMAZENAMENTO CONTEÚDO
-foreach ($STORAGE_ITEM in $STORAGE_BASE) {
-  $STORAGE_ITEM = $STORAGE_ITEM | Select-Object @{N="n";Expression={
-    $(
-      if (($_.PNPDeviceID -like "*NVME*") -or ($_.Model -like "*NVME*")) { "SSD NVMe "}
-      elseif (($_.PNPDeviceID -like "*VEN_&*") -and ($_.Model -notlike "*NVME*")) {"SSD "}
-      elseif(($_.PNPDeviceID -like "*VEN_SANDISK*") -or ($_.Model -like "*SanDisk SD*")) {"SSD "}
-      elseif (($_.PNPDeviceID -like "*VEN_WDC*") -and ($_.PNPDeviceID -notlike "*NVME*")) {"HDD "}
-      elseif($_.MediaType -like "*External*") {"HD Externo "}
-      elseif($_.MediaType -like "*Removable*") {"Pen Drive "}
-      elseif($_.PNPDeviceID -like "*RAID*") {"RAID "}
-    ) + [string][math]::Round((($STORAGE_ITEM | Measure-Object -Property Size -sum).sum)/1GB, 2) + " GB"
-    }
-  } | Select-Object -ExpandProperty n
-
-    $STORAGE_BLOCK = New-Object System.Windows.Controls.TextBlock
-    $STORAGE_BLOCK.Text = $STORAGE_ITEM
-    $STORAGE_BLOCK.margin = "15,0,15,0"
-    $STORAGE_BLOCK.FontSize = "16"
-    $StackPanel.AddChild($STORAGE_BLOCK)
-}
-
-# ADD IMAGEM AO PAINEL
-$StackPanel.AddChild($IMAGE)
-
-# Parametros gerais
-$Params=@{
-  Content=$StackPanel
-  Title="Hardware Info"
+$PARAMS_ERROR = @{
+  Title="Erro"
+  Content="Não foi possível salvar as informações, tentando novamente em alguns segundos.."
   TitleBackground="DarkRed"
-  TitleFontSize=22
+  TitleFontSize=20
   TitleFontWeight='Bold'
   TitleTextForeground='White'
   ButtonType='None'
   ButtonTextForeground="DarkRed"
-  CustomButtons="Confirmar","Desligar"
+  # CustomButtons="Confirmar"
   BorderThickness=2
   ShadowDepth=4
+  ContentFontSize=16
+  Timeout=5
 }
 
-New-WPFMessageBox @Params
-
-# Resolução após clique nos botoões
-if ($WPFMessageBoxOutput -eq "Confirmar") {
-  exit
-} elseif ($WPFMessageBoxOutput -eq "Desligar") {
-  Stop-Computer -Force
+$PARAMS_SUCCESS = @{
+  Title="Sucesso"
+  Content="Informações salvas com sucesso, finalizando..."
+  TitleBackground="DarkRed"
+  TitleFontSize=20
+  TitleFontWeight='Bold'
+  TitleTextForeground='White'
+  ButtonType='None'
+  ButtonTextForeground="DarkRed"
+  # CustomButtons="Confirmar"
+  BorderThickness=2
+  ShadowDepth=4
+  ContentFontSize=16
+  Timeout=6
 }
+
+$SAVING_LOOP = 'true';
+
+while ($SAVING_LOOP) {
+  try {
+    if ($LINES -eq 0) {
+      "CLIENTE;SERIAL;MODELO;MEMORIA;ARMAZENAMENTO;PRODUZIDO POR;SETOR;HORA;DIA" | Add-Content $FULL_PATH -ErrorAction Stop
+    }
+
+    "$CLIENTE;$SERIAL;$NOTEBOOK_STRING;$MEMORY_STRING;$STORAGE_STRING;$COLABORADOR;$SETOR;$HOUR_MINUTE;$DAY_MONTH" | Add-Content $FULL_PATH -ErrorAction Stop
+
+    New-WPFMessageBox @PARAMS_SUCCESS
+    exit
+  }
+  catch {
+    # Em caso de erro, esperar de 1 a 5 seg e tentar salvar novamente
+    $RANDOM_WAIT = Get-Random -Minimum 1 -Maximum 5
+    Start-Sleep -Seconds $RANDOM_WAIT
+    New-WPFMessageBox @PARAMS_ERROR
+  }
+}
+
+
