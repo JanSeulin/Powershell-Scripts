@@ -270,11 +270,11 @@ Function New-WPFMessageBox {
 "@
 
 [XML]$ButtonXaml = @"
-<Button xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Width="Auto" Height="30" FontFamily="Segui" FontSize="16" Background="Transparent" Foreground="White" BorderThickness="1" Margin="10" Padding="20,0,20,0" HorizontalAlignment="Center" Cursor="Hand"/>
+<Button xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Width="Auto" Height="30" FontFamily="Segui" FontSize="24" Background="Transparent" Foreground="White" BorderThickness="1" Margin="10" Padding="20,0,20,0" HorizontalAlignment="Right" Cursor="Hand"/>
 "@
 
 [XML]$ButtonTextXaml = @"
-<TextBlock xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontFamily="$($PSBoundParameters.FontFamily)" FontSize="16" Background="Transparent" Foreground="$($PSBoundParameters.ButtonTextForeground)" Padding="20,5,20,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+<TextBlock xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontFamily="$($PSBoundParameters.FontFamily)" FontSize="24" Background="Transparent" Foreground="$($PSBoundParameters.ButtonTextForeground)" Padding="20,5,20,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 "@
 
 [XML]$ContentTextXaml = @"
@@ -292,10 +292,10 @@ Function New-WPFMessageBox {
       $ButtonText.Text = "$Content"
       $Button.Content = $ButtonText
       $Button.Add_MouseEnter({
-          $This.Content.FontSize = "17"
+          $This.Content.FontSize = "25"
       })
       $Button.Add_MouseLeave({
-          $This.Content.FontSize = "16"
+          $This.Content.FontSize = "24"
       })
       $Button.Add_Click({
           # New-Variable -Name WPFMessageBoxOutput -Value $($This.Content.Text) -Option ReadOnly -Scope Script -Force
@@ -473,13 +473,151 @@ Function New-WPFMessageBox {
 
   # Display the window
   $null = $window.Dispatcher.InvokeAsync{$window.ShowDialog()}.Wait()
-
   }
 }
 
-######################################################################################################
+$CLIENTE = $args[0]
+$TAG = $args[1]
 
-##################### INFO PC ###################
+Write-Host "CLIENTE: $CLIENTE"
+Write-Host "TAG: $TAG"
+
+$SETOR = "PRODUCAO"
+
+net use \\172.18.3.4\d$ /user:arkserv\jan Lucy@505
+
+[string[]]$LISTA_PRODUCAO = Get-Content -Path '\\172.18.3.4\d$\Logs\PRODUCAO\Lista_Funcionarios.txt'
+
+#################### PATRIMONIO ####################
+$PATRIMONIO_LOOP = "true"
+
+While ($PATRIMONIO_LOOP -eq "true") {
+  # Create a textblock
+  $TextBlock_Patrimonio = New-Object System.Windows.Controls.TextBlock
+  $TextBlock_Patrimonio.Text = "Digite o Patrimônio da Máquina"
+  $TextBlock_Patrimonio.Margin = 10
+  $TextBlock_Patrimonio.FontSize = 16
+
+  $TextBox_Patrimonio = New-Object System.Windows.Controls.TextBox
+  $TextBox_Patrimonio.Text = ""
+  $TextBox_Patrimonio.Margin = "10,0,10,0"
+  $TextBox_Patrimonio.FontSize = 16
+  $TextBox_Patrimonio.BorderThickness = 2
+
+  $StackPanel_Patrimonio = New-Object System.Windows.Controls.StackPanel
+  $StackPanel_Patrimonio.AddChild($TextBlock_Patrimonio)
+  $StackPanel_Patrimonio.AddChild($TextBox_Patrimonio)
+
+  $Params_Patrimonio=@{
+    Content=$StackPanel_Patrimonio
+    Title="Patrimônio"
+    TitleBackground="DarkRed"
+    TitleFontSize=20
+    TitleFontWeight='Bold'
+    TitleTextForeground='White'
+    ButtonType='None'
+    ButtonTextForeground="DarkRed"
+    CustomButtons="OK"
+    BorderThickness=2
+    ShadowDepth=4
+    ContentFontSize=1
+  }
+
+  New-WPFMessageBox @Params_Patrimonio
+
+  if ($WPFMessageBoxOutput -eq "OK") {
+    $PATRIMONIO = $TextBox_Patrimonio.text
+
+    if (($PATRIMONIO.Length -lt 4) -or ($PATRIMONIO.Length -gt 6) -or ($PATRIMONIO -match "[^0-9]")) {
+      $Params_Patrimonio_Erro=@{
+        Content="Valor inválido. O patrimônio deve ter entre 4 e 6 caracteres numéricos."
+        Title="Erro"
+        TitleBackground="DarkRed"
+        TitleFontSize=20
+        TitleFontWeight='Bold'
+        TitleTextForeground='White'
+        ButtonType='None'
+        ButtonTextForeground="DarkRed"
+        CustomButtons="OK"
+        BorderThickness=2
+        ShadowDepth=4
+        ContentFontSize=16
+      }
+
+      New-WPFMessageBox @Params_Patrimonio_Erro
+    } else {
+      $PATRIMONIO_LOOP = "false"
+    }
+  }
+}
+
+#####
+$StackPanel_COLABORADOR = New-Object System.Windows.Controls.StackPanel
+$ComboBox = New-Object System.Windows.Controls.ComboBox
+$ComboBox.Margin = "10,10,10,0"
+$ComboBox.Background = "White"
+$ComboBox.FontSize = 16
+$ComboBox.ItemsSource = $LISTA_PRODUCAO
+
+$RANDOM_INT = Get-Random -Maximum ($ComboBox.ItemsSource | Measure-Object).Count
+$ComboBox.SelectedIndex = $RANDOM_INT
+
+# Create a textblock
+$TextBlock = New-Object System.Windows.Controls.TextBlock
+$TextBlock.Text = "Selecione seu nome na lista abaixo:"
+$TextBlock.Margin = 10
+$TextBlock.FontSize = 16
+
+$TextBlock, $ComboBox | ForEach-Object {
+  $StackPanel_COLABORADOR.AddChild($PSItem)
+}
+
+$Params_COLABORADOR=@{
+  Content=$StackPanel_COLABORADOR
+  Title="Colaborador"
+  TitleBackground="DarkRed"
+  TitleFontSize=20
+  TitleFontWeight='Bold'
+  TitleTextForeground='White'
+  ButtonType='None'
+  ButtonTextForeground="DarkRed"
+  CustomButtons="Confirmar","Voltar"
+  BorderThickness=2
+  ShadowDepth=4
+  ContentFontSize=1
+}
+
+# $ComboBox | Select-Object *
+
+New-WPFMessageBox @Params_COLABORADOR
+
+if ($WPFMessageBoxOutput -eq "Confirmar") {
+  $COLABORADOR = $ComboBox.SelectedValue
+}
+
+Write-Host "`n"
+
+# $DAY = Get-Date -Format "dd - dddd"
+$DAY_MONTH = Get-Date -Format "dd - MM"
+$MONTH_YEAR = Get-Date -Format "MM-yyyy"
+$HOUR_MINUTE = Get-Date -Format "HH:mm"
+
+# "\\172.18.3.4\d$\Logs\$SETOR\$MONTH_YEAR"
+$TEST_PATH = Test-Path "\\172.18.3.4\d$\Logs\$SETOR\$MONTH_YEAR"
+$TEST_FILE_PATH = Test-Path "\\172.18.3.4\d$\Logs\$SETOR\$MONTH_YEAR\Autopilot.csv"
+
+if (!$TEST_PATH) {
+  New-Item -Type Directory -Path "\\172.18.3.4\d$\Logs\$SETOR\$MONTH_YEAR"
+}
+
+if (!$TEST_FILE_PATH) {
+  Set-Location -Path "\\172.18.3.4\d$\Logs\$SETOR\$MONTH_YEAR"
+  New-Item ".\Autopilot.csv"
+}
+
+$FULL_PATH = "\\172.18.3.4\d$\Logs\$SETOR\$MONTH_YEAR\Autopilot.csv"
+$LINES = (Get-Content $FULL_PATH | Measure-Object).Count
+
 $COMPUTER_SYSTEM = Get-CimInstance Win32_ComputerSystem
 $NOTEBOOK_MANUFACTURER = $COMPUTER_SYSTEM | Select-Object -ExpandProperty Manufacturer
 $NOTEBOOK_MODEL = $COMPUTER_SYSTEM | Select-Object -ExpandProperty SystemFamily
@@ -503,297 +641,61 @@ $MEMORY_SIZE = ($MEMORY | Measure-Object -Property capacity -Sum).sum /1gb
 $MEMORY_STRING = [string]($MEMORY_SIZE) + " GB"
 
 $STORAGE_BASE = Get-CimInstance Win32_DiskDrive
-$STORAGE_STRING = [string][math]::Round((($STORAGE_BASE | Measure-Object -Property Size -sum).sum)/1GB, 2) + " GB"
+$STORAGE_STRING = [string][math]::Round((($STORAGE_BASE | Where-Object -Property MediaType -ne "Removable Media" | Measure-Object -Property Size -sum).sum)/1GB, 2) + " GB"
 
 $SERIAL = Get-CimInstance Win32_Bios | Select-Object -ExpandProperty SerialNumber
 
-
-
-
-# Create a textblock
-$TextBlock_Setor = New-Object System.Windows.Controls.TextBlock
-$TextBlock_Setor.Text = "Atencao para selecionar corretamente, nao e possivel alterar apos selecionado."
-$TextBlock_Setor.Margin = 10
-$TextBlock_Setor.FontSize = 16
-
-$StackPanel_SETOR = New-Object System.Windows.Controls.StackPanel
-
-$Button_PROD = New-Object System.Windows.Controls.Button
-
-# Create a textblock
-$TextBlock_PROD = New-Object System.Windows.Controls.TextBlock
-$TextBlock_PROD.Text = "PRODUCAO"
-$TextBlock_PROD.TextAlignment = "Center"
-
-$Button_PROD.Content = $TextBlock_PROD
-$Button_PROD.FontSize = 24
-$Button_PROD.HorizontalAlignment = "Center"
-$Button_PROD.VerticalAlignment = "Center"
-$Button_PROD.Height = "NaN"
-$Button_PROD.Width =150
-$Button_PROD.Background = "transparent"
-$Button_PROD.Foreground = "DarkRed"
-$Button_PROD.BorderThickness = 2
-$Button_PROD.BorderBrush = "Red"
-$Button_PROD.Margin = "10,10,25,10"
-$Button_PROD.Cursor = "Hand"
-
-# Create a textblock
-$TextBlock_RMA = New-Object System.Windows.Controls.TextBlock
-$TextBlock_RMA.Text = "RMA"
-$TextBlock_RMA.TextAlignment = "Center"
-
-$Button_RMA = New-Object System.Windows.Controls.Button
-$Button_RMA.Content = $TextBlock_RMA
-$Button_RMA.FontSize = 24
-$Button_RMA.HorizontalAlignment = "Center"
-$Button_RMA.VerticalAlignment = "Center"
-$Button_RMA.Height = "NaN"
-$Button_RMA.Width = 150
-$Button_RMA.Background = "transparent"
-$Button_RMA.Foreground = "DarkRed"
-$Button_RMA.BorderThickness = 1
-$Button_RMA.Margin = "25,10,10,10"
-$Button_RMA.Cursor = "Hand"
-
-$DockPanel = New-object System.Windows.Controls.DockPanel
-$DockPanel.LastChildFill = $False
-$DockPanel.HorizontalAlignment = "Center"
-$DockPanel.Width = "NaN"
-$DockPanel.AddChild($Button_PROD)
-$DockPanel.AddChild($Button_RMA)
-
-$StackPanel_SETOR.Orientation = "horizontal"
-$StackPanel_SETOR.HorizontalAlignment="Center"
-# $StackPanel_SETOR.AddChild($TextBlock_Setor)
-$StackPanel_SETOR.AddChild($DockPanel)
-# $StackPanel_SETOR.AddChild($Button_RMA)
-
-$Params_Setor=@{
-  Content=$StackPanel_SETOR
-  Title="Selecione o Setor"
+$PARAMS_ERROR = @{
+  Title="Erro"
+  Content="Não foi possível salvar as informações, tentando novamente em alguns segundos.."
   TitleBackground="DarkRed"
   TitleFontSize=20
   TitleFontWeight='Bold'
   TitleTextForeground='White'
   ButtonType='None'
   ButtonTextForeground="DarkRed"
-  # CustomButtons="Producao","RMA"
+  # CustomButtons="Confirmar"
   BorderThickness=2
   ShadowDepth=4
-  ContentFontSize=1
+  ContentFontSize=16
+  Timeout=5
 }
 
-$SETOR = ""
-$COLABORADOR = ""
-
-
-############# BOTAO PROD ###############
-$RETURN_PROD = $Button_PROD.Add_Click({
-  $SETOR = "PRODUCAO"
-  $LISTA_PRODUCAO = @(
-    "Ana Clara"
-    "Eliane Vieira"
-    "Erick Rodrigues"
-    "Joao Paulo"
-    "Luiz Henrique"
-    "Pedro Gauger"
-    "Taina Silva"
-    "Tauane Abreu"
-    "Zenaide Alves"
-  )
-
-  Write-Host "BUTTON PROD"
-  $StackPanel_COLABORADOR = New-Object System.Windows.Controls.StackPanel
-  $ComboBox = New-Object System.Windows.Controls.ComboBox
-  $ComboBox.Margin = "10,10,10,0"
-  $ComboBox.Background = "White"
-  $ComboBox.FontSize = 16
-
-  $ComboBox.ItemsSource = $LISTA_PRODUCAO
-
-  $RANDOM_INT = Get-Random -Maximum ($ComboBox.ItemsSource | Measure-Object).Count
-  $ComboBox.SelectedIndex = $RANDOM_INT
-
-  # Create a textblock
-  $TextBlock = New-Object System.Windows.Controls.TextBlock
-  $TextBlock.Text = "Selecione seu nome na lista abaixo:"
-  $TextBlock.Margin = 10
-  $TextBlock.FontSize = 16
-
-  # $StackPanel_COLABORADOR.AddChild($TextBlock)
-  # $StackPanel_COLABORADOR.AddChild($ComboBox)
-
-  $TextBlock, $ComboBox | ForEach-Object {
-    $StackPanel_COLABORADOR.AddChild($PSItem)
-  }
-
-  $Params_COLABORADOR=@{
-    Content=$StackPanel_COLABORADOR
-    Title="Colaborador"
-    TitleBackground="DarkRed"
-    TitleFontSize=20
-    TitleFontWeight='Bold'
-    TitleTextForeground='White'
-    ButtonType='None'
-    ButtonTextForeground="DarkRed"
-    CustomButtons="Confirmar"
-    BorderThickness=2
-    ShadowDepth=4
-    ContentFontSize=1
-  }
-
-  New-WPFMessageBox @Params_COLABORADOR
-
-  if ($WPFMessageBoxOutput -eq "Confirmar") {
-    return $ComboBox.SelectedValue, $SETOR
-  }
-})
-
-Write-Host $RETURN_PROD
-
-############# BOTAO RMA ###############
-$COLABORADOR = $Button_RMA.Add_Click({
-  $LISTA_RMA = @(
-  "Andre Luiz"
-  "Dyego Fernandes"
-  "Gabriel Andrew"
-  "Gleison Carlos"
-  "Icaro Leandro"
-  "Jean Douglas"
-  "Jefferson da Silva"
-  "Joao Augusto"
-  "Joao Bosco"
-  "Jose Ricardo"
-  "Leonardo Roberto"
-  "Luiz Filipe"
-  "Patrick dos Santos"
-  "Ricardo Kunzendorff"
-  "Robson da Silva"
-  "Rodrigo Marques"
-  "Vinicius Alves"
-  "Volglas de Almeida"
-)
-
-  Write-Host "BUTTON RMA"
-  $StackPanel_COLABORADOR = New-Object System.Windows.Controls.StackPanel
-  $ComboBox = New-Object System.Windows.Controls.ComboBox
-  $ComboBox.Margin = "10,10,10,0"
-  $ComboBox.Background = "White"
-  $ComboBox.FontSize = 16
-
-  $ComboBox.ItemsSource = $LISTA_RMA
-
-  $RANDOM_INT = Get-Random -Maximum ($ComboBox.ItemsSource | Measure-Object).Count
-  $ComboBox.SelectedIndex = $RANDOM_INT
-
-  # Create a textblock
-  $TextBlock = New-Object System.Windows.Controls.TextBlock
-  $TextBlock.Text = "Selecione seu nome na lista abaixo:"
-  $TextBlock.Margin = 10
-  $TextBlock.FontSize = 16
-
-  $TextBlock, $ComboBox | ForEach-Object {
-    $StackPanel_COLABORADOR.AddChild($PSItem)
-  }
-
-  $Params_COLABORADOR=@{
-    Content=$StackPanel_COLABORADOR
-    Title="Colaborador"
-    TitleBackground="DarkRed"
-    TitleFontSize=20
-    TitleFontWeight='Bold'
-    TitleTextForeground='White'
-    ButtonType='None'
-    ButtonTextForeground="DarkRed"
-    CustomButtons="Confirmar"
-    BorderThickness=2
-    ShadowDepth=4
-    ContentFontSize=1
-  }
-
-  New-WPFMessageBox @Params_COLABORADOR
-
-  if ($WPFMessageBoxOutput -eq "Confirmar") {
-    return $ComboBox.SelectedValue
-  }
-})
-
-New-WPFMessageBox @Params_Setor
-
-net use \\172.18.3.4\d$ /user:arkserv\jan Lucy@505
-
-# $DAY = Get-Date -Format "dd - dddd"
-$DAY_MONTH = Get-Date -Format "dd - MM"
-$MONTH_YEAR = Get-Date -Format "MM-yyyy"
-$HOUR_MINUTE = Get-Date -Format "HH:mm"
-
-"\\172.18.3.4\d$\SERVIDOR DEPLOYMENT\MDT01\Logs\$SETOR\$MONTH_YEAR"
-$TEST_PATH = Test-Path "\\172.18.3.4\d$\SERVIDOR DEPLOYMENT\MDT01\Logs\$SETOR\$MONTH_YEAR"
-$TEST_FILE_PATH = Test-Path "\\172.18.3.4\d$\SERVIDOR DEPLOYMENT\MDT01\Logs\$SETOR\$MONTH_YEAR\$MONTH_YEAR.csv"
-
-if (!$TEST_PATH) {
-  New-Item -Type Directory -Path "\\172.18.3.4\d$\SERVIDOR DEPLOYMENT\MDT01\Logs\$SETOR\$MONTH_YEAR"
+$PARAMS_SUCCESS = @{
+  Title="Sucesso"
+  Content="Informações salvas com sucesso, finalizando..."
+  TitleBackground="DarkRed"
+  TitleFontSize=20
+  TitleFontWeight='Bold'
+  TitleTextForeground='White'
+  ButtonType='None'
+  ButtonTextForeground="DarkRed"
+  # CustomButtons="Confirmar"
+  BorderThickness=2
+  ShadowDepth=4
+  ContentFontSize=16
+  Timeout=6
 }
 
-if (!$TEST_FILE_PATH) {
-  Set-Location -Path "\\172.18.3.4\d$\SERVIDOR DEPLOYMENT\MDT01\Logs\$SETOR\$MONTH_YEAR"
-  New-Item ".\$MONTH_YEAR.csv"
+$SAVING_LOOP = 'true';
+
+while ($SAVING_LOOP) {
+  try {
+    if ($LINES -eq 0) {
+      "PATRIMONIO;CLIENTE;TAG;SERIAL;MODELO;MEMORIA;ARMAZENAMENTO;PRODUZIDO POR;SETOR;HORA;DIA" | Add-Content $FULL_PATH -ErrorAction Stop
+    }
+
+    "$PATRIMONIO;$CLIENTE;$TAG;$SERIAL;$NOTEBOOK_STRING;$MEMORY_STRING;$STORAGE_STRING;$COLABORADOR;$SETOR;$HOUR_MINUTE;$DAY_MONTH" | Add-Content $FULL_PATH -ErrorAction Stop
+
+    New-WPFMessageBox @PARAMS_SUCCESS
+    exit
+  }
+  catch {
+    # Em caso de erro, esperar de 1 a 5 seg e tentar salvar novamente
+    $RANDOM_WAIT = Get-Random -Minimum 1 -Maximum 5
+    Start-Sleep -Seconds $RANDOM_WAIT
+    New-WPFMessageBox @PARAMS_ERROR
+  }
 }
-
-$FULL_PATH = "\\172.18.3.4\d$\SERVIDOR DEPLOYMENT\MDT01\Logs\$SETOR\$MONTH_YEAR\$MONTH_YEAR.csv"
-$LINES = (Get-Content $FULL_PATH | Measure-Object).Count
-
-
-
-if ($LINES -eq 0) {
-  "SERIAL;MODELO;MEMORIA;ARMAZENAMENTO;PRODUZIDO POR;SETOR;HORA;DIA" | Add-Content $FULL_PATH
-}
-
-"$SERIAL;$NOTEBOOK_STRING;$MEMORY_STRING;$STORAGE_STRING;$COLABORADOR;$SETOR;$HOUR_MINUTE;$DAY_MONTH" | Add-Content $FULL_PATH
-
-Write-Host "`n"
-
-# $net.RemoveNetworkDrive("U:");
-
-########### REF ############
-### MODELO NOTEBOOK ###
-# $COMPUTER_SYSTEM = Get-CimInstance Win32_ComputerSystem
-# $NOTEBOOK_MANUFACTURER = $COMPUTER_SYSTEM | Select-Object -ExpandProperty Manufacturer
-# $NOTEBOOK_MODEL = $COMPUTER_SYSTEM | Select-Object -ExpandProperty SystemFamily
-
-# if ($NOTEBOOK_MANUFACTURER -like "*Dell*") {
-#   $NOTEBOOK_MANUFACTURER = "Dell"
-#   $NOTEBOOK_MODEL = $COMPUTER_SYSTEM | Select-Object -ExpandProperty Model
-# } elseif ($NOTEBOOK_MANUFACTURER -like "*LENOVO*") {
-#   $NOTEBOOK_MANUFACTURER = "Lenovo"
-# } elseif ($NOTEBOOK_MANUFACTURER -like "*SAMSUNG*") {
-#   $NOTEBOOK_MANUFACTURER = "Samsung"
-# } elseif ($NOTEBOOK_MANUFACTURER -like "*HP*") {
-#   $NOTEBOOK_MANUFACTURER = ""
-#   $NOTEBOOK_MODEL = $COMPUTER_SYSTEM | Select-Object -ExpandProperty Model
-# }
-
-# ### CPU ###
-# $CPU_BASE = Get-CimInstance -ClassName Win32_Processor
-# $CPU = $CPU_BASE | Select-Object -ExpandProperty Name
-# $CPU_CORES = $CPU_BASE | Select-Object -ExpandProperty NumberOfCores
-# $CPU_THREADS = $CPU_BASE | Select-Object -ExpandProperty NumberOfLogicalProcessors
-# $CPU_SPEED = $CPU_BASE | Select-Object -ExpandProperty MaxClockSpeed
-
-# ### MEMORIA ####
-# $MEMORY = Get-CimInstance Win32_PhysicalMemory
-# $MEMORY_SIZE = ($MEMORY | Measure-Object -Property capacity -Sum).sum /1gb
-# $MEMORY_SLOTS = ($MEMORY | Select-Object BankLabel | Measure-Object).Count
-# $TOTAL_NUMBER_OF_SLOTS = Get-CimInstance Win32_PhysicalMemoryArray | Select-Object -ExpandProperty MemoryDevices
-
-# $SLOT_SIZE_STRING = ""
-# $COUNT = 1
-
-### SELECIONE 1 PARA PRODUÃ 2 RMA
-
-
-
-
 
 

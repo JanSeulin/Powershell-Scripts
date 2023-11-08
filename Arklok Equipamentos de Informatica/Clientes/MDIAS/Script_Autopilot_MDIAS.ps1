@@ -156,7 +156,7 @@ if (($CHECK_IMPORT_SUCCESS) -and !($CHECK_IF_ALREADY_ASSIGNED_OTHER_TENANT) -and
 
   net use \\172.18.3.4\d$ /user:arkserv\jan Lucy@505
 
-  & "\\172.18.3.4\d$\Servidor Deployment\MDT01\Scripts\Gerar_Log\Gerar_Log_Autopilot.exe"
+  & "\\172.18.3.4\d$\Servidor Deployment\MDT01\Scripts\Gerar_Log\Gerar_Log_Autopilot.exe" 'MDIAS (AUTOPILOT)' $TAG
 
   $KEY_RESTART = ""
 

@@ -477,143 +477,172 @@ Function New-WPFMessageBox {
   }
 }
 
-# $SOURCE_IMG = "Z:\Scripts\Info_Sistema\Logo\Arklok_Slogan.png"
-# # $SOURCE_IMG = "C:\Images\Arklok_Slogan.png"
-# # $SOURCE_IMG_DEV="C:\Images\Arklok_Slogan.png"
-# $IMAGE = New-Object System.Windows.Controls.Image
-# $IMAGE.Source = $SOURCE_IMG
-# $Image.Height = 0
-# $Image.Width = 0
-# $Image.Margin = "0,0,0,0"
-
-# Create a textblock
-$TextBlock_Setor = New-Object System.Windows.Controls.TextBlock
-$TextBlock_Setor.Text = "Atenção: Não é possível alterar o setor após a seleção."
-$TextBlock_Setor.Margin = 10
-$TextBlock_Setor.FontSize = 16
-
-$StackPanel_SETOR = New-Object System.Windows.Controls.StackPanel
-# $StackPanel_SETOR.AddChild($IMAGE)
-$StackPanel_SETOR.AddChild($TextBlock_Setor)
-
-$Params_Setor=@{
-  Content=$StackPanel_SETOR
-  Title="Selecione o Setor"
-  TitleBackground="DarkRed"
-  TitleFontSize=20
-  TitleFontWeight='Bold'
-  TitleTextForeground='White'
-  ButtonType='None'
-  ButtonTextForeground="DarkRed"
-  CustomButtons="PRODUCAO","RMA"
-  BorderThickness=2
-  ShadowDepth=4
-  ContentFontSize=1
-}
-
-$SETOR = ""
-
-New-WPFMessageBox @Params_Setor
-
-if ($WPFMessageBoxOutput -eq "Producao") {
-  $SETOR = "PRODUCAO"
-} elseif ($WPFMessageBoxOutput -eq "RMA") {
-  $SETOR = "RMA"
-}
+$param1 = $args[0]
+Write-Host $param1
 
 net use \\172.18.3.4\d$ /user:arkserv\jan Lucy@505
 
-[string[]]$LISTA_PRODUCAO = Get-Content -Path '\\172.18.3.4\d$\Logs\PRODUCAO\Lista_Funcionarios.txt'
-[string[]]$LISTA_RMA = Get-Content -Path '\\172.18.3.4\d$\Logs\RMA\Lista_Funcionarios.txt'
+#################### PATRIMONIO ####################
+$PATRIMONIO_LOOP = "true"
 
-# $LISTA_PRODUCAO = [IO.File]::ReadAllLines("\\172.18.3.4\d$\Logs\PRODUCAO\Lista_Funcionarios.txt")
-# $LISTA_RMA = [IO.File]::ReadAllLines("\\172.18.3.4\d$\Logs\RMA\Lista_Funcionarios.txt")
-# $LISTA_PRODUCAO = @(
-#   "Ana Clara"
-#   "Eliane Vieira"
-#   "Erick Rodrigues"
-#   "Joao Paulo"
-#   "Luiz Henrique"
-#   "Pedro Gauger"
-#   "Taina Silva"
-#   "Tauane Abreu"
-#   "Zenaide Alves"
-# )
+While ($PATRIMONIO_LOOP -eq "true") {
+  # Create a textblock
+  $TextBlock_Patrimonio = New-Object System.Windows.Controls.TextBlock
+  $TextBlock_Patrimonio.Text = "Digite o Patrimônio da Máquina"
+  $TextBlock_Patrimonio.Margin = 10
+  $TextBlock_Patrimonio.FontSize = 16
 
-# $LISTA_RMA = @(
-#   "Andre Luiz"
-#   "Dyego Fernandes"
-#   "Gabriel Andrew"
-#   "Gleison Carlos"
-#   "Icaro Leandro"
-#   "Jean Douglas"
-#   "Jefferson da Silva"
-#   "Joao Augusto"
-#   "Joao Bosco"
-#   "Jose Ricardo"
-#   "Leonardo Roberto"
-#   "Luiz Filipe"
-#   "Patrick dos Santos"
-#   "Ricardo Kunzendorff"
-#   "Robson da Silva"
-#   "Rodrigo Marques"
-#   "Vinicius Alves"
-#   "Volglas de Almeida"
-# )
+  $TextBox_Patrimonio = New-Object System.Windows.Controls.TextBox
+  $TextBox_Patrimonio.Text = ""
+  $TextBox_Patrimonio.Margin = "10,0,10,0"
+  $TextBox_Patrimonio.FontSize = 16
+  $TextBox_Patrimonio.BorderThickness = 2
 
-$StackPanel_COLABORADOR = New-Object System.Windows.Controls.StackPanel
-$ComboBox = New-Object System.Windows.Controls.ComboBox
-$ComboBox.Margin = "10,10,10,0"
-$ComboBox.Background = "White"
-$ComboBox.FontSize = 16
+  $StackPanel_Patrimonio = New-Object System.Windows.Controls.StackPanel
+  $StackPanel_Patrimonio.AddChild($TextBlock_Patrimonio)
+  $StackPanel_Patrimonio.AddChild($TextBox_Patrimonio)
 
+  $Params_Patrimonio=@{
+    Content=$StackPanel_Patrimonio
+    Title="Patrimônio"
+    TitleBackground="DarkRed"
+    TitleFontSize=20
+    TitleFontWeight='Bold'
+    TitleTextForeground='White'
+    ButtonType='None'
+    ButtonTextForeground="DarkRed"
+    CustomButtons="OK"
+    BorderThickness=2
+    ShadowDepth=4
+    ContentFontSize=1
+  }
 
-if ($SETOR -eq "PRODUCAO") {
-  $ComboBox.ItemsSource = $LISTA_PRODUCAO
-} else {
-  $ComboBox.ItemsSource = $LISTA_RMA
+  New-WPFMessageBox @Params_Patrimonio
+
+  if ($WPFMessageBoxOutput -eq "OK") {
+    $PATRIMONIO = $TextBox_Patrimonio.text
+
+    Write-Host "PATRIMONIO: $PATRIMONIO"
+
+    if (($PATRIMONIO.Length -lt 4) -or ($PATRIMONIO.Length -gt 6) -or ($PATRIMONIO -match "[^0-9]")) {
+      $Params_Patrimonio_Erro=@{
+        Content="Valor inválido. O patrimônio deve ter entre 4 e 6 caracteres numéricos."
+        Title="Erro"
+        TitleBackground="DarkRed"
+        TitleFontSize=20
+        TitleFontWeight='Bold'
+        TitleTextForeground='White'
+        ButtonType='None'
+        ButtonTextForeground="DarkRed"
+        CustomButtons="OK"
+        BorderThickness=2
+        ShadowDepth=4
+        ContentFontSize=16
+      }
+
+      New-WPFMessageBox @Params_Patrimonio_Erro
+    } else {
+      $PATRIMONIO_LOOP = "false"
+    }
+  }
 }
 
-$RANDOM_INT = Get-Random -Maximum ($ComboBox.ItemsSource | Measure-Object).Count
-$ComboBox.SelectedIndex = $RANDOM_INT
 
-# Create a textblock
-$TextBlock = New-Object System.Windows.Controls.TextBlock
-$TextBlock.Text = "Selecione seu nome na lista abaixo:"
-$TextBlock.Margin = 10
-$TextBlock.FontSize = 16
+$LOOP_SETOR = "true";
 
-# $StackPanel_COLABORADOR.AddChild($TextBlock)
-# $StackPanel_COLABORADOR.AddChild($ComboBox)
+while  ($LOOP_SETOR) {
+  ################ SETOR ###############
+  $TextBlock_Setor = New-Object System.Windows.Controls.TextBlock
+  $TextBlock_Setor.Text = "Atenção: não é possível alterar o setor e colaborador após confirmação."
+  $TextBlock_Setor.Margin = 10
+  $TextBlock_Setor.FontSize = 16
 
-$TextBlock, $ComboBox | ForEach-Object {
-  $StackPanel_COLABORADOR.AddChild($PSItem)
+  $StackPanel_SETOR = New-Object System.Windows.Controls.StackPanel
+  # $StackPanel_SETOR.AddChild($IMAGE)
+  $StackPanel_SETOR.AddChild($TextBlock_Setor)
+
+  $Params_Setor=@{
+    Content=$StackPanel_SETOR
+    Title="Selecione o Setor"
+    TitleBackground="DarkRed"
+    TitleFontSize=20
+    TitleFontWeight='Bold'
+    TitleTextForeground='White'
+    ButtonType='None'
+    ButtonTextForeground="DarkRed"
+    CustomButtons="PRODUCAO","RMA"
+    BorderThickness=2
+    ShadowDepth=4
+    ContentFontSize=1
+  }
+
+  $SETOR = ""
+
+  New-WPFMessageBox @Params_Setor
+
+  if ($WPFMessageBoxOutput -eq "Producao") {
+    $SETOR = "PRODUCAO"
+  } elseif ($WPFMessageBoxOutput -eq "RMA") {
+    $SETOR = "RMA"
+  }
+
+  [string[]]$LISTA_PRODUCAO = Get-Content -Path '\\172.18.3.4\d$\Logs\PRODUCAO\Lista_Funcionarios.txt'
+  [string[]]$LISTA_RMA = Get-Content -Path '\\172.18.3.4\d$\Logs\RMA\Lista_Funcionarios.txt'
+
+  #################### COLABORADOR ####################
+  $StackPanel_COLABORADOR = New-Object System.Windows.Controls.StackPanel
+  $ComboBox = New-Object System.Windows.Controls.ComboBox
+  $ComboBox.Margin = "10,10,10,0"
+  $ComboBox.Background = "White"
+  $ComboBox.FontSize = 16
+
+  if ($SETOR -eq "PRODUCAO") {
+    $ComboBox.ItemsSource = $LISTA_PRODUCAO
+  } else {
+    $ComboBox.ItemsSource = $LISTA_RMA
+  }
+
+  $RANDOM_INT = Get-Random -Maximum ($ComboBox.ItemsSource | Measure-Object).Count
+  $ComboBox.SelectedIndex = $RANDOM_INT
+
+  $TextBlock = New-Object System.Windows.Controls.TextBlock
+  $TextBlock.Text = "Selecione seu nome na lista abaixo:"
+  $TextBlock.Margin = 10
+  $TextBlock.FontSize = 16
+
+  $TextBlock, $ComboBox | ForEach-Object {
+    $StackPanel_COLABORADOR.AddChild($PSItem)
+  }
+
+  $Params_COLABORADOR=@{
+    Content=$StackPanel_COLABORADOR
+    Title="Colaborador"
+    TitleBackground="DarkRed"
+    TitleFontSize=20
+    TitleFontWeight='Bold'
+    TitleTextForeground='White'
+    ButtonType='None'
+    ButtonTextForeground="DarkRed"
+    CustomButtons="Confirmar","Voltar"
+    BorderThickness=2
+    ShadowDepth=4
+    ContentFontSize=1
+  }
+
+  $ComboBox | Select-Object *
+
+  New-WPFMessageBox @Params_COLABORADOR
+
+  if ($WPFMessageBoxOutput -eq "Confirmar") {
+    $COLABORADOR = $ComboBox.SelectedValue
+    break;
+  } elseif ($WPFMessageBoxOutput -eq "Voltar") {
+    Continue;
+  }
+
+  Write-Host "`n"
 }
 
-$Params_COLABORADOR=@{
-  Content=$StackPanel_COLABORADOR
-  Title="Colaborador"
-  TitleBackground="DarkRed"
-  TitleFontSize=20
-  TitleFontWeight='Bold'
-  TitleTextForeground='White'
-  ButtonType='None'
-  ButtonTextForeground="DarkRed"
-  CustomButtons="Confirmar"
-  BorderThickness=2
-  ShadowDepth=4
-  ContentFontSize=1
-}
-
-$ComboBox | Select-Object *
-
-New-WPFMessageBox @Params_COLABORADOR
-
-if ($WPFMessageBoxOutput -eq "Confirmar") {
-  $COLABORADOR = $ComboBox.SelectedValue
-}
-
-Write-Host "`n"
 
 # net use \\172.18.3.4\d$ /user:arkserv\jan Lucy@505
 
@@ -705,10 +734,10 @@ $SAVING_LOOP = 'true';
 while ($SAVING_LOOP) {
   try {
     if ($LINES -eq 0) {
-      "CLIENTE;SERIAL;MODELO;MEMORIA;ARMAZENAMENTO;PRODUZIDO POR;SETOR;HORA;DIA" | Add-Content $FULL_PATH -ErrorAction Stop
+      "PATRIMONIO;CLIENTE;SERIAL;MODELO;MEMORIA;ARMAZENAMENTO;PRODUZIDO POR;SETOR;HORA;DIA" | Add-Content $FULL_PATH -ErrorAction Stop
     }
 
-    "$CLIENTE;$SERIAL;$NOTEBOOK_STRING;$MEMORY_STRING;$STORAGE_STRING;$COLABORADOR;$SETOR;$HOUR_MINUTE;$DAY_MONTH" | Add-Content $FULL_PATH -ErrorAction Stop
+    "$PATRIMONIO;$CLIENTE;$SERIAL;$NOTEBOOK_STRING;$MEMORY_STRING;$STORAGE_STRING;$COLABORADOR;$SETOR;$HOUR_MINUTE;$DAY_MONTH" | Add-Content $FULL_PATH -ErrorAction Stop
 
     New-WPFMessageBox @PARAMS_SUCCESS
     exit

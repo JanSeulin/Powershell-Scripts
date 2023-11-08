@@ -477,17 +477,9 @@ Function New-WPFMessageBox {
   }
 }
 
+net use \\172.18.3.4\d$ /user:arkserv\jan Lucy@505
 
-
-
-
-
-
-
-
-
-$SETOR = ""
-
+#################### PATRIMONIO ####################
 $PATRIMONIO_LOOP = "true"
 
 While ($PATRIMONIO_LOOP -eq "true") {
@@ -546,23 +538,13 @@ While ($PATRIMONIO_LOOP -eq "true") {
       }
 
       New-WPFMessageBox @Params_Patrimonio_Erro
+    } else {
+      $PATRIMONIO_LOOP = "false"
     }
   }
 }
 
-
-
-# Write-Host "Patrimonio " $TextBox_Patrimonio.value
-
-
-
-Write-Host "Patrimonio $PATRIMONIO"
-
-
-
-
-
-# Create a textblock
+################ SETOR ###############
 $TextBlock_Setor = New-Object System.Windows.Controls.TextBlock
 $TextBlock_Setor.Text = "Atenção: Não é possível alterar o setor após a seleção."
 $TextBlock_Setor.Margin = 10
@@ -570,7 +552,6 @@ $TextBlock_Setor.FontSize = 16
 
 $StackPanel_SETOR = New-Object System.Windows.Controls.StackPanel
 # $StackPanel_SETOR.AddChild($IMAGE)
-# $StackPanel_SETOR.AddChild($TextBox_Setor)
 $StackPanel_SETOR.AddChild($TextBlock_Setor)
 
 $Params_Setor=@{
@@ -597,8 +578,6 @@ if ($WPFMessageBoxOutput -eq "Producao") {
 } elseif ($WPFMessageBoxOutput -eq "RMA") {
   $SETOR = "RMA"
 }
-
-net use \\172.18.3.4\d$ /user:arkserv\jan Lucy@505
 
 [string[]]$LISTA_PRODUCAO = Get-Content -Path '\\172.18.3.4\d$\Logs\PRODUCAO\Lista_Funcionarios.txt'
 [string[]]$LISTA_RMA = Get-Content -Path '\\172.18.3.4\d$\Logs\RMA\Lista_Funcionarios.txt'
@@ -638,14 +617,12 @@ net use \\172.18.3.4\d$ /user:arkserv\jan Lucy@505
 #   "Volglas de Almeida"
 # )
 
-
-
+#################### COLABORADOR ####################
 $StackPanel_COLABORADOR = New-Object System.Windows.Controls.StackPanel
 $ComboBox = New-Object System.Windows.Controls.ComboBox
 $ComboBox.Margin = "10,10,10,0"
 $ComboBox.Background = "White"
 $ComboBox.FontSize = 16
-
 
 if ($SETOR -eq "PRODUCAO") {
   $ComboBox.ItemsSource = $LISTA_PRODUCAO
@@ -656,14 +633,10 @@ if ($SETOR -eq "PRODUCAO") {
 $RANDOM_INT = Get-Random -Maximum ($ComboBox.ItemsSource | Measure-Object).Count
 $ComboBox.SelectedIndex = $RANDOM_INT
 
-# Create a textblock
 $TextBlock = New-Object System.Windows.Controls.TextBlock
 $TextBlock.Text = "Selecione seu nome na lista abaixo:"
 $TextBlock.Margin = 10
 $TextBlock.FontSize = 16
-
-# $StackPanel_COLABORADOR.AddChild($TextBlock)
-# $StackPanel_COLABORADOR.AddChild($ComboBox)
 
 $TextBlock, $ComboBox | ForEach-Object {
   $StackPanel_COLABORADOR.AddChild($PSItem)
@@ -784,10 +757,10 @@ $SAVING_LOOP = 'true';
 while ($SAVING_LOOP) {
   try {
     if ($LINES -eq 0) {
-      "CLIENTE;SERIAL;MODELO;MEMORIA;ARMAZENAMENTO;PRODUZIDO POR;SETOR;HORA;DIA" | Add-Content $FULL_PATH -ErrorAction Stop
+      "PATRIMONIO;CLIENTE;SERIAL;MODELO;MEMORIA;ARMAZENAMENTO;PRODUZIDO POR;SETOR;HORA;DIA" | Add-Content $FULL_PATH -ErrorAction Stop
     }
 
-    "$CLIENTE;$SERIAL;$NOTEBOOK_STRING;$MEMORY_STRING;$STORAGE_STRING;$COLABORADOR;$SETOR;$HOUR_MINUTE;$DAY_MONTH" | Add-Content $FULL_PATH -ErrorAction Stop
+    "$PATRIMONIO;$CLIENTE;$SERIAL;$NOTEBOOK_STRING;$MEMORY_STRING;$STORAGE_STRING;$COLABORADOR;$SETOR;$HOUR_MINUTE;$DAY_MONTH" | Add-Content $FULL_PATH -ErrorAction Stop
 
     New-WPFMessageBox @PARAMS_SUCCESS
     exit

@@ -473,23 +473,89 @@ Function New-WPFMessageBox {
 
   # Display the window
   $null = $window.Dispatcher.InvokeAsync{$window.ShowDialog()}.Wait()
-
   }
 }
 
-# New-WPFMessageBox @Params_Setor
+$CLIENTE = $args[0]
+$TAG = $args[1]
+
+Write-Host "CLIENTE: $CLIENTE"
+Write-Host "TAG: $TAG"
 
 $SETOR = "PRODUCAO"
 
 net use \\172.18.3.4\d$ /user:arkserv\jan Lucy@505
 
 [string[]]$LISTA_PRODUCAO = Get-Content -Path '\\172.18.3.4\d$\Logs\PRODUCAO\Lista_Funcionarios.txt'
+
+#################### PATRIMONIO ####################
+$PATRIMONIO_LOOP = "true"
+
+While ($PATRIMONIO_LOOP -eq "true") {
+  # Create a textblock
+  $TextBlock_Patrimonio = New-Object System.Windows.Controls.TextBlock
+  $TextBlock_Patrimonio.Text = "Digite o Patrimônio da Máquina"
+  $TextBlock_Patrimonio.Margin = 10
+  $TextBlock_Patrimonio.FontSize = 16
+
+  $TextBox_Patrimonio = New-Object System.Windows.Controls.TextBox
+  $TextBox_Patrimonio.Text = ""
+  $TextBox_Patrimonio.Margin = "10,0,10,0"
+  $TextBox_Patrimonio.FontSize = 16
+  $TextBox_Patrimonio.BorderThickness = 2
+
+  $StackPanel_Patrimonio = New-Object System.Windows.Controls.StackPanel
+  $StackPanel_Patrimonio.AddChild($TextBlock_Patrimonio)
+  $StackPanel_Patrimonio.AddChild($TextBox_Patrimonio)
+
+  $Params_Patrimonio=@{
+    Content=$StackPanel_Patrimonio
+    Title="Patrimônio"
+    TitleBackground="DarkRed"
+    TitleFontSize=20
+    TitleFontWeight='Bold'
+    TitleTextForeground='White'
+    ButtonType='None'
+    ButtonTextForeground="DarkRed"
+    CustomButtons="OK"
+    BorderThickness=2
+    ShadowDepth=4
+    ContentFontSize=1
+  }
+
+  New-WPFMessageBox @Params_Patrimonio
+
+  if ($WPFMessageBoxOutput -eq "OK") {
+    $PATRIMONIO = $TextBox_Patrimonio.text
+
+    if (($PATRIMONIO.Length -lt 4) -or ($PATRIMONIO.Length -gt 6) -or ($PATRIMONIO -match "[^0-9]")) {
+      $Params_Patrimonio_Erro=@{
+        Content="Valor inválido. O patrimônio deve ter entre 4 e 6 caracteres numéricos."
+        Title="Erro"
+        TitleBackground="DarkRed"
+        TitleFontSize=20
+        TitleFontWeight='Bold'
+        TitleTextForeground='White'
+        ButtonType='None'
+        ButtonTextForeground="DarkRed"
+        CustomButtons="OK"
+        BorderThickness=2
+        ShadowDepth=4
+        ContentFontSize=16
+      }
+
+      New-WPFMessageBox @Params_Patrimonio_Erro
+    } else {
+      $PATRIMONIO_LOOP = "false"
+    }
+  }
+}
+
 # [string[]]$LISTA_RMA = Get-Content -Path '\\172.18.3.4\d$\Logs\RMA\Lista_Funcionarios.txt'
 
 # MÉTODO ALTERNATIVO (Talvez mais eficaz, necessita teste)
 # $LISTA_PRODUCAO = [IO.File]::ReadAllLines("\\172.18.3.4\d$\Logs\PRODUCAO\Lista_Funcionarios.txt")
 # $LISTA_RMA = [IO.File]::ReadAllLines("\\172.18.3.4\d$\Logs\RMA\Lista_Funcionarios.txt")
-
 
 # $LISTA_PRODUCAO = @(
 #   "Ana Clara"
@@ -524,98 +590,106 @@ net use \\172.18.3.4\d$ /user:arkserv\jan Lucy@505
 #   "Volglas de Almeida"
 # )
 
-$LISTA_AUTOPILOT = @(
+$LOOP_CLIENTE = "true"
+
+While ($LOOP_CLIENTE) {
+  $LISTA_AUTOPILOT = @(
   "MDIAS (Autopilot)"
   "TIMAC (Autopilot)"
-)
+  )
 
-# $STACKPANEL_AUTOPILOT =
-$STACKPANEL_AUTOPILOT = New-Object System.Windows.Controls.StackPanel
-$ComboBox_Autopilot = New-Object System.Windows.Controls.ComboBox
-$ComboBox_Autopilot.Background = "White"
-$ComboBox_Autopilot.Margin = "10,10,10,0"
-$ComboBox_Autopilot.FontSize = 16
-$ComboBox_Autopilot.ItemsSource = $LISTA_AUTOPILOT
+  # $STACKPANEL_AUTOPILOT =
+  $STACKPANEL_AUTOPILOT = New-Object System.Windows.Controls.StackPanel
+  $ComboBox_Autopilot = New-Object System.Windows.Controls.ComboBox
+  $ComboBox_Autopilot.Background = "White"
+  $ComboBox_Autopilot.Margin = "10,10,10,0"
+  $ComboBox_Autopilot.FontSize = 16
+  $ComboBox_Autopilot.ItemsSource = $LISTA_AUTOPILOT
 
-$RANDOM_INT_AUTOPILOT = Get-Random -Maximum ($ComboBox_Autopilot.ItemsSource | Measure-Object).Count
-$ComboBox_Autopilot.SelectedIndex = $RANDOM_INT_AUTOPILOT
+  $RANDOM_INT_AUTOPILOT = Get-Random -Maximum ($ComboBox_Autopilot.ItemsSource | Measure-Object).Count
+  $ComboBox_Autopilot.SelectedIndex = $RANDOM_INT_AUTOPILOT
 
-# Create a textblock
-$TextBlock_AUTOPILOT = New-Object System.Windows.Controls.TextBlock
-$TextBlock_AUTOPILOT.Text = "Selecione o cliente na lista abaixo:"
-$TextBlock_AUTOPILOT.Margin = 10
-$TextBlock_AUTOPILOT.FontSize = 16
+  # Create a textblock
+  $TextBlock_AUTOPILOT = New-Object System.Windows.Controls.TextBlock
+  $TextBlock_AUTOPILOT.Text = "Selecione o cliente na lista abaixo:"
+  $TextBlock_AUTOPILOT.Margin = 10
+  $TextBlock_AUTOPILOT.FontSize = 16
 
-$TextBlock_AUTOPILOT, $ComboBox_Autopilot | ForEach-Object {
-  $STACKPANEL_AUTOPILOT.AddChild($PSItem)
+  $TextBlock_AUTOPILOT, $ComboBox_Autopilot | ForEach-Object {
+    $STACKPANEL_AUTOPILOT.AddChild($PSItem)
+  }
+
+  $Params_AUTOPILOT=@{
+    Content=$STACKPANEL_AUTOPILOT
+    Title="Cliente Autopilot"
+    TitleBackground="DarkRed"
+    TitleFontSize=20
+    TitleFontWeight='Bold'
+    TitleTextForeground='White'
+    ButtonType='None'
+    ButtonTextForeground="DarkRed"
+    CustomButtons="Confirmar"
+    BorderThickness=2
+    ShadowDepth=4
+    ContentFontSize=1
+  }
+
+  New-WPFMessageBox @Params_AUTOPILOT
+
+  if ($WPFMessageBoxOutput -eq "Confirmar") {
+    $CLIENTE = $ComboBox_Autopilot.SelectedValue
+    break;
+  }
+
+  Write-Host $CLIENTE
+
+  #####
+  $StackPanel_COLABORADOR = New-Object System.Windows.Controls.StackPanel
+  $ComboBox = New-Object System.Windows.Controls.ComboBox
+  $ComboBox.Margin = "10,10,10,0"
+  $ComboBox.Background = "White"
+  $ComboBox.FontSize = 16
+  $ComboBox.ItemsSource = $LISTA_PRODUCAO
+
+  $RANDOM_INT = Get-Random -Maximum ($ComboBox.ItemsSource | Measure-Object).Count
+  $ComboBox.SelectedIndex = $RANDOM_INT
+
+  # Create a textblock
+  $TextBlock = New-Object System.Windows.Controls.TextBlock
+  $TextBlock.Text = "Selecione seu nome na lista abaixo:"
+  $TextBlock.Margin = 10
+  $TextBlock.FontSize = 16
+
+  $TextBlock, $ComboBox | ForEach-Object {
+    $StackPanel_COLABORADOR.AddChild($PSItem)
+  }
+
+  $Params_COLABORADOR=@{
+    Content=$StackPanel_COLABORADOR
+    Title="Colaborador"
+    TitleBackground="DarkRed"
+    TitleFontSize=20
+    TitleFontWeight='Bold'
+    TitleTextForeground='White'
+    ButtonType='None'
+    ButtonTextForeground="DarkRed"
+    CustomButtons="Confirmar","Voltar"
+    BorderThickness=2
+    ShadowDepth=4
+    ContentFontSize=1
+  }
+
+  # $ComboBox | Select-Object *
+
+  New-WPFMessageBox @Params_COLABORADOR
+
+  if ($WPFMessageBoxOutput -eq "Confirmar") {
+    $COLABORADOR = $ComboBox.SelectedValue
+  } elseif($WPFMessageBoxOutput -eq "Voltar") {
+    Continue;
+  }
 }
 
-$Params_AUTOPILOT=@{
-  Content=$STACKPANEL_AUTOPILOT
-  Title="Cliente Autopilot"
-  TitleBackground="DarkRed"
-  TitleFontSize=20
-  TitleFontWeight='Bold'
-  TitleTextForeground='White'
-  ButtonType='None'
-  ButtonTextForeground="DarkRed"
-  CustomButtons="Confirmar"
-  BorderThickness=2
-  ShadowDepth=4
-  ContentFontSize=1
-}
-
-New-WPFMessageBox @Params_AUTOPILOT
-
-if ($WPFMessageBoxOutput -eq "Confirmar") {
-  $CLIENTE = $ComboBox_Autopilot.SelectedValue
-}
-
-Write-Host $CLIENTE
-
-#####
-$StackPanel_COLABORADOR = New-Object System.Windows.Controls.StackPanel
-$ComboBox = New-Object System.Windows.Controls.ComboBox
-$ComboBox.Margin = "10,10,10,0"
-$ComboBox.Background = "White"
-$ComboBox.FontSize = 16
-$ComboBox.ItemsSource = $LISTA_PRODUCAO
-
-$RANDOM_INT = Get-Random -Maximum ($ComboBox.ItemsSource | Measure-Object).Count
-$ComboBox.SelectedIndex = $RANDOM_INT
-
-# Create a textblock
-$TextBlock = New-Object System.Windows.Controls.TextBlock
-$TextBlock.Text = "Selecione seu nome na lista abaixo:"
-$TextBlock.Margin = 10
-$TextBlock.FontSize = 16
-
-$TextBlock, $ComboBox | ForEach-Object {
-  $StackPanel_COLABORADOR.AddChild($PSItem)
-}
-
-$Params_COLABORADOR=@{
-  Content=$StackPanel_COLABORADOR
-  Title="Colaborador"
-  TitleBackground="DarkRed"
-  TitleFontSize=20
-  TitleFontWeight='Bold'
-  TitleTextForeground='White'
-  ButtonType='None'
-  ButtonTextForeground="DarkRed"
-  CustomButtons="Confirmar"
-  BorderThickness=2
-  ShadowDepth=4
-  ContentFontSize=1
-}
-
-# $ComboBox | Select-Object *
-
-New-WPFMessageBox @Params_COLABORADOR
-
-if ($WPFMessageBoxOutput -eq "Confirmar") {
-  $COLABORADOR = $ComboBox.SelectedValue
-}
 
 Write-Host "`n"
 
@@ -704,10 +778,10 @@ $SAVING_LOOP = 'true';
 while ($SAVING_LOOP) {
   try {
     if ($LINES -eq 0) {
-      "CLIENTE;SERIAL;MODELO;MEMORIA;ARMAZENAMENTO;PRODUZIDO POR;SETOR;HORA;DIA" | Add-Content $FULL_PATH -ErrorAction Stop
+      "PATRIMONIO;CLIENTE;SERIAL;MODELO;MEMORIA;ARMAZENAMENTO;PRODUZIDO POR;SETOR;HORA;DIA" | Add-Content $FULL_PATH -ErrorAction Stop
     }
 
-    "$CLIENTE;$SERIAL;$NOTEBOOK_STRING;$MEMORY_STRING;$STORAGE_STRING;$COLABORADOR;$SETOR;$HOUR_MINUTE;$DAY_MONTH" | Add-Content $FULL_PATH -ErrorAction Stop
+    "$PATRIMONIO;$CLIENTE;$SERIAL;$NOTEBOOK_STRING;$MEMORY_STRING;$STORAGE_STRING;$COLABORADOR;$SETOR;$HOUR_MINUTE;$DAY_MONTH" | Add-Content $FULL_PATH -ErrorAction Stop
 
     New-WPFMessageBox @PARAMS_SUCCESS
     exit
