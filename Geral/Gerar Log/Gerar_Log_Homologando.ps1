@@ -477,9 +477,6 @@ Function New-WPFMessageBox {
   }
 }
 
-$param1 = $args[0]
-Write-Host $param1
-
 net use \\172.18.3.4\d$ /user:arkserv\jan Lucy@505
 
 #################### PATRIMONIO ####################
@@ -731,19 +728,18 @@ $PARAMS_SUCCESS = @{
 
 $SAVING_LOOP = 'true';
 
+if ($LINES -eq 0) {
+  "PATRIMONIO;CLIENTE;SERIAL;MODELO;MEMORIA;ARMAZENAMENTO;PRODUZIDO POR;SETOR;HORA;DIA" | Add-Content $FULL_PATH -ErrorAction Stop
+}
+
 while ($SAVING_LOOP) {
   try {
-    if ($LINES -eq 0) {
-      "PATRIMONIO;CLIENTE;SERIAL;MODELO;MEMORIA;ARMAZENAMENTO;PRODUZIDO POR;SETOR;HORA;DIA" | Add-Content $FULL_PATH -ErrorAction Stop
-    }
-
     "$PATRIMONIO;$CLIENTE;$SERIAL;$NOTEBOOK_STRING;$MEMORY_STRING;$STORAGE_STRING;$COLABORADOR;$SETOR;$HOUR_MINUTE;$DAY_MONTH" | Add-Content $FULL_PATH -ErrorAction Stop
 
     New-WPFMessageBox @PARAMS_SUCCESS
     exit
   }
   catch {
-    <#Do this if a terminating exception happens#>
     $RANDOM_WAIT = Get-Random -Minimum 1 -Maximum 5
     Start-Sleep -Seconds $RANDOM_WAIT
     New-WPFMessageBox @PARAMS_ERROR

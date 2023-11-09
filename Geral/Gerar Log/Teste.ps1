@@ -477,15 +477,6 @@ Function New-WPFMessageBox {
   }
 }
 
-
-
-
-
-
-
-
-
-
 $SETOR = ""
 
 $PATRIMONIO_LOOP = "true"
@@ -555,12 +546,7 @@ While ($PATRIMONIO_LOOP -eq "true") {
 # Write-Host "Patrimonio " $TextBox_Patrimonio.value
 
 
-
 Write-Host "Patrimonio $PATRIMONIO"
-
-
-
-
 
 # Create a textblock
 $TextBlock_Setor = New-Object System.Windows.Controls.TextBlock

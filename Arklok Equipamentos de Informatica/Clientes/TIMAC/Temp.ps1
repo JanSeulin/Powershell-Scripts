@@ -1,3 +1,3 @@
-net use \\172.18.3.4\d$ /user:arkserv\jan Lucy@505
+net use \\172.18.3.4\d$ /user:arkserv\jan Lucy@505 | Out-Null
 
-& "\\172.18.3.4\d$\Servidor Deployment\MDT01\Scripts\Gerar_Log\Gerar_Log_Autopilot.exe" 'TIMAC (AUTOPILOT)' 'TAGS-TIMAC-AGRO-BRASIL'
+& "\\172.18.3.4\d$\Servidor Deployment\MDT01\Scripts\Gerar_Log\Gerar_Log_Autopilot.exe" 'TIMAC (AUTOPILOT)' 'TAGS-TIMAC-AGRO-BRASIL' | Out-Null

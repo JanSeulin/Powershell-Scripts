@@ -158,11 +158,6 @@ if (($CHECK_IMPORT_SUCCESS) -and !($CHECK_IF_ASSIGNED_0_SECONDS) -and !($CHECK_I
 } else {
   Write-Host -ForegroundColor Red "`nNão foi possível realizar o procedimento necessário, por gentileza analisar os erros acima."
 
-  net use \\172.18.3.4\d$ /user:arkserv\jan Lucy@505
-
-  & "\\172.18.3.4\d$\Servidor Deployment\MDT01\Scripts\Gerar_Log\Gerar_Log_Autopilot.exe" 'TIMAC (AUTOPILOT)' 'TAGS-TIMAC-AGRO-BRASIL'
-
-
   $KEY_FAIL = ""
 
   Write-Host "`n"

@@ -581,7 +581,7 @@ $Params_COLABORADOR=@{
   TitleTextForeground='White'
   ButtonType='None'
   ButtonTextForeground="DarkRed"
-  CustomButtons="Confirmar","Voltar"
+  CustomButtons="Confirmar"
   BorderThickness=2
   ShadowDepth=4
   ContentFontSize=1
@@ -679,12 +679,13 @@ $PARAMS_SUCCESS = @{
 
 $SAVING_LOOP = 'true';
 
+
+if ($LINES -eq 0) {
+  "PATRIMONIO;CLIENTE;TAG;SERIAL;MODELO;MEMORIA;ARMAZENAMENTO;PRODUZIDO POR;SETOR;HORA;DIA" | Add-Content $FULL_PATH -ErrorAction Stop
+}
+
 while ($SAVING_LOOP) {
   try {
-    if ($LINES -eq 0) {
-      "PATRIMONIO;CLIENTE;TAG;SERIAL;MODELO;MEMORIA;ARMAZENAMENTO;PRODUZIDO POR;SETOR;HORA;DIA" | Add-Content $FULL_PATH -ErrorAction Stop
-    }
-
     "$PATRIMONIO;$CLIENTE;$TAG;$SERIAL;$NOTEBOOK_STRING;$MEMORY_STRING;$STORAGE_STRING;$COLABORADOR;$SETOR;$HOUR_MINUTE;$DAY_MONTH" | Add-Content $FULL_PATH -ErrorAction Stop
 
     New-WPFMessageBox @PARAMS_SUCCESS
