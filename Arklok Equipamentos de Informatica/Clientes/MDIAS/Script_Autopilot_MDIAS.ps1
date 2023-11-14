@@ -91,7 +91,7 @@ Write-Output "`n"
 Write-Host -ForegroundColor Green "Após inserir a TAG, aguarde a abertura da tela de login da Microsoft."
 Write-Host -ForegroundColor Green "Em caso de erro, por gentileza rodar o script novamente. Certifique-se de estar conectado à internet.`n"
 
-$ARRAY_TAGS=@('MDBN','MDBD','GMEN','GMED','MOIN','MOID','MRCN','MRCD','CRTN','CRTD','GMPN','GMPD','SJMN','SJMD','TMNN','TMND','DMAN','DMAD','DPIN','DPID','BLMN','BLMD','EMAN','EMAD','GMTN','GMTD','JPAN','JPAD','VITN','VITD','VITN','VITD','MAC','MACD','AJUN','AJUD','VDCN','VDCD','GMAN','GMAD','GMAN','GMAD','RJN','RJD','PEN','PED','PMN','PMD','PQN','PQD','UBLN','UBLD','BSAN','BSAD','SCSN','SCSD','GRUN','GRUD','LPAN','LPAD','MPRN','MPRD','LTXN','LTXD','JASN','JASD','BGO','BGOD','PNSN','PNSD','BGON','BGOD')
+$ARRAY_TAGS=@('MDBN','MDBD','GMEN','GMED','MOIN','MOID','MRCN','MRCD','CRTN','CRTD','GMPN','GMPD','SJMN','SJMD','TMNN','TMND','DMAN','DMAD','DPIN','DPID','BLMN','BLMD','EMAN','EMAD','GMTN','GMTD','JPAN','JPAD','VITN','VITD','VITN','VITD','MAC','MACD','AJUN','AJUD','VDCN','VDCD','GMAN','GMAD','GMAN','GMAD','RJN','RJD','PEN','PED','PMN','PMD','PQN','PQD','UBLN','UBLD','BSAN','BSAD','SCSN','SCSD','GRUN','GRUD','LPAN','LPAD','MPRN','MPRD','LTXN','LTXD','JASN','JASD','BGO','BGOD','PNSN','PNSD','BGON','BGOD', 'MADN', 'MADD', 'MADNW', 'MADDW')
 
 $TAG_CORRECT = $false;
 

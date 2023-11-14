@@ -134,20 +134,20 @@ if (($CHECK_IMPORT_SUCCESS) -and !($CHECK_IF_ASSIGNED_0_SECONDS) -and !($CHECK_I
   $KEY_RESTART = ""
 
   Write-Host "`n"
-  While ($KEY_RESTART -ne "r") {
+  While ($KEY_RESTART -ne "e") {
 
-    Write-Host -ForegroundColor Green "Pressione R para reiniciar a máquina agora."
+    Write-Host -ForegroundColor Green "Pressione E para desligar a máquina agora."
     $KEY_RESTART = [Console]::ReadKey($true).Key
 
-    if ($KEY_RESTART -eq "r") {
+    if ($KEY_RESTART -eq "e") {
       Clear-Host
       RunCredits
 
-      Write-Host "Reiniciando..."
+      Write-Host "Desligando..."
       Start-Sleep -Seconds 5
 
       Remove-Item -Path "C:\PerfLogs\Transcript.txt"
-      Restart-Computer
+      Stop-Computer
     }
   }
 } else {

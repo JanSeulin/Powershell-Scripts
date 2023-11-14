@@ -551,7 +551,7 @@ While ($PATRIMONIO_LOOP -eq "true") {
   }
 }
 
-#####
+#################### COLABORADOR ####################
 $StackPanel_COLABORADOR = New-Object System.Windows.Controls.StackPanel
 $ComboBox = New-Object System.Windows.Controls.ComboBox
 $ComboBox.Margin = "10,10,10,0"
@@ -586,8 +586,6 @@ $Params_COLABORADOR=@{
   ShadowDepth=4
   ContentFontSize=1
 }
-
-# $ComboBox | Select-Object *
 
 New-WPFMessageBox @Params_COLABORADOR
 
@@ -634,6 +632,10 @@ if ($NOTEBOOK_MANUFACTURER -like "*Dell*") {
   $NOTEBOOK_MODEL = $COMPUTER_SYSTEM | Select-Object -ExpandProperty Model
 }
 
+### CPU ###
+$CPU_BASE = Get-CimInstance -ClassName Win32_Processor
+$CPU = $CPU_BASE | Select-Object -ExpandProperty Name
+
 $NOTEBOOK_STRING = $NOTEBOOK_MANUFACTURER + " " + $NOTEBOOK_MODEL
 
 $MEMORY = Get-CimInstance Win32_PhysicalMemory
@@ -647,7 +649,7 @@ $SERIAL = Get-CimInstance Win32_Bios | Select-Object -ExpandProperty SerialNumbe
 
 $PARAMS_ERROR = @{
   Title="Erro"
-  Content="Não foi possível salvar as informações, tentando novamente em alguns segundos.."
+  Content="Não foi possível salvar as informações, tentando novamente em alguns segundos..."
   TitleBackground="DarkRed"
   TitleFontSize=20
   TitleFontWeight='Bold'
@@ -658,7 +660,7 @@ $PARAMS_ERROR = @{
   BorderThickness=2
   ShadowDepth=4
   ContentFontSize=16
-  Timeout=5
+  Timeout=3
 }
 
 $PARAMS_SUCCESS = @{
@@ -674,19 +676,19 @@ $PARAMS_SUCCESS = @{
   BorderThickness=2
   ShadowDepth=4
   ContentFontSize=16
-  Timeout=6
+  Timeout=4
 }
+
 
 $SAVING_LOOP = 'true';
 
-
 if ($LINES -eq 0) {
-  "PATRIMONIO;CLIENTE;TAG;SERIAL;MODELO;MEMORIA;ARMAZENAMENTO;PRODUZIDO POR;SETOR;HORA;DIA" | Add-Content $FULL_PATH -ErrorAction Stop
+  "PATRIMONIO;IMAGEM;TAG;SERIAL;MODELO;CPU;MEMORIA;ARMAZENAMENTO;PRODUZIDO POR;SETOR;HORA;DIA" | Add-Content $FULL_PATH
 }
 
 while ($SAVING_LOOP) {
   try {
-    "$PATRIMONIO;$CLIENTE;$TAG;$SERIAL;$NOTEBOOK_STRING;$MEMORY_STRING;$STORAGE_STRING;$COLABORADOR;$SETOR;$HOUR_MINUTE;$DAY_MONTH" | Add-Content $FULL_PATH -ErrorAction Stop
+    "$PATRIMONIO;$CLIENTE;$TAG;$SERIAL;$NOTEBOOK_STRING;$CPU;$MEMORY_STRING;$STORAGE_STRING;$COLABORADOR;$SETOR;$HOUR_MINUTE;$DAY_MONTH" | Add-Content $FULL_PATH -ErrorAction Stop
 
     New-WPFMessageBox @PARAMS_SUCCESS
     exit
@@ -698,5 +700,3 @@ while ($SAVING_LOOP) {
     New-WPFMessageBox @PARAMS_ERROR
   }
 }
-
-

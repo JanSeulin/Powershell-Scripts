@@ -544,7 +544,6 @@ While ($PATRIMONIO_LOOP -eq "true") {
   }
 }
 
-
 $LOOP_SETOR = "true";
 
 while  ($LOOP_SETOR) {
@@ -555,7 +554,6 @@ while  ($LOOP_SETOR) {
   $TextBlock_Setor.FontSize = 16
 
   $StackPanel_SETOR = New-Object System.Windows.Controls.StackPanel
-  # $StackPanel_SETOR.AddChild($IMAGE)
   $StackPanel_SETOR.AddChild($TextBlock_Setor)
 
   $Params_Setor=@{
@@ -640,11 +638,39 @@ while  ($LOOP_SETOR) {
   Write-Host "`n"
 }
 
-
 # net use \\172.18.3.4\d$ /user:arkserv\jan Lucy@505
-
 $tsenv = New-Object -COMObject Microsoft.SMS.TSEnvironment
 $CLIENTE = $tsenv.Value("TaskSequenceName")
+
+$COMPUTER_SYSTEM = Get-CimInstance Win32_ComputerSystem
+$NOTEBOOK_MANUFACTURER = $COMPUTER_SYSTEM | Select-Object -ExpandProperty Manufacturer
+$NOTEBOOK_MODEL = $COMPUTER_SYSTEM | Select-Object -ExpandProperty SystemFamily
+
+if ($NOTEBOOK_MANUFACTURER -like "*Dell*") {
+  $NOTEBOOK_MANUFACTURER = "Dell"
+  $NOTEBOOK_MODEL = $COMPUTER_SYSTEM | Select-Object -ExpandProperty Model
+} elseif ($NOTEBOOK_MANUFACTURER -like "*LENOVO*") {
+  $NOTEBOOK_MANUFACTURER = "Lenovo"
+} elseif ($NOTEBOOK_MANUFACTURER -like "*SAMSUNG*") {
+  $NOTEBOOK_MANUFACTURER = "Samsung"
+} elseif ($NOTEBOOK_MANUFACTURER -like "*HP*") {
+  $NOTEBOOK_MANUFACTURER = ""
+  $NOTEBOOK_MODEL = $COMPUTER_SYSTEM | Select-Object -ExpandProperty Model
+}
+
+$NOTEBOOK_STRING = $NOTEBOOK_MANUFACTURER + " " + $NOTEBOOK_MODEL
+### CPU ###
+$CPU_BASE = Get-CimInstance -ClassName Win32_Processor
+$CPU = $CPU_BASE | Select-Object -ExpandProperty Name
+
+$MEMORY = Get-CimInstance Win32_PhysicalMemory
+$MEMORY_SIZE = ($MEMORY | Measure-Object -Property capacity -Sum).sum /1gb
+$MEMORY_STRING = [string]($MEMORY_SIZE) + " GB"
+
+$STORAGE_BASE = Get-CimInstance Win32_DiskDrive
+$STORAGE_STRING = [string][math]::Round((($STORAGE_BASE | Where-Object -Property MediaType -ne "Removable Media" | Measure-Object -Property Size -sum).sum)/1GB, 2) + " GB"
+
+$SERIAL = Get-CimInstance Win32_Bios | Select-Object -ExpandProperty SerialNumber
 
 # $DAY = Get-Date -Format "dd - dddd"
 $DAY_MONTH = Get-Date -Format "dd - MM"
@@ -667,33 +693,6 @@ if (!$TEST_FILE_PATH) {
 $FULL_PATH = "\\172.18.3.4\d$\Logs\$SETOR\$MONTH_YEAR\$MONTH_YEAR.csv"
 $LINES = (Get-Content $FULL_PATH | Measure-Object).Count
 
-$COMPUTER_SYSTEM = Get-CimInstance Win32_ComputerSystem
-$NOTEBOOK_MANUFACTURER = $COMPUTER_SYSTEM | Select-Object -ExpandProperty Manufacturer
-$NOTEBOOK_MODEL = $COMPUTER_SYSTEM | Select-Object -ExpandProperty SystemFamily
-
-if ($NOTEBOOK_MANUFACTURER -like "*Dell*") {
-  $NOTEBOOK_MANUFACTURER = "Dell"
-  $NOTEBOOK_MODEL = $COMPUTER_SYSTEM | Select-Object -ExpandProperty Model
-} elseif ($NOTEBOOK_MANUFACTURER -like "*LENOVO*") {
-  $NOTEBOOK_MANUFACTURER = "Lenovo"
-} elseif ($NOTEBOOK_MANUFACTURER -like "*SAMSUNG*") {
-  $NOTEBOOK_MANUFACTURER = "Samsung"
-} elseif ($NOTEBOOK_MANUFACTURER -like "*HP*") {
-  $NOTEBOOK_MANUFACTURER = ""
-  $NOTEBOOK_MODEL = $COMPUTER_SYSTEM | Select-Object -ExpandProperty Model
-}
-
-$NOTEBOOK_STRING = $NOTEBOOK_MANUFACTURER + " " + $NOTEBOOK_MODEL
-
-$MEMORY = Get-CimInstance Win32_PhysicalMemory
-$MEMORY_SIZE = ($MEMORY | Measure-Object -Property capacity -Sum).sum /1gb
-$MEMORY_STRING = [string]($MEMORY_SIZE) + " GB"
-
-$STORAGE_BASE = Get-CimInstance Win32_DiskDrive
-$STORAGE_STRING = [string][math]::Round((($STORAGE_BASE | Where-Object -Property MediaType -ne "Removable Media" | Measure-Object -Property Size -sum).sum)/1GB, 2) + " GB"
-
-$SERIAL = Get-CimInstance Win32_Bios | Select-Object -ExpandProperty SerialNumber
-
 $PARAMS_ERROR = @{
   Title="Erro"
   Content="Não foi possível salvar as informações, tentando novamente em alguns segundos.."
@@ -707,7 +706,7 @@ $PARAMS_ERROR = @{
   BorderThickness=2
   ShadowDepth=4
   ContentFontSize=16
-  Timeout=5
+  Timeout=3
 }
 
 $PARAMS_SUCCESS = @{
@@ -723,18 +722,18 @@ $PARAMS_SUCCESS = @{
   BorderThickness=2
   ShadowDepth=4
   ContentFontSize=16
-  Timeout=6
+  Timeout=4
 }
 
 $SAVING_LOOP = 'true';
 
 if ($LINES -eq 0) {
-  "PATRIMONIO;CLIENTE;SERIAL;MODELO;MEMORIA;ARMAZENAMENTO;PRODUZIDO POR;SETOR;HORA;DIA" | Add-Content $FULL_PATH -ErrorAction Stop
+  "PATRIMONIO;IMAGEM;SERIAL;MODELO;CPU;MEMORIA;ARMAZENAMENTO;PRODUZIDO POR;SETOR;HORA;DIA" | Add-Content $FULL_PATH
 }
 
 while ($SAVING_LOOP) {
   try {
-    "$PATRIMONIO;$CLIENTE;$SERIAL;$NOTEBOOK_STRING;$MEMORY_STRING;$STORAGE_STRING;$COLABORADOR;$SETOR;$HOUR_MINUTE;$DAY_MONTH" | Add-Content $FULL_PATH -ErrorAction Stop
+    "$PATRIMONIO;$CLIENTE;$SERIAL;$NOTEBOOK_STRING;$CPU;$MEMORY_STRING;$STORAGE_STRING;$COLABORADOR;$SETOR;$HOUR_MINUTE;$DAY_MONTH" | Add-Content $FULL_PATH -ErrorAction Stop
 
     New-WPFMessageBox @PARAMS_SUCCESS
     exit
