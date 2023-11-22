@@ -219,8 +219,7 @@ Function New-WPFMessageBox {
 <Window
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      x:Name="Window" Title="" SizeToContent="WidthAndHeight" WindowStyle="None" ResizeMode="NoResize" AllowsTransparency="True" Background="Transparent" Opacity="1" Topmost="True" Top="0"
-      WindowStartupLocation="CenterScreen">
+      x:Name="Window" Title="" SizeToContent="WidthAndHeight" WindowStyle="None" ResizeMode="NoResize" AllowsTransparency="True" Background="Transparent" Opacity="1" Topmost="True" Top="-10">
   <Window.Resources>
       <Style TargetType="{x:Type Button}">
           <Setter Property="Template">
@@ -256,11 +255,11 @@ Function New-WPFMessageBox {
               <Grid.OpacityMask>
                   <VisualBrush Visual="{Binding ElementName=Mask}"/>
               </Grid.OpacityMask>
-              <StackPanel Name="StackPanel" >
+              <StackPanel Name="StackPanel">
                   <TextBox Name="TitleBar" IsReadOnly="True" IsHitTestVisible="False" Text="$Title" Padding="10" FontFamily="$($PSBoundParameters.FontFamily)" FontSize="$TitleFontSize" Foreground="$($PSBoundParameters.TitleTextForeground)" FontWeight="$($PSBoundParameters.TitleFontWeight)" Background="$($PSBoundParameters.TitleBackground)" HorizontalAlignment="Stretch" VerticalAlignment="Center" Width="Auto" HorizontalContentAlignment="Center" BorderThickness="0"/>
                   <DockPanel Name="ContentHost" Margin="0,10,0,10"  >
                   </DockPanel>
-                  <DockPanel Name="ButtonHost" LastChildFill="False" HorizontalAlignment="Center" >
+                  <DockPanel Name="ButtonHost" LastChildFill="False" HorizontalAlignment="Center">
                   </DockPanel>
               </StackPanel>
           </Grid>
@@ -270,11 +269,11 @@ Function New-WPFMessageBox {
 "@
 
 [XML]$ButtonXaml = @"
-<Button xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Width="Auto" Height="30" FontFamily="Segui" FontSize="24" Background="Transparent" Foreground="White" BorderThickness="1" Margin="10" Padding="20,0,20,0" HorizontalAlignment="Right" Cursor="Hand"/>
+<Button xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Width="Auto" Height="30" FontFamily="Segui" FontSize="16" Background="Transparent" Foreground="White" BorderThickness="1" Margin="10" Padding="20,0,20,0" HorizontalAlignment="Right" Cursor="Hand"/>
 "@
 
 [XML]$ButtonTextXaml = @"
-<TextBlock xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontFamily="$($PSBoundParameters.FontFamily)" FontSize="24" Background="Transparent" Foreground="$($PSBoundParameters.ButtonTextForeground)" Padding="20,5,20,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+<TextBlock xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontFamily="$($PSBoundParameters.FontFamily)" FontSize="16" Background="Transparent" Foreground="$($PSBoundParameters.ButtonTextForeground)" Padding="20,5,20,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 "@
 
 [XML]$ContentTextXaml = @"
@@ -292,10 +291,10 @@ Function New-WPFMessageBox {
       $ButtonText.Text = "$Content"
       $Button.Content = $ButtonText
       $Button.Add_MouseEnter({
-          $This.Content.FontSize = "25"
+          $This.Content.FontSize = "17"
       })
       $Button.Add_MouseLeave({
-          $This.Content.FontSize = "24"
+          $This.Content.FontSize = "16"
       })
       $Button.Add_Click({
           # New-Variable -Name WPFMessageBoxOutput -Value $($This.Content.Text) -Option ReadOnly -Scope Script -Force
@@ -477,33 +476,390 @@ Function New-WPFMessageBox {
   }
 }
 
-net use \\172.18.3.4\d$ /user:arkserv\jan Lucy@505
 
-#################### PATRIMONIO ####################
-$PATRIMONIO_LOOP = "true"
 
-While ($PATRIMONIO_LOOP -eq "true") {
-  # Create a textblock
-  $TextBlock_Patrimonio = New-Object System.Windows.Controls.TextBlock
-  $TextBlock_Patrimonio.Text = "Digite o Patrimônio da Máquina"
-  $TextBlock_Patrimonio.Margin = 10
-  $TextBlock_Patrimonio.FontSize = 16
 
-  $TextBox_Patrimonio = New-Object System.Windows.Controls.TextBox
-  $TextBox_Patrimonio.Text = ""
-  $TextBox_Patrimonio.Margin = "10,0,10,0"
-  $TextBox_Patrimonio.FontSize = 16
-  $TextBox_Patrimonio.BorderThickness = 2
 
-  $StackPanel_Patrimonio = New-Object System.Windows.Controls.StackPanel
-  $StackPanel_Patrimonio.AddChild($TextBlock_Patrimonio)
-  $StackPanel_Patrimonio.AddChild($TextBox_Patrimonio)
+$LOOP = 'true'
 
-  $Params_Patrimonio=@{
-    Content=$StackPanel_Patrimonio
-    Title="Patrimônio"
+while ($LOOP) {
+  ############################ HARDWARE INFO ########################
+  ### MODELO NOTEBOOK ###
+  $COMPUTER_SYSTEM = Get-CimInstance Win32_ComputerSystem
+  $NOTEBOOK_MANUFACTURER = $COMPUTER_SYSTEM | Select-Object -ExpandProperty Manufacturer
+  $NOTEBOOK_MODEL = $COMPUTER_SYSTEM | Select-Object -ExpandProperty SystemFamily
+
+  if ($NOTEBOOK_MANUFACTURER -like "*Dell*") {
+    $NOTEBOOK_MANUFACTURER = "Dell"
+    $NOTEBOOK_MODEL = $COMPUTER_SYSTEM | Select-Object -ExpandProperty Model
+  } elseif ($NOTEBOOK_MANUFACTURER -like "*LENOVO*") {
+    $NOTEBOOK_MANUFACTURER = "Lenovo"
+  } elseif ($NOTEBOOK_MANUFACTURER -like "*SAMSUNG*") {
+    $NOTEBOOK_MANUFACTURER = "Samsung"
+  } elseif ($NOTEBOOK_MANUFACTURER -like "*HP*") {
+    $NOTEBOOK_MANUFACTURER = ""
+    $NOTEBOOK_MODEL = $COMPUTER_SYSTEM | Select-Object -ExpandProperty Model
+  }
+
+  ### CPU ###
+  $CPU_BASE = Get-CimInstance -ClassName Win32_Processor
+  $CPU = $CPU_BASE | Select-Object -ExpandProperty Name
+  $CPU_CORES = $CPU_BASE | Select-Object -ExpandProperty NumberOfCores
+  $CPU_THREADS = $CPU_BASE | Select-Object -ExpandProperty NumberOfLogicalProcessors
+  $CPU_SPEED = $CPU_BASE | Select-Object -ExpandProperty MaxClockSpeed
+
+  ### MEMORIA ####
+  $MEMORY = Get-CimInstance Win32_PhysicalMemory
+  $MEMORY_SIZE = ($MEMORY | Measure-Object -Property capacity -Sum).sum /1gb
+  $MEMORY_SLOTS = ($MEMORY | Select-Object BankLabel | Measure-Object).Count
+  $TOTAL_NUMBER_OF_SLOTS = Get-CimInstance Win32_PhysicalMemoryArray | Select-Object -ExpandProperty MemoryDevices
+
+  $SLOT_SIZE_STRING = ""
+  $COUNT = 1
+
+  foreach ($MEMORY_ITEM in $MEMORY) {
+    $SIZE = [string]($MEMORY_ITEM | Measure-Object -Property capacity -Sum).sum /1gb
+
+    if ($MEMORY_ITEM -eq $MEMORY[-1]) {
+      $SLOT_SIZE_STRING += "Slot $COUNT`: $SIZE GB"
+    } else {
+      $SLOT_SIZE_STRING += "Slot $COUNT`: $SIZE GB - "
+    }
+    $COUNT++
+  }
+
+  $MEMORY_VOLTAGE = ($MEMORY  | Select-Object -ExpandProperty ConfiguredVoltage)
+  $MEMORY_VOLTAGE = ($MEMORY_VOLTAGE -split '\n')[0]
+
+  $MEMORY_SPEED = $MEMORY  | Select-Object -ExpandProperty Speed
+  $MEMORY_SPEED = ($MEMORY_SPEED -split '\n')[0]
+
+  # ARMAZENAMENTO FÓRMULA ATUAL - PERMITE MÚLTIPLOS HDS SEREM EXIBIDOS CORRETAMENTE
+  $STORAGE_BASE = Get-CimInstance Win32_DiskDrive
+
+  # ADICIONA TIPO DE MEMÓRIA DE ACORDO COM VOLTAGEM
+  switch ($MEMORY_VOLTAGE){
+    1100 { $MEMORY_TYPE = "DDR5"}
+    1200 { $MEMORY_TYPE = "DDR4" }
+    1500 { $MEMORY_TYPE = "DDR3" }
+    1800 { $MEMORY_TYPE = "DDR2" }
+    2500 { $MEMORY_TYPE = "DDR1" }
+  }
+
+  #### IMAGEM ARKLOK ####
+  $SOURCE_IMG = "Z:\Scripts\Info_Sistema\Logo\Arklok_Slogan.png"
+  $SOURCE_IMG_DEV="C:\Images\Arklok_Slogan.png"
+  $IMAGE = New-Object System.Windows.Controls.Image
+  $IMAGE.Source = $SOURCE_IMG
+  $Image.Height = 100
+  $Image.Width = 450
+  $Image.Margin = "0,25,0,0"
+
+
+  # NOTEBOOK MODELO
+  $NOTEBOOK_BLOCK = New-Object System.Windows.Controls.TextBlock
+  $NOTEBOOK_BLOCK.Text = "$NOTEBOOK_MANUFACTURER $NOTEBOOK_MODEL"
+  $NOTEBOOK_BLOCK.margin = "0,5,0,5"
+  $NOTEBOOK_BLOCK.FontSize = "17"
+  $NOTEBOOK_BLOCK.HorizontalAlignment = "center"
+  $NOTEBOOK_BLOCK.FontWeight = "Bold"
+  $NOTEBOOK_BLOCK.Foreground = "DarkRed"
+
+  # CPU TÍTULO
+  $CPU_BLOCK_LABEL = New-Object System.Windows.Controls.TextBlock
+  $CPU_BLOCK_LABEL.Text = "PROCESSADOR"
+  $CPU_BLOCK_LABEL.margin = "20,5,5,5"
+  $CPU_BLOCK_LABEL.FontSize = "16"
+  $CPU_BLOCK_LABEL.FontWeight = "Bold"
+
+  # CPU MODELO
+  $CPU_BLOCK = New-Object System.Windows.Controls.TextBlock
+  $CPU_BLOCK.Text = "Modelo: $CPU"
+  $CPU_BLOCK.margin = "30,-5,15,0"
+  $CPU_BLOCK.FontSize = "16"
+
+  # CPU NÚCLEOS
+  $CPU_CORES_BLOCK = New-Object System.Windows.Controls.TextBlock
+  $CPU_CORES_BLOCK.Text = "Nucleos: $CPU_CORES, Threads: $CPU_THREADS"
+  $CPU_CORES_BLOCK.margin = "30,0,15,0"
+  $CPU_CORES_BLOCK.FontSize = "16"
+
+  # CPU FREQUENCIA
+  $CPU_SPEED_BLOCK = New-Object System.Windows.Controls.TextBlock
+  $CPU_SPEED_BLOCK.Text = "Frequencia: $CPU_SPEED mhz"
+  $CPU_SPEED_BLOCK.margin = "30,0,15,0"
+  $CPU_SPEED_BLOCK.FontSize = "16"
+
+  # MEMÓRIA TITULO
+  $MEMORY_BLOCK_LABEL = New-Object System.Windows.Controls.TextBlock
+  $MEMORY_BLOCK_LABEL.Text = "MEMORIA RAM"
+  $MEMORY_BLOCK_LABEL.margin = "20,5,5,5"
+  $MEMORY_BLOCK_LABEL.FontSize = "16"
+  $MEMORY_BLOCK_LABEL.FontWeight = "Bold"
+
+  # MEMÓRIA TAMANHO E TIPO
+  $MEMORY_BLOCK = New-Object System.Windows.Controls.TextBlock
+  $MEMORY_BLOCK.Text = "Total: $MEMORY_SIZE GB $MEMORY_TYPE"
+  $MEMORY_BLOCK.margin = "30,-5,15,0"
+  $MEMORY_BLOCK.FontSize = "16"
+
+  # MEMÓRIA SLOTS
+  $MEMORY_SLOTS_BLOCK = New-Object System.Windows.Controls.TextBlock
+
+  $MEMORY_SLOTS_BLOCK.margin = "30,0,15,0"
+  $MEMORY_SLOTS_BLOCK.FontSize = "16"
+
+  $MEMORY_SLOTS_BLOCK = New-Object System.Windows.Controls.TextBlock
+  $MEMORY_SLOTS_BLOCK.Text = "Slots em uso: $MEMORY_SLOTS de $TOTAL_NUMBER_OF_SLOTS"
+  if ($NOTEBOOK_MANUFACTURER -eq "Samsung") {
+    $MEMORY_SLOTS_BLOCK.Text = "Slots em uso: $MEMORY_SLOTS"
+  }
+  $MEMORY_SLOTS_BLOCK.margin = "30,0,15,0"
+  $MEMORY_SLOTS_BLOCK.FontSize = "16"
+
+  # MEMÓRIA FREQUENCIA
+  $MEMORY_SPEED_BLOCK = New-Object System.Windows.Controls.TextBlock
+  $MEMORY_SPEED_BLOCK.Text = "Frequencia: $MEMORY_SPEED mhz"
+  $MEMORY_SPEED_BLOCK.margin = "30,0,15,0"
+  $MEMORY_SPEED_BLOCK.FontSize = "16"
+
+  # ARMAZENAMENTO TÍTULO
+  $STORAGE_BLOCK_LABEL = New-Object System.Windows.Controls.TextBlock
+  $STORAGE_BLOCK_LABEL.Text = "ARMAZENAMENTO"
+  $STORAGE_BLOCK_LABEL.margin = "20,5,5,0"
+  $STORAGE_BLOCK_LABEL.FontSize = "16"
+  $STORAGE_BLOCK_LABEL.FontWeight = "Bold"
+
+  # PAINEL
+  $StackPanel = New-Object System.Windows.Controls.StackPanel
+
+  $StackPanel.AddChild($NOTEBOOK_BLOCK)
+
+  # ADD CPU AO PAINEL
+  $StackPanel.AddChild($CPU_BLOCK_LABEL)
+  $StackPanel.AddChild($CPU_BLOCK)
+  $StackPanel.AddChild($CPU_CORES_BLOCK)
+  $StackPanel.AddChild($CPU_SPEED_BLOCK)
+
+  # ADD MEMÓRIA AO PAINEL
+  $StackPanel.AddChild($MEMORY_BLOCK_LABEL)
+  $StackPanel.AddChild($MEMORY_BLOCK)
+  $StackPanel.AddChild($MEMORY_SLOTS_BLOCK)
+
+  # TAMANHO CADA SLOT, SE HOUVER MAIS DE UM
+  if ($MEMORY_SLOTS -gt 1) {
+    $MEMORY_SLOTS_SIZE_BLOCK = New-Object System.Windows.Controls.TextBlock
+    $MEMORY_SLOTS_SIZE_BLOCK.Text = $SLOT_SIZE_STRING
+    $MEMORY_SLOTS_SIZE_BLOCK.margin = "30,0,15,0"
+    $MEMORY_SLOTS_SIZE_BLOCK.FontSize = "16"
+
+    $StackPanel.AddChild($MEMORY_SLOTS_SIZE_BLOCK)
+  }
+
+  $StackPanel.AddChild($MEMORY_SPEED_BLOCK)
+
+  # ADD ARMAZENAMENTO AO PAINEL
+  $StackPanel.AddChild($STORAGE_BLOCK_LABEL)
+
+  # ARMAZENAMENTO CONTEÚDO
+  foreach ($STORAGE_ITEM in $STORAGE_BASE) {
+    $STORAGE_ITEM = $STORAGE_ITEM | Select-Object @{N="n";Expression={
+      $(
+        if (($_.PNPDeviceID -like "*NVME*") -or ($_.Model -like "*NVME*")) { "SSD NVMe "}
+        elseif (($_.PNPDeviceID -like "*VEN_&*") -and ($_.Model -notlike "*NVME*")) {"SSD "}
+        elseif(($_.PNPDeviceID -like "*VEN_SANDISK*") -or ($_.Model -like "*SanDisk SD*")) {"SSD "}
+        elseif (($_.PNPDeviceID -like "*VEN_WDC*") -and ($_.PNPDeviceID -notlike "*NVME*")) {"HDD "}
+        elseif($_.MediaType -like "*External*") {"HD Externo "}
+        elseif($_.MediaType -like "*Removable*") {"Pen Drive "}
+        elseif($_.PNPDeviceID -like "*RAID*") {"RAID "}
+      ) + [string][math]::Round((($STORAGE_ITEM | Measure-Object -Property Size -sum).sum)/1GB, 2) + " GB"
+      }
+    } | Select-Object -ExpandProperty n
+
+      $STORAGE_BLOCK = New-Object System.Windows.Controls.TextBlock
+      $STORAGE_BLOCK.Text = $STORAGE_ITEM
+      $STORAGE_BLOCK.margin = "30,0,15,0"
+      $STORAGE_BLOCK.FontSize = "16"
+      $StackPanel.AddChild($STORAGE_BLOCK)
+  }
+
+  $BUTTON_STACK_PANEL = New-Object System.Windows.Controls.StackPanel
+  $BUTTON_STACK_PANEL.Orientation = "Horizontal"
+
+  $BUTTON_AIM_CONTENT = New-Object System.Windows.Controls.TextBlock
+  $BUTTON_AIM_CONTENT.Text = "  AIM  "
+  $BUTTON_AIM_CONTENT.margin = "15,0,5,0"
+  $BUTTON_AIM_CONTENT.FontSize = "18"
+  $BUTTON_AIM_CONTENT.Foreground = "DarkRed"
+  $BUTTON_AIM_CONTENT.HorizontalAlignment = "Center"
+  $BUTTON_AIM_CONTENT.VerticalAlignment = "Center"
+  # $BUTTON_AIM_CONTENT.FontWeight = "Bold"
+
+  $BUTTON_AIM = New-Object System.Windows.Controls.Button
+  $BUTTON_AIM.Content = $BUTTON_AIM_CONTENT
+  $BUTTON_AIM.FontSize = 14
+  # $BUTTON_AIM.HorizontalAlignment = "Left"
+  $BUTTON_AIM.VerticalAlignment = "Center"
+  $BUTTON_AIM.Height = 50
+  $BUTTON_AIM.Width = 110
+  $BUTTON_AIM.margin = "10,10,0,10"
+  $BUTTON_AIM.Background = "Transparent"
+  $BUTTON_AIM.BorderThickness = 2
+  $BUTTON_AIM.Cursor = "Hand"
+  # $BUTTON_AIM.Opacity = 0.9
+
+  $BUTTON_AIM.Add_MouseEnter({
+    # $BUTTON_AIM_CONTENT.FontSize = "20"
+    $BUTTON_AIM_CONTENT.FontWeight = "Bold"
+    # $BUTTON_AIM.Background = "Transparent"
+    # $BUTTON_AIM_CONTENT.Foreground = "White"
+  })
+
+  $BUTTON_AIM.Add_MouseLeave({
+    # $BUTTON_AIM.Background = "DarkRed"
+    # $BUTTON_AIM_CONTENT.FontSize = "18"
+    $BUTTON_AIM_CONTENT.FontWeight = "Normal"
+    # $BUTTON_AIM_CONTENT.Foreground = "DarkRed"
+  })
+
+
+  $Params_Aim=@{
+    Content="Nenhuma instalação do AIM encontrada."
+    Title="Atenção"
+    TitleBackground="Orange"
+    TitleFontSize=22
+    TitleFontWeight='Bold'
+    TitleTextForeground='Black'
+    ButtonType='None'
+    ButtonTextForeground="Black"
+    CustomButtons="Voltar"
+    BorderThickness=2
+    ShadowDepth=4
+    # ContentBackground="Black"
+  }
+
+  $BUTTON_AIM.Add_Click({
+    $AIM = Test-Path "C:\Program Files (x86)\Automatos\Desktop Agent\adacontrol.exe"
+    if (!$AIM) {
+      New-WPFMessageBox @Params_AIM
+    } else {
+      Start-Process -FilePath "C:\Program Files (x86)\Automatos\Desktop Agent\adacontrol.exe"
+    }
+  })
+
+  $BUTTON_WINDOWS_CONTENT = New-Object System.Windows.Controls.TextBlock
+  $BUTTON_WINDOWS_CONTENT.Text = "ATIVAÇÃO WINDOWS"
+  $BUTTON_WINDOWS_CONTENT.margin = "15,0,15,0"
+  $BUTTON_WINDOWS_CONTENT.FontSize = "18"
+  $BUTTON_WINDOWS_CONTENT.Foreground = "DarkRed"
+  $BUTTON_WINDOWS_CONTENT.HorizontalAlignment = "Center"
+  $BUTTON_WINDOWS_CONTENT.VerticalAlignment = "Center"
+  # $BUTTON_WINDOWS_CONTENT.FontWeight = "Bold"
+
+  $BUTTON_WINDOWS = New-Object System.Windows.Controls.Button
+  $BUTTON_WINDOWS.Content = $BUTTON_WINDOWS_CONTENT
+  $BUTTON_WINDOWS.FontSize = 14
+  # $BUTTON_WINDOWS.HorizontalAlignment = "Left"
+  $BUTTON_WINDOWS.VerticalAlignment = "Center"
+  $BUTTON_WINDOWS.Height = 50
+  $BUTTON_WINDOWS.Width = 250
+  $BUTTON_WINDOWS.margin = "0,10,0,10"
+  $BUTTON_WINDOWS.Background = "Transparent"
+  $BUTTON_WINDOWS.BorderThickness = 0
+  $BUTTON_WINDOWS.Cursor = "Hand"
+  # $BUTTON_WINDOWS.Opacity = 0.9
+
+  $BUTTON_WINDOWS.Add_Click({
+    Start-Process -FilePath "slui.exe"
+  })
+
+  $BUTTON_WINDOWS.Add_MouseEnter({
+    # $BUTTON_WINDOWS_CONTENT.FontSize = "20"
+    $BUTTON_WINDOWS_CONTENT.FontWeight = "Bold"
+    # $BUTTON_WINDOWS.Background = "DarkRed"
+    # $BUTTON_WINDOWS_CONTENT.Foreground = "White"
+  })
+
+  $BUTTON_WINDOWS.Add_MouseLeave({
+    # $BUTTON_WINDOWS_CONTENT.FontSize = "18"
+    $BUTTON_WINDOWS_CONTENT.FontWeight = "Normal"
+    # $BUTTON_WINDOWS.Background = "Transparent"
+    # $BUTTON_WINDOWS_CONTENT.Foreground = "DarkRed"
+  })
+
+  $BUTTON_DRIVERS_CONTENT = New-Object System.Windows.Controls.TextBlock
+  $BUTTON_DRIVERS_CONTENT.Text = "DRIVERS"
+  $BUTTON_DRIVERS_CONTENT.margin = "15,0,15,0"
+  $BUTTON_DRIVERS_CONTENT.FontSize = "18"
+  $BUTTON_DRIVERS_CONTENT.Foreground = "DarkRed"
+  $BUTTON_DRIVERS_CONTENT.HorizontalAlignment = "Center"
+  $BUTTON_DRIVERS_CONTENT.VerticalAlignment = "Center"
+  # $BUTTON_DRIVERS_CONTENT.FontWeight = "Bold"
+
+  $BUTTON_DRIVERS = New-Object System.Windows.Controls.Button
+  $BUTTON_DRIVERS.Content = $BUTTON_DRIVERS_CONTENT
+  $BUTTON_DRIVERS.FontSize = 14
+  # $BUTTON_DRIVERS.HorizontalAlignment = "Left"
+  $BUTTON_DRIVERS.VerticalAlignment = "Center"
+  $BUTTON_DRIVERS.Height = 50
+  $BUTTON_DRIVERS.Width = 110
+  $BUTTON_DRIVERS.margin = "0,10,35,10"
+  # $BUTTON_DRIVERS.padding = "0,0,50,0"
+  $BUTTON_DRIVERS.Background = "Transparent"
+  $BUTTON_DRIVERS.BorderThickness = 10
+  $BUTTON_DRIVERS.Cursor = "Hand"
+  $BUTTON_DRIVERS.BorderBrush = "Black"
+  # $BUTTON_DRIVERS.Bord
+  # $BUTTON_DRIVERS.Opacity = 1
+
+  $BUTTON_DRIVERS.Add_MouseEnter({
+    # $BUTTON_DRIVERS_CONTENT.FontSize = "20"
+    # $BUTTON_DRIVERS.Background = "DarkRed"
+    # $BUTTON_DRIVERS_CONTENT.Foreground = "White"
+    $BUTTON_DRIVERS_CONTENT.FontWeight = "Bold"
+  })
+
+  $BUTTON_DRIVERS.Add_MouseLeave({
+    # $BUTTON_DRIVERS_CONTENT.FontSize = "18"
+    # $BUTTON_DRIVERS.Background = "Transparent"
+    # $BUTTON_DRIVERS_CONTENT.Foreground = "DarkRed"
+    $BUTTON_DRIVERS_CONTENT.FontWeight = "normal"
+  })
+
+  $BUTTON_DRIVERS.Add_Click({
+    Start-Process -FilePath "devmgmt.msc"
+  })
+
+  # $BUTTON_STACK_PANEL.Background = "DarkRed"
+  $BUTTON_STACK_PANEL.margin = "0,10,0,0"
+  $BUTTON_STACK_PANEL.height = 50
+  # # $BUTTON_STACK_PANEL.Opacity = 0.97
+  # $BUTTON_STACK_PANEL.BorderThickness = 2
+  # $DockPanel = New-object System.Windows.Controls.DockPanel
+  # $DockPanel.LastChildFill = $False
+  # $DockPanel.HorizontalAlignment = "Center"
+  # $DockPanel.Width = "NaN"
+  # $DockPanel.AddChild($BUTTON_AIM)
+  # $DockPanel.AddChild($BUTTON_WINDOWS)
+  # $DockPanel.AddChild($BUTTON_DRIVERS)
+  # $DockPanel.Background = "Black"
+
+  $BUTTON_STACK_PANEL.AddChild($BUTTON_AIM)
+  $BUTTON_STACK_PANEL.AddChild($BUTTON_WINDOWS)
+  $BUTTON_STACK_PANEL.AddChild($BUTTON_DRIVERS)
+
+
+  # ADD IMAGEM AO PAINEL
+  $StackPanel.Background="White"
+  $StackPanel.AddChild($IMAGE)
+  $StackPanel.AddChild($BUTTON_STACK_PANEL)
+
+  # Parametros gerais
+  $Params=@{
+    Content=$StackPanel
+    Title="VALIDAÇÃO"
     TitleBackground="DarkRed"
-    TitleFontSize=20
+    TitleFontSize=22
     TitleFontWeight='Bold'
     TitleTextForeground='White'
     ButtonType='None'
@@ -511,240 +867,14 @@ While ($PATRIMONIO_LOOP -eq "true") {
     CustomButtons="OK"
     BorderThickness=2
     ShadowDepth=4
-    ContentFontSize=1
+    ContentBackground="White"
   }
 
-  New-WPFMessageBox @Params_Patrimonio
+  New-WPFMessageBox @Params
 
   if ($WPFMessageBoxOutput -eq "OK") {
-    $PATRIMONIO = $TextBox_Patrimonio.text
-
-    Write-Host "PATRIMONIO: $PATRIMONIO"
-
-    if (($PATRIMONIO.Length -lt 4) -or ($PATRIMONIO.Length -gt 6) -or ($PATRIMONIO -match "[^0-9]")) {
-      $Params_Patrimonio_Erro=@{
-        Content="Valor inválido. O patrimônio deve ter entre 4 e 6 caracteres numéricos."
-        Title="Erro"
-        TitleBackground="DarkRed"
-        TitleFontSize=20
-        TitleFontWeight='Bold'
-        TitleTextForeground='White'
-        ButtonType='None'
-        ButtonTextForeground="DarkRed"
-        CustomButtons="OK"
-        BorderThickness=2
-        ShadowDepth=4
-        ContentFontSize=16
-      }
-
-      New-WPFMessageBox @Params_Patrimonio_Erro
-    } else {
-      $PATRIMONIO_LOOP = "false"
-    }
-  }
-}
-
-$LOOP_SETOR = "true";
-
-while  ($LOOP_SETOR) {
-  ################ SETOR ###############
-  $TextBlock_Setor = New-Object System.Windows.Controls.TextBlock
-  $TextBlock_Setor.Text = "Atenção: não é possível alterar o setor e colaborador após confirmação."
-  $TextBlock_Setor.Margin = 10
-  $TextBlock_Setor.FontSize = 16
-
-  $StackPanel_SETOR = New-Object System.Windows.Controls.StackPanel
-  $StackPanel_SETOR.AddChild($TextBlock_Setor)
-
-  $Params_Setor=@{
-    Content=$StackPanel_SETOR
-    Title="Selecione o Setor"
-    TitleBackground="DarkRed"
-    TitleFontSize=20
-    TitleFontWeight='Bold'
-    TitleTextForeground='White'
-    ButtonType='None'
-    ButtonTextForeground="DarkRed"
-    CustomButtons="PRODUCAO","RMA"
-    BorderThickness=2
-    ShadowDepth=4
-    ContentFontSize=1
-  }
-
-  $SETOR = ""
-
-  New-WPFMessageBox @Params_Setor
-
-  if ($WPFMessageBoxOutput -eq "Producao") {
-    $SETOR = "PRODUCAO"
-  } elseif ($WPFMessageBoxOutput -eq "RMA") {
-    $SETOR = "RMA"
-  }
-
-  [string[]]$LISTA_PRODUCAO = Get-Content -Path '\\172.18.3.4\d$\Logs\PRODUCAO\Lista_Funcionarios.txt'
-  [string[]]$LISTA_RMA = Get-Content -Path '\\172.18.3.4\d$\Logs\RMA\Lista_Funcionarios.txt'
-
-  #################### COLABORADOR ####################
-  $StackPanel_COLABORADOR = New-Object System.Windows.Controls.StackPanel
-  $ComboBox = New-Object System.Windows.Controls.ComboBox
-  $ComboBox.Margin = "10,10,10,0"
-  $ComboBox.Background = "White"
-  $ComboBox.FontSize = 16
-
-  if ($SETOR -eq "PRODUCAO") {
-    $ComboBox.ItemsSource = $LISTA_PRODUCAO
-  } else {
-    $ComboBox.ItemsSource = $LISTA_RMA
-  }
-
-  $RANDOM_INT = Get-Random -Maximum ($ComboBox.ItemsSource | Measure-Object).Count
-  $ComboBox.SelectedIndex = $RANDOM_INT
-
-  $TextBlock = New-Object System.Windows.Controls.TextBlock
-  $TextBlock.Text = "Selecione seu nome na lista abaixo:"
-  $TextBlock.Margin = 10
-  $TextBlock.FontSize = 16
-
-  $TextBlock, $ComboBox | ForEach-Object {
-    $StackPanel_COLABORADOR.AddChild($PSItem)
-  }
-
-  $Params_COLABORADOR=@{
-    Content=$StackPanel_COLABORADOR
-    Title="Colaborador"
-    TitleBackground="DarkRed"
-    TitleFontSize=20
-    TitleFontWeight='Bold'
-    TitleTextForeground='White'
-    ButtonType='None'
-    ButtonTextForeground="DarkRed"
-    CustomButtons="Confirmar","Voltar"
-    BorderThickness=2
-    ShadowDepth=4
-    ContentFontSize=1
-  }
-
-  $ComboBox | Select-Object *
-
-  New-WPFMessageBox @Params_COLABORADOR
-
-  if ($WPFMessageBoxOutput -eq "Confirmar") {
-    $COLABORADOR = $ComboBox.SelectedValue
-    break;
-  } elseif ($WPFMessageBoxOutput -eq "Voltar") {
-    Continue;
-  }
-
-  Write-Host "`n"
-}
-
-# net use \\172.18.3.4\d$ /user:arkserv\jan Lucy@505
-$tsenv = New-Object -COMObject Microsoft.SMS.TSEnvironment
-$CLIENTE = $tsenv.Value("TaskSequenceName")
-
-$COMPUTER_SYSTEM = Get-CimInstance Win32_ComputerSystem
-$NOTEBOOK_MANUFACTURER = $COMPUTER_SYSTEM | Select-Object -ExpandProperty Manufacturer
-$NOTEBOOK_MODEL = $COMPUTER_SYSTEM | Select-Object -ExpandProperty SystemFamily
-
-if ($NOTEBOOK_MANUFACTURER -like "*Dell*") {
-  $NOTEBOOK_MANUFACTURER = "Dell"
-  $NOTEBOOK_MODEL = $COMPUTER_SYSTEM | Select-Object -ExpandProperty Model
-} elseif ($NOTEBOOK_MANUFACTURER -like "*LENOVO*") {
-  $NOTEBOOK_MANUFACTURER = "Lenovo"
-} elseif ($NOTEBOOK_MANUFACTURER -like "*SAMSUNG*") {
-  $NOTEBOOK_MANUFACTURER = "Samsung"
-} elseif ($NOTEBOOK_MANUFACTURER -like "*HP*") {
-  $NOTEBOOK_MANUFACTURER = ""
-  $NOTEBOOK_MODEL = $COMPUTER_SYSTEM | Select-Object -ExpandProperty Model
-}
-
-$NOTEBOOK_STRING = $NOTEBOOK_MANUFACTURER + " " + $NOTEBOOK_MODEL
-
-### CPU ###
-$CPU_BASE = Get-CimInstance -ClassName Win32_Processor
-$CPU = $CPU_BASE | Select-Object -ExpandProperty Name
-
-$MEMORY = Get-CimInstance Win32_PhysicalMemory
-$MEMORY_SIZE = ($MEMORY | Measure-Object -Property capacity -Sum).sum /1gb
-$MEMORY_STRING = [string]($MEMORY_SIZE) + " GB"
-
-$STORAGE_BASE = Get-CimInstance Win32_DiskDrive
-$STORAGE_STRING = [string][math]::Round((($STORAGE_BASE | Where-Object -Property MediaType -ne "Removable Media" | Measure-Object -Property Size -sum).sum)/1GB, 2) + " GB"
-
-$SERIAL = Get-CimInstance Win32_Bios | Select-Object -ExpandProperty SerialNumber
-
-$DAY_MONTH = Get-Date -Format "dd - MM"
-$MONTH_YEAR = Get-Date -Format "MM-yyyy"
-$HOUR_MINUTE = Get-Date -Format "HH:mm"
-
-if ($COLABORADOR -eq "Imagem") {
-  $SETOR = "IMAGEM"
-}
-
-$TEST_PATH = Test-Path "\\172.18.3.4\d$\Logs\$SETOR\$MONTH_YEAR"
-$TEST_FILE_PATH = Test-Path "\\172.18.3.4\d$\Logs\$SETOR\$MONTH_YEAR\$MONTH_YEAR.csv"
-
-if (!$TEST_PATH) {
-  New-Item -Type Directory -Path "\\172.18.3.4\d$\Logs\$SETOR\$MONTH_YEAR"
-}
-
-if (!$TEST_FILE_PATH) {
-  Set-Location -Path "\\172.18.3.4\d$\Logs\$SETOR\$MONTH_YEAR"
-  New-Item ".\$MONTH_YEAR.csv"
-}
-
-$FULL_PATH = "\\172.18.3.4\d$\Logs\$SETOR\$MONTH_YEAR\$MONTH_YEAR.csv"
-
-$LINES = (Get-Content $FULL_PATH | Measure-Object).Count
-
-$PARAMS_ERROR = @{
-  Title="Erro"
-  Content="Não foi possível salvar as informações, tentando novamente em alguns segundos.."
-  TitleBackground="DarkRed"
-  TitleFontSize=20
-  TitleFontWeight='Bold'
-  TitleTextForeground='White'
-  ButtonType='None'
-  ButtonTextForeground="DarkRed"
-  BorderThickness=2
-  ShadowDepth=4
-  ContentFontSize=16
-  Timeout=3
-}
-
-$PARAMS_SUCCESS = @{
-  Title="Sucesso"
-  Content="Informações salvas com sucesso, finalizando..."
-  TitleBackground="DarkRed"
-  TitleFontSize=20
-  TitleFontWeight='Bold'
-  TitleTextForeground='White'
-  ButtonType='None'
-  ButtonTextForeground="DarkRed"
-  BorderThickness=2
-  ShadowDepth=4
-  ContentFontSize=16
-  Timeout=4
-}
-
-$SAVING_LOOP = 'true';
-
-if ($LINES -eq 0) {
-  "PATRIMONIO;IMAGEM;SERIAL;MODELO;CPU;MEMORIA;ARMAZENAMENTO;PRODUZIDO POR;SETOR;HORA;DIA" | Add-Content $FULL_PATH
-}
-
-while ($SAVING_LOOP) {
-  try {
-    "$PATRIMONIO;$CLIENTE;$SERIAL;$NOTEBOOK_STRING;$CPU;$MEMORY_STRING;$STORAGE_STRING;$COLABORADOR;$SETOR;$HOUR_MINUTE;$DAY_MONTH" | Add-Content $FULL_PATH -ErrorAction Stop
-
-    New-WPFMessageBox @PARAMS_SUCCESS
     exit
   }
-  catch {
-    $RANDOM_WAIT = Get-Random -Minimum 1 -Maximum 5
-    Start-Sleep -Seconds $RANDOM_WAIT
-    New-WPFMessageBox @PARAMS_ERROR
-  }
 }
 
-
+# Resolução após clique nos botoões

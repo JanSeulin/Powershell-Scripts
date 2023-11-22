@@ -539,6 +539,8 @@ While ($PATRIMONIO_LOOP -eq "true") {
 
       New-WPFMessageBox @Params_Patrimonio_Erro
     } else {
+      # Write-Host "CPU$PATRIMONIO"
+      Rename-Computer -NewName "CPU$PATRIMONIO"
       $PATRIMONIO_LOOP = "false"
     }
   }

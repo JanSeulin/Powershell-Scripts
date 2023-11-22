@@ -94,12 +94,8 @@ $DATE = Get-Date -Format "dd-MM"
 
 net use \\172.18.3.4\d$ /user:arkserv\jan Lucy@505
 
-# ABRE CONEXÃO COM O SERVIDOR P/ ARMAZENAMENTO DO ARQUIVO
-$net = new-object -ComObject WScript.Network
-$net.MapNetworkDrive("u:", "\\172.18.3.4\d$", $false, "arkserv\jan", "Lucy@505")
-
 # SELECIONA CAMINHO DAS HASH E CRIA/TESTA CAMINHO COMPLETO SE AINDA NÃO EXISTE
-$HASH_PATH = "U:\SERVIDOR DEPLOYMENT\MDT01\HASH"
+$HASH_PATH = "\\172.18.3.4\d$\SERVIDOR DEPLOYMENT\MDT01\HASH"
 $HASH_TEST_PATH = Test-Path $HASH_PATH
 $HASH_PATH_FOLDER = "$HASH_PATH\$DATE"
 $HASH_PATH_FOLDER_TEST = Test-Path $HASH_PATH_FOLDER
@@ -110,7 +106,7 @@ if ($HASH_TEST_PATH) {
   }
 
   Copy-Item -Path "C:\HWID\*" -Destination "$HASH_PATH_FOLDER" -Recurse
-  Set-Location "U:\SERVIDOR DEPLOYMENT\MDT01\HASH\$DATE\"
+  Set-Location "\\172.18.3.4\d$\SERVIDOR DEPLOYMENT\MDT01\HASH\$DATE\"
   $FILE_COPIED_SUCCESSFULY = Test-Path -Path $STRINGHWID
 
   # VALIDAÇÃO SE CÓPIA FOI BEM SUCEDIDA
@@ -120,14 +116,11 @@ if ($HASH_TEST_PATH) {
     Write-Host -ForegroundColor Red "Não foi possível copiar o arquivo ao servidor. Favor realizar a cópia manualmente ou a um pendrive."
     explorer "C:\HWID"
   }
-
   # CASO NÃO SEJA POSSÍVEL A CÓPIA AO SERVIDOR, A PASTA HWID SERÁ ABERTA PARA CÓPIA MANUAL
 } else {
   explorer "C:\HWID"
 }
 
-# FECHA CONEXÃO COM SERVIDOR E REABILITA O QUICKEDIT DO POWERSHELL
-$net.RemoveNetworkDrive("U:");
 Set-ItemProperty -Path 'HKCU:\Console' -Name 'QuickEdit' -Value 0x00000001
 Set-ItemProperty -Path 'HKCU:\Console\%SystemRoot%_System32_WindowsPowerShell_v1.0_Powershell.exe' -Name 'QuickEdit' -Value 0x00000001
 Set-ItemProperty -Path 'HKCU:\Console\%SystemRoot%_SysWOW64_WindowsPowerShell_v1.0_powershell.exe' -Name 'QuickEdit' -Value 0x00000001

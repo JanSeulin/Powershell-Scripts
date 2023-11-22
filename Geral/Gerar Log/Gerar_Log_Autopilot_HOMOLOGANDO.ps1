@@ -600,6 +600,10 @@ $DAY_MONTH = Get-Date -Format "dd - MM"
 $MONTH_YEAR = Get-Date -Format "MM-yyyy"
 $HOUR_MINUTE = Get-Date -Format "HH:mm"
 
+if ($COLABORADOR -eq "Imagem") {
+  $SETOR = "IMAGEM"
+}
+
 # "\\172.18.3.4\d$\Logs\$SETOR\$MONTH_YEAR"
 $TEST_PATH = Test-Path "\\172.18.3.4\d$\Logs\$SETOR\$MONTH_YEAR"
 $TEST_FILE_PATH = Test-Path "\\172.18.3.4\d$\Logs\$SETOR\$MONTH_YEAR\Autopilot.csv"
