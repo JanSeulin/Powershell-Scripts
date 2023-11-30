@@ -6,3 +6,5 @@ $FUNCIONARIOS_RMA = [IO.File]::ReadAllLines("\\172.18.3.4\d$\Logs\RMA\Lista_Func
 
 $FUNCIONARIOS_PROD
 $FUNCIONARIOS_RMA
+
+#TEST
