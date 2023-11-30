@@ -1,0 +1,12 @@
+##### MUDAR PLANO DE ENERGIA PARA ALTA PERFORMANCE #####
+powercfg /s 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c
+
+
+Nelson Williams
+Balanceado: ~13:21
+Alta Performance: ~12:50
+
+
+Fund Cultural Cassiano
+Balanceado: 28:41
+Alta Performance:

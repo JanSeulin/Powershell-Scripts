@@ -1,19 +1,3 @@
-function RunCredits {
-  Write-Host -ForegroundColor Cyan "**************************************"
-  Start-Sleep -Milliseconds 250
-  Write-Host -ForegroundColor Cyan "*                                    *"
-  Start-Sleep -Milliseconds 250
-  Write-Host -ForegroundColor Cyan "* Criado por: Jan Seulin             *"
-  Start-Sleep -Milliseconds 250
-  Write-Host -ForegroundColor Cyan "* Setor: Imagem                      *"
-  Start-Sleep -Milliseconds 250
-  Write-Host -ForegroundColor Cyan "* Arklok Equipamentos de Informática *"
-  Start-Sleep -Milliseconds 250
-  Write-Host -ForegroundColor Cyan "*                                    *"
-  Start-Sleep -Milliseconds 250
-  Write-Host -ForegroundColor Cyan "**************************************"
-  Start-Sleep -Milliseconds 250
-  Write-Host "`n"
-}
+net use \\172.18.3.4\d$ /user:arkserv\jan Lucy@505
 
-RunCredits
+& "\\172.18.3.4\d$\Servidor Deployment\MDT01\Scripts\Gerar_Log\Gerar_Log_Autopilot.exe" 'LAVORO AGRO (AUTOPILOT)'

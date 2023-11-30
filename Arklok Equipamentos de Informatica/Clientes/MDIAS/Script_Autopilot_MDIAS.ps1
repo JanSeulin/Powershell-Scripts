@@ -121,9 +121,11 @@ while ($MICROSOFT_LOGIN_LOOP -eq $true) {
     $MICROSOFT_LOGIN_LOOP = $false;
 
   } catch [System.Exception] {
+    Write-Host -ForegroundColor Red $_.Exception.Message
     Write-Host -ForegroundColor Yellow "`nProblema ao logar na conta da Microsoft, tentando novamente em alguns segundos..."
     Start-Sleep -Seconds 10
   } Catch {
+    Write-Host -ForegroundColor Red $_.Exception.Message
     Write-Host -ForegroundColor Yellow "`nProblema ao logar na conta da Microsoft, tentando novamente em alguns segundos..."
     Start-Sleep -Seconds 10
   }

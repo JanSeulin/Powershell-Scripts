@@ -219,7 +219,7 @@ Function New-WPFMessageBox {
 <Window
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      x:Name="Window" Title="" SizeToContent="WidthAndHeight" WindowStyle="None" ResizeMode="NoResize" AllowsTransparency="True" Background="Transparent" Opacity="1" Topmost="True" Top="-10">
+      x:Name="Window" Title="" SizeToContent="WidthAndHeight" WindowStyle="None" ResizeMode="NoResize" AllowsTransparency="True" Background="Transparent" Opacity="1" Topmost="True" Top="0">
   <Window.Resources>
       <Style TargetType="{x:Type Button}">
           <Setter Property="Template">
@@ -269,15 +269,15 @@ Function New-WPFMessageBox {
 "@
 
 [XML]$ButtonXaml = @"
-<Button xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Width="Auto" Height="30" FontFamily="Segui" FontSize="16" Background="Transparent" Foreground="White" BorderThickness="1" Margin="10" Padding="20,0,20,0" HorizontalAlignment="Right" Cursor="Hand"/>
+<Button xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Width="Auto" Height="15" FontFamily="Segui" FontSize="16" Background="transparent" Foreground="White" BorderThickness="1" Margin="10,7,10,12" Padding="20,0,20,0" HorizontalAlignment="Right" Cursor="Hand"/>
 "@
 
 [XML]$ButtonTextXaml = @"
-<TextBlock xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontFamily="$($PSBoundParameters.FontFamily)" FontSize="16" Background="Transparent" Foreground="$($PSBoundParameters.ButtonTextForeground)" Padding="20,5,20,5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+<TextBlock xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontFamily="$($PSBoundParameters.FontFamily)" FontSize="19" Background="transparent" Foreground="$($PSBoundParameters.ButtonTextForeground)" Padding="0" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 "@
 
 [XML]$ContentTextXaml = @"
-<TextBlock xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Text="$Content" Foreground="$($PSBoundParameters.ContentTextForeground)" DockPanel.Dock="Right" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="$($PSBoundParameters.FontFamily)" FontSize="$ContentFontSize" FontWeight="$($PSBoundParameters.ContentFontWeight)" TextWrapping="Wrap" Height="Auto" MaxWidth="500" MinWidth="50" Padding="10"/>
+<TextBlock xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Text="$Content" Foreground="$($PSBoundParameters.ContentTextForeground)" DockPanel.Dock="Right" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="$($PSBoundParameters.FontFamily)" FontSize="$ContentFontSize" FontWeight="$($PSBoundParameters.ContentFontWeight)" TextWrapping="Wrap" Height="auto" MaxWidth="500" MinWidth="50" Padding="10"/>
 "@
 
   # Load the window from XAML
@@ -291,10 +291,10 @@ Function New-WPFMessageBox {
       $ButtonText.Text = "$Content"
       $Button.Content = $ButtonText
       $Button.Add_MouseEnter({
-          $This.Content.FontSize = "17"
+          $This.Content.FontSize = "20"
       })
       $Button.Add_MouseLeave({
-          $This.Content.FontSize = "16"
+          $This.Content.FontSize = "19"
       })
       $Button.Add_Click({
           # New-Variable -Name WPFMessageBoxOutput -Value $($This.Content.Text) -Option ReadOnly -Scope Script -Force
@@ -476,10 +476,6 @@ Function New-WPFMessageBox {
   }
 }
 
-
-
-
-
 $LOOP = 'true'
 
 while ($LOOP) {
@@ -488,6 +484,11 @@ while ($LOOP) {
   $COMPUTER_SYSTEM = Get-CimInstance Win32_ComputerSystem
   $NOTEBOOK_MANUFACTURER = $COMPUTER_SYSTEM | Select-Object -ExpandProperty Manufacturer
   $NOTEBOOK_MODEL = $COMPUTER_SYSTEM | Select-Object -ExpandProperty SystemFamily
+
+  # NOME IMAGEM
+  $tsenv = New-Object -COMObject Microsoft.SMS.TSEnvironment
+  $CLIENTE = $tsenv.Value("TaskSequenceName")
+  # $CLIENTE = "TIM CRC"
 
   if ($NOTEBOOK_MANUFACTURER -like "*Dell*") {
     $NOTEBOOK_MANUFACTURER = "Dell"
@@ -545,16 +546,6 @@ while ($LOOP) {
     1800 { $MEMORY_TYPE = "DDR2" }
     2500 { $MEMORY_TYPE = "DDR1" }
   }
-
-  #### IMAGEM ARKLOK ####
-  $SOURCE_IMG = "Z:\Scripts\Info_Sistema\Logo\Arklok_Slogan.png"
-  $SOURCE_IMG_DEV="C:\Images\Arklok_Slogan.png"
-  $IMAGE = New-Object System.Windows.Controls.Image
-  $IMAGE.Source = $SOURCE_IMG
-  $Image.Height = 100
-  $Image.Width = 450
-  $Image.Margin = "0,25,0,0"
-
 
   # NOTEBOOK MODELO
   $NOTEBOOK_BLOCK = New-Object System.Windows.Controls.TextBlock
@@ -709,17 +700,11 @@ while ($LOOP) {
   # $BUTTON_AIM.Opacity = 0.9
 
   $BUTTON_AIM.Add_MouseEnter({
-    # $BUTTON_AIM_CONTENT.FontSize = "20"
     $BUTTON_AIM_CONTENT.FontWeight = "Bold"
-    # $BUTTON_AIM.Background = "Transparent"
-    # $BUTTON_AIM_CONTENT.Foreground = "White"
   })
 
   $BUTTON_AIM.Add_MouseLeave({
-    # $BUTTON_AIM.Background = "DarkRed"
-    # $BUTTON_AIM_CONTENT.FontSize = "18"
     $BUTTON_AIM_CONTENT.FontWeight = "Normal"
-    # $BUTTON_AIM_CONTENT.Foreground = "DarkRed"
   })
 
 
@@ -732,9 +717,11 @@ while ($LOOP) {
     TitleTextForeground='Black'
     ButtonType='None'
     ButtonTextForeground="Black"
-    CustomButtons="Voltar"
-    BorderThickness=2
+    CustomButtons="Fechar","Abrir Servidor"
+    BorderThickness=3
     ShadowDepth=4
+    ContentFontSize=16
+    # ContentFontWeight="Bold"
     # ContentBackground="Black"
   }
 
@@ -742,6 +729,14 @@ while ($LOOP) {
     $AIM = Test-Path "C:\Program Files (x86)\Automatos\Desktop Agent\adacontrol.exe"
     if (!$AIM) {
       New-WPFMessageBox @Params_AIM
+
+      if ($WPFMessageBoxOutput -eq "Abrir Servidor") {
+        if ($CLIENTE -like "*SPDM*") {
+          explorer Z:\SPDM_AIM\
+        } else {
+          explorer ftp://aim_client:%40rklok2019@ftp.arklok.com.br/
+        }
+      }
     } else {
       Start-Process -FilePath "C:\Program Files (x86)\Automatos\Desktop Agent\adacontrol.exe"
     }
@@ -769,22 +764,67 @@ while ($LOOP) {
   $BUTTON_WINDOWS.Cursor = "Hand"
   # $BUTTON_WINDOWS.Opacity = 0.9
 
-  $BUTTON_WINDOWS.Add_Click({
-    Start-Process -FilePath "slui.exe"
-  })
+  $Params_WindowsKey=@{
+    Content="Chave do Windows copiada para a área de transferência."
+    Title=""
+    TitleBackground="DarkRed"
+    TitleFontSize=22
+    TitleFontWeight='Bold'
+    TitleTextForeground='White'
+    ButtonType='None'
+    ButtonTextForeground="White"
+    Timeout=2
+    BorderThickness=2
+    ShadowDepth=2
+    ContentBackground="Blue"
+    ContentTextForeground="White"
+    ContentFontSize=16
+    ContentFontWeight="Bold"
+  }
+
+  $Params_WindowsKey_Error=@{
+    Content="A ativação do Windows NÃO deve ser realizada nessa imagem."
+    Title="Atenção"
+    TitleBackground="DarkRed"
+    TitleFontSize=22
+    TitleFontWeight='Bold'
+    TitleTextForeground='White'
+    ButtonType='Ok'
+    ButtonTextForeground="DarkRed"
+    # CustomButtons="OK"
+    BorderThickness=2
+    ShadowDepth=2
+    ContentBackground="White"
+    ContentTextForeground="Black"
+    ContentFontSize=17
+    ContentFontWeight="Bold"
+  }
+
+  if (
+    ($CLIENTE -like "*TIM CORP*") -or ($CLIENTE -like "*INST PRESB MACKENZIE - ( IMAGEM FACULDADE*") -or
+    ($CLIENTE -like "*TIM CRC*") -or ($CLIENTE -like "*TIM SP*") -or
+    ($CLIENTE -like "*PROTEGE*") -or ($CLIENTE -like "*CONEXIA EDUCACAO*")
+    ) {
+    $BUTTON_WINDOWS.Add_Click({
+      New-WPFMessageBox @Params_WindowsKey_Error
+    })
+  } else {
+    $BUTTON_WINDOWS.Add_Click({
+      $CLIPBOARD = Get-Clipboard -Raw
+      if ($CLIPBOARD -ne "4HNTB-7RXXB-47FQK-VMVWX-HCFDB") {
+        Set-Clipboard -Value 4HNTB-7RXXB-47FQK-VMVWX-HCFDB
+        New-WPFMessageBox @Params_WindowsKey
+      }
+      Start-Process -FilePath "slui.exe"
+    })
+  }
 
   $BUTTON_WINDOWS.Add_MouseEnter({
-    # $BUTTON_WINDOWS_CONTENT.FontSize = "20"
     $BUTTON_WINDOWS_CONTENT.FontWeight = "Bold"
-    # $BUTTON_WINDOWS.Background = "DarkRed"
-    # $BUTTON_WINDOWS_CONTENT.Foreground = "White"
   })
 
   $BUTTON_WINDOWS.Add_MouseLeave({
-    # $BUTTON_WINDOWS_CONTENT.FontSize = "18"
     $BUTTON_WINDOWS_CONTENT.FontWeight = "Normal"
-    # $BUTTON_WINDOWS.Background = "Transparent"
-    # $BUTTON_WINDOWS_CONTENT.Foreground = "DarkRed"
   })
 
   $BUTTON_DRIVERS_CONTENT = New-Object System.Windows.Controls.TextBlock
@@ -813,16 +853,10 @@ while ($LOOP) {
   # $BUTTON_DRIVERS.Opacity = 1
 
   $BUTTON_DRIVERS.Add_MouseEnter({
-    # $BUTTON_DRIVERS_CONTENT.FontSize = "20"
-    # $BUTTON_DRIVERS.Background = "DarkRed"
-    # $BUTTON_DRIVERS_CONTENT.Foreground = "White"
     $BUTTON_DRIVERS_CONTENT.FontWeight = "Bold"
   })
 
   $BUTTON_DRIVERS.Add_MouseLeave({
-    # $BUTTON_DRIVERS_CONTENT.FontSize = "18"
-    # $BUTTON_DRIVERS.Background = "Transparent"
-    # $BUTTON_DRIVERS_CONTENT.Foreground = "DarkRed"
     $BUTTON_DRIVERS_CONTENT.FontWeight = "normal"
   })
 
@@ -830,28 +864,16 @@ while ($LOOP) {
     Start-Process -FilePath "devmgmt.msc"
   })
 
-  # $BUTTON_STACK_PANEL.Background = "DarkRed"
-  $BUTTON_STACK_PANEL.margin = "0,10,0,0"
+  $BUTTON_STACK_PANEL.margin = "0,10,0,10"
   $BUTTON_STACK_PANEL.height = 50
-  # # $BUTTON_STACK_PANEL.Opacity = 0.97
-  # $BUTTON_STACK_PANEL.BorderThickness = 2
-  # $DockPanel = New-object System.Windows.Controls.DockPanel
-  # $DockPanel.LastChildFill = $False
-  # $DockPanel.HorizontalAlignment = "Center"
-  # $DockPanel.Width = "NaN"
-  # $DockPanel.AddChild($BUTTON_AIM)
-  # $DockPanel.AddChild($BUTTON_WINDOWS)
-  # $DockPanel.AddChild($BUTTON_DRIVERS)
-  # $DockPanel.Background = "Black"
 
   $BUTTON_STACK_PANEL.AddChild($BUTTON_AIM)
   $BUTTON_STACK_PANEL.AddChild($BUTTON_WINDOWS)
   $BUTTON_STACK_PANEL.AddChild($BUTTON_DRIVERS)
 
 
-  # ADD IMAGEM AO PAINEL
+  # ADD BOTÕES AO STACKPANEL
   $StackPanel.Background="White"
-  $StackPanel.AddChild($IMAGE)
   $StackPanel.AddChild($BUTTON_STACK_PANEL)
 
   # Parametros gerais
@@ -863,11 +885,11 @@ while ($LOOP) {
     TitleFontWeight='Bold'
     TitleTextForeground='White'
     ButtonType='None'
-    ButtonTextForeground="DarkRed"
+    ButtonTextForeground="White"
     CustomButtons="OK"
-    BorderThickness=2
+    BorderThickness=3
     ShadowDepth=4
-    ContentBackground="White"
+    ContentBackground="DarkRed"
   }
 
   New-WPFMessageBox @Params
@@ -876,5 +898,3 @@ while ($LOOP) {
     exit
   }
 }
-
-# Resolução após clique nos botoões
