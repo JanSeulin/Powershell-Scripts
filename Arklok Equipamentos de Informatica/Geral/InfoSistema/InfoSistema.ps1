@@ -605,7 +605,7 @@ $MEMORY_SLOTS_BLOCK.FontSize = "16"
 
 $MEMORY_SLOTS_BLOCK = New-Object System.Windows.Controls.TextBlock
 $MEMORY_SLOTS_BLOCK.Text = "Slots em uso: $MEMORY_SLOTS de $TOTAL_NUMBER_OF_SLOTS"
-if ($NOTEBOOK_MANUFACTURER -eq "Samsung") {
+if (($NOTEBOOK_MANUFACTURER -eq "Samsung") -or ($TOTAL_NUMBER_OF_SLOTS -gt 4)) {
   $MEMORY_SLOTS_BLOCK.Text = "Slots em uso: $MEMORY_SLOTS"
 }
 $MEMORY_SLOTS_BLOCK.margin = "15,0,15,0"

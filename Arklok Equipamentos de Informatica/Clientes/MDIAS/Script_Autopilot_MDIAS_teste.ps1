@@ -91,7 +91,9 @@ Write-Output "`n"
 Write-Host -ForegroundColor Green "Após inserir a TAG, aguarde a abertura da tela de login da Microsoft."
 Write-Host -ForegroundColor Green "Em caso de erro, por gentileza rodar o script novamente. Certifique-se de estar conectado à internet.`n"
 
-$ARRAY_TAGS=@('MDBN','MDBD','GMEN','GMED','MOIN','MOID','MRCN','MRCD','CRTN','CRTD','GMPN','GMPD','SJMN','SJMD','TMNN','TMND','DMAN','DMAD','DPIN','DPID','BLMN','BLMD','EMAN','EMAD','GMTN','GMTD','JPAN','JPAD','VITN','VITD','VITN','VITD','MAC','MACD','AJUN','AJUD','VDCN','VDCD','GMAN','GMAD','GMAN','GMAD','RJN','RJD','PEN','PED','PMN','PMD','PQN','PQD','UBLN','UBLD','BSAN','BSAD','SCSN','SCSD','GRUN','GRUD','LPAN','LPAD','MPRN','MPRD','LTXN','LTXD','JASN','JASD','BGO','BGOD','PNSN','PNSD','BGON','BGOD', 'MADN', 'MADD', 'MADNW', 'MADDW')
+$ARRAY_TAGS=@('MDBN','MDBD','GMEN','GMED','MOIN','MOID','MRCN','MRCD','CRTN','CRTD','GMPN','GMPD','SJMN','SJMD','TMNN','TMND','DMAN','DMAD','DPIN','DPID','BLMN','BLMD','EMAN','EMAD','GMTN','GMTD','JPAN','JPAD','VITN','VITD','VITN','VITD','MAC','MACD','AJUN','AJUD','VDCN','VDCD','GMAN','GMAD','GMAN','GMAD','RJN','RJD','PEN','PED','PMN','PMD','PQN','PQD','UBLN','UBLD','BSAN','BSAD','SCSN','SCSD','GRUN','GRUD','LPAN','LPAD','MPRN','MPRD','LTXN','LTXD','JASN','JASD','BGO','BGOD','PNSN','PNSD','BGON','BGOD', 'MADN', 'MADD', 'MADNW', 'MADDW', 'CRRN', 'CRRD', 'ESTN', 'ESTD', 'SCAN', 'SCAD', 'PNHN', 'PNHD', 'JPADN', 'JPAD', '')
+
+$ARRAY_TAGS=@('AJUD','AJUN','BGO','BGOD','BGOD','BGON','BLMD','BLMN','BSAD','BSAN','CRRD','CRRN','CRTD','CRTN','DMAD','DMAN','DPID','DPIN','EMAD','EMAN','ESTD','ESTN','GMAD','GMAD','GMAN','GMAN','GMED','GMEN','GMPD','GMPN','GMTD','GMTN','GRUD','GRUN','JASD','JASN','JPAD','JPAD','JPADN', 'JPAD', 'JPAN','LPAD','LPAN','LTXD','LTXN','MACN','MACD','MADD','MADDW','MADN','MADNW','MDBD','MDBN','MOID','MOIN','MPRD','MPRN','MRCD','MRCN','PED','PEN','PMD','PMN','PNHD','PNHN','PNSD','PNSN','PQD','PQN','RJD','RJN','SCAD','SCAN','SCSD','SCSN','SJMD','SJMN','TMND','TMNN','UBLD','UBLN','VDCD','VDCN','VITD','VITD','VITN','VITN')
 
 $TAG_CORRECT = $false;
 
