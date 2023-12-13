@@ -673,7 +673,7 @@ $STORAGE_STRING = [string][math]::Round((($STORAGE_BASE | Where-Object -Property
 
 $SERIAL = Get-CimInstance Win32_Bios | Select-Object -ExpandProperty SerialNumber
 
-$DAY_MONTH = Get-Date -Format "dd - MM"
+$DAY_MONTH = Get-Date -Format "dd-MM"
 $MONTH_YEAR = Get-Date -Format "MM-yyyy"
 $HOUR_MINUTE = Get-Date -Format "HH:mm"
 

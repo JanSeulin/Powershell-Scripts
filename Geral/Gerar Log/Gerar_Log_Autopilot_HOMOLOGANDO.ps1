@@ -596,7 +596,7 @@ if ($WPFMessageBoxOutput -eq "Confirmar") {
 Write-Host "`n"
 
 # $DAY = Get-Date -Format "dd - dddd"
-$DAY_MONTH = Get-Date -Format "dd - MM"
+$DAY_MONTH = Get-Date -Format "dd-MM"
 $MONTH_YEAR = Get-Date -Format "MM-yyyy"
 $HOUR_MINUTE = Get-Date -Format "HH:mm"
 

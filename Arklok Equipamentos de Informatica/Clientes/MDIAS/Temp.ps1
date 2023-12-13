@@ -1,3 +1,7 @@
-net use \\172.18.3.4\d$ /user:arkserv\jan Lucy@505
+$WINDOWS_STATUS = Get-CimInstance SoftwareLicensingProduct -Filter "partialproductkey is not null" | Where-Object Name -like windows* | Select-Object -ExpandProperty LicenseStatus
 
-& "\\172.18.3.4\d$\Servidor Deployment\MDT01\Scripts\Gerar_Log\Gerar_Log_Autopilot.exe" 'LAVORO AGRO (AUTOPILOT)'
+if ($WINDOWS_STATUS -eq 1) {
+  Write-Host -ForegroundColor Green "O windows está ativado."
+} else {
+  Write-Host -ForegroundColor Red "O Windows não está ativado."
+}
