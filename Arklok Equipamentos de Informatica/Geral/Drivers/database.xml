@@ -1,0 +1,4715 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Database version="301">
+  <Package id="n2igb02w" name="TPAD_N2IGB0" description="Synaptics Touchpad Firmware - 10 (1809 or Later)/ 11 (21H2 or Later)">
+    <FileName>n2igb02w_2_.xml</FileName>
+    <Version>3972349</Version>
+    <ReleaseDate>09/01/2023</ReleaseDate>
+    <Size>2219019</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n2igb02w\n2igb02w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1mcc02w_0sf114n3" name="CAMFU_R1MCC_0SF1" description="Integrated Camera Firmware for LVI/0SF114N3 - 10/11">
+    <FileName>r1mcc02w_0sf114n3_2_.xml</FileName>
+    <Version>0006</Version>
+    <ReleaseDate>16/05/2023</ReleaseDate>
+    <Size>4723358</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1mcc02w_0sf114n3\r1mcc02w_0sf114n3_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1ard07w" name="BT_R1ARD" description="Realtek RTL8852AE Bluetooth Driver - 10 (1809 or later)/11 (21H2 or later)">
+    <FileName>r1ard07w_2_.xml</FileName>
+    <Version>1.9.1051.3009</Version>
+    <ReleaseDate>28/03/2023</ReleaseDate>
+    <Size>1762610</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1ard07w\r1ard07w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1bch08w" name="AID_R1BCH" description="AMD IO Driver - 10 (1903 or later)/11 (21H2 or later)">
+    <FileName>r1bch08w_2_.xml</FileName>
+    <Version>2.2.0.130</Version>
+    <ReleaseDate>27/12/2021</ReleaseDate>
+    <Size>1722533</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1bch08w\r1bch08w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1bfb14w" name="WWAN_R1BFB" description="Fibocom L850-GL Wireless WAN Driver - 10 (1903 or Later)/11 (21H2 or Later)">
+    <FileName>r1bfb14w_2_.xml</FileName>
+    <Version>2.0.1.109</Version>
+    <ReleaseDate>19/01/2022</ReleaseDate>
+    <Size>80323791</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1bfb14w\r1bfb14w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r17cm33w" name="CAME_R17CM" description="Integrated Camera Driver - 10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>r17cm33w_2_.xml</FileName>
+    <Version>10.0.22000.20272/10.13.19041.28/5.0.18.168</Version>
+    <ReleaseDate>23/03/2023</ReleaseDate>
+    <Size>92396551</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r17cm33w\r17cm33w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n2xst13w" name="ULTR_N2XST" description="Synaptics ThinkPad UltraNav Driver - 10(1809 or later)/11(21H2 or later)">
+    <FileName>n2xst13w_2_.xml</FileName>
+    <Version>19.5.19.95</Version>
+    <ReleaseDate>13/12/2022</ReleaseDate>
+    <Size>6791056</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n2xst13w\n2xst13w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n1fupa0w" name="LPM_N1FUP" description="Lenovo Power and Battery Driver - 10 (1703 or Later)/11 (21H2 or Later)">
+    <FileName>n1fupa0w_2_.xml</FileName>
+    <Version>10.0.154.0</Version>
+    <ReleaseDate>10/10/2023</ReleaseDate>
+    <Size>4479183</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n1fupa0w\n1fupa0w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1biw15w_t" name="WLAN_R1BIW_RS5" description="Intel WLAN Driver - 10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>r1biw15w_t_2_.xml</FileName>
+    <Version>22.240.0.6</Version>
+    <ReleaseDate>22/08/2023</ReleaseDate>
+    <Size>13081883</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1biw15w_t\r1biw15w_t_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n3xku04w_v2" name="PMD_N3XKU" description="Lenovo Power Management Driver - 10 (1607 or Later)/11 (21H2 or Later)">
+    <FileName>n3xku04w_v2_2_.xml</FileName>
+    <Version>1.68.37.0</Version>
+    <ReleaseDate>25/10/2023</ReleaseDate>
+    <Size>1527956</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n3xku04w_v2\n3xku04w_v2_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1bib13w_t" name="BT_R1BIB_RS5" description="Intel Bluetooth Driver - 10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>r1bib13w_t_2_.xml</FileName>
+    <Version>22.220.0.3</Version>
+    <ReleaseDate>02/06/2023</ReleaseDate>
+    <Size>2005560</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1bib13w_t\r1bib13w_t_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1bmr10w_gns" name="GLPCR_R1BGM" description="MultiCard Reader Driver for Genesys - 10 (1909 or Later)/11 (21H2 or Later)">
+    <FileName>r1bmr10w_gns_2_.xml</FileName>
+    <Version>1.1.25.0</Version>
+    <ReleaseDate>11/03/2022</ReleaseDate>
+    <Size>3131298</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1bmr10w_gns\r1bmr10w_gns_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="u3aud04w_w10" name="AUDIO_U3AUD_W10" description="Lenovo Audio Driver for Docks - 10 [64]">
+    <FileName>u3aud04w_w10_2_.xml</FileName>
+    <Version>1.31.38.54</Version>
+    <ReleaseDate>10/11/2021</ReleaseDate>
+    <Size>1647844</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\u3aud04w_w10\u3aud04w_w10_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20W0" os="Windows 10" />
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20N9" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="suhotfixww04" name="HOTFIX_TVSU_WIN11" description="Hotfix for Lenovo System Update - 11 (21H2 or Later)">
+    <FileName>suhotfixww04_2_.xml</FileName>
+    <Version>1.0.0.4</Version>
+    <ReleaseDate>15/10/2021</ReleaseDate>
+    <Size>1798584</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\suhotfixww04\suhotfixww04_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20RB" os="Windows 11" />
+      <System mtm="20UE" os="Windows 11" />
+      <System mtm="11JQ" os="Windows 11" />
+      <System mtm="11T4" os="Windows 11" />
+      <System mtm="20TA" os="Windows 11" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1mcc02w_cnfkh63" name="CAMFU_R1MCC_CNFK" description="Integrated Camera Firmware for Chicony/CNFKH63 - 10/11">
+    <FileName>r1mcc02w_cnfkh63_2_.xml</FileName>
+    <Version>2795</Version>
+    <ReleaseDate>17/05/2023</ReleaseDate>
+    <Size>4723358</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1mcc02w_cnfkh63\r1mcc02w_cnfkh63_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n20p510w" name="FWU_THIN_N20P5" description="ThinkPad Ultra/Pro/Basic Docking Station PD Controller FW Utility (Windows 10 Version 1709 or Later) - 10 [64]">
+    <FileName>n20p510w_2_.xml</FileName>
+    <Version>5.0.10.14</Version>
+    <ReleaseDate>01/09/2020</ReleaseDate>
+    <Size>6265939</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n20p510w\n20p510w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1bar17w" name="AUD_R1BAR" description="Realtek Audio Driver - 10 (1909 or Later)">
+    <FileName>r1bar17w_2_.xml</FileName>
+    <Version>6.0.9366.1</Version>
+    <ReleaseDate>02/09/2022</ReleaseDate>
+    <Size>143911747</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1bar17w\r1bar17w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="u3etn10w_2_w11_x86" name="USBC_U3ETN_W11_X86" description="Lenovo USB3.0 LAN Driver for Docks and Adapters - 11 (21H2 or Later)">
+    <FileName>u3etn10w_2_w11_x86_2_.xml</FileName>
+    <Version>11.13.0420.2023</Version>
+    <ReleaseDate>10/11/2023</ReleaseDate>
+    <Size>8335027</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\u3etn10w_2_w11_x86\u3etn10w_2_w11_x86_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20RB" os="Windows 11" />
+      <System mtm="20UE" os="Windows 11" />
+      <System mtm="11JQ" os="Windows 11" />
+      <System mtm="11T4" os="Windows 11" />
+      <System mtm="20TA" os="Windows 11" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n20pc06w" name="FWU_THIN_N20PC" description="ThinkPad Basic Docking Station USB Hub FW Utility (Windows 10 Version 1709 or Later) - 10 [64]">
+    <FileName>n20pc06w_2_.xml</FileName>
+    <Version>5.05.00.01.03</Version>
+    <ReleaseDate>21/05/2020</ReleaseDate>
+    <Size>2465784</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n20pc06w\n20pc06w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20W0" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1are09w" name="WLAN_R1ARE" description="Realtek Realtek8852AE WLAN Driver - 10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>r1are09w_2_.xml</FileName>
+    <Version>6001.10.355.1</Version>
+    <ReleaseDate>07/10/2023</ReleaseDate>
+    <Size>2781488</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1are09w\r1are09w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="dislink1012875" name="USBDISPLAY_HLUD0_U3DOCK" description="Generic DisplayLink Driver for ThinkPad USB 3.0 Ultra/Pro/Basic Dock - 10 (1607 or Later)">
+    <FileName>dislink1012875_2_.xml</FileName>
+    <Version>10.1.2875.0</Version>
+    <ReleaseDate>19/10/2022</ReleaseDate>
+    <Size>54128321</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\dislink1012875\dislink1012875_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20W0" os="Windows 10" />
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20N9" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1bfp09w" name="FP_R1BFP" description="Synaptics FingerPrint Driver - 10 (1903 or Later)/11 (21H2 or Later)">
+    <FileName>r1bfp09w_2_.xml</FileName>
+    <Version>6.0.53.1105</Version>
+    <ReleaseDate>02/12/2021</ReleaseDate>
+    <Size>2615860</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1bfp09w\r1bfp09w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="u3etn10w_2_w10_x86" name="USBC_U3ETN_W10_X86" description="Lenovo USB3.0 LAN Driver for Docks and Adapters - 10 [64]">
+    <FileName>u3etn10w_2_w10_x86_2_.xml</FileName>
+    <Version>10.59.0420.2023</Version>
+    <ReleaseDate>10/11/2023</ReleaseDate>
+    <Size>8335027</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\u3etn10w_2_w10_x86\u3etn10w_2_w10_x86_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20W0" os="Windows 10" />
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="11JQ" os="Windows 10" />
+      <System mtm="11T4" os="Windows 10" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20N9" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="usbcundkfw3085_2" name="FWU_FVIKING09" description="ThinkPad Universal USB-C Dock FW Package - 10 (1903 or Later)/11 (21H2 or Later)">
+    <FileName>usbcundkfw3085_2_2_.xml</FileName>
+    <Version>3.0.85</Version>
+    <ReleaseDate>30/05/2023</ReleaseDate>
+    <Size>3713674</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\usbcundkfw3085_2\usbcundkfw3085_2_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1amw16w" name="MMWD_R1AMW" description="Mediatek MT7921 WLAN Driver - 10 (1909 or Later)/11 (21H2 or Later)">
+    <FileName>r1amw16w_2_.xml</FileName>
+    <Version>23.33.2.563</Version>
+    <ReleaseDate>31/10/2023</ReleaseDate>
+    <Size>11660848</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1amw16w\r1amw16w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n2tbr05w" name="FWU_LENO_N2TBR" description="Lenovo Battery Firmware Update Utility - 10 (1709 or Later)/11 (21H2 or Later)">
+    <FileName>n2tbr05w_2_.xml</FileName>
+    <Version>1.0.4</Version>
+    <ReleaseDate>08/10/2022</ReleaseDate>
+    <Size>2240135</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n2tbr05w\n2tbr05w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="dislink1112757" name="USBDISPLAY_HLUD0_RS" description="Generic DisplayLink Driver for USB Docks and Adapters - 10 (1607 or Later)/11 (21H2 or Later)">
+    <FileName>dislink1112757_2_.xml</FileName>
+    <Version>11.1.2757.0</Version>
+    <ReleaseDate>04/09/2023</ReleaseDate>
+    <Size>48092653</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\dislink1112757\dislink1112757_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+      <System mtm="11JQ" os="Windows 10" />
+      <System mtm="11JQ" os="Windows 11" />
+      <System mtm="11T4" os="Windows 10" />
+      <System mtm="11T4" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="lenovoprovisiondolbyvisionp07" name="LPDV" description="Dolby Vision Provisioning Package - 10 (1709 or Later)/11 (21H2 or Later)">
+    <FileName>lenovoprovisiondolbyvisionp07_2_.xml</FileName>
+    <Version>1.7.4.3</Version>
+    <ReleaseDate>26/07/2023</ReleaseDate>
+    <Size>1880942</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\lenovoprovisiondolbyvisionp07\lenovoprovisiondolbyvisionp07_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20W0" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1bem05w" name="RLASF_R1BEM" description="Realtek LAN Adapter Software - 11 (21H2 or Later)">
+    <FileName>r1bem05w_2_.xml</FileName>
+    <Version>1166.11.1206.2022/1168.11.1206.2022</Version>
+    <ReleaseDate>26/04/2023</ReleaseDate>
+    <Size>1374466</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1bem05w\r1bem05w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1bmi05w" name="TMF_R1BMI_WIN11" description="ThinkPad Monitor File - 11 (21H2 or later)">
+    <FileName>r1bmi05w_2_.xml</FileName>
+    <Version>6.14.11.0</Version>
+    <ReleaseDate>27/12/2021</ReleaseDate>
+    <Size>1125451</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1bmi05w\r1bmi05w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="usbcg2dkfw1120_2" name="FWU_USB-C2_WLDCG" description="ThinkPad USB-C Dock Gen2 FW Package - 10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>usbcg2dkfw1120_2_2_.xml</FileName>
+    <Version>1.1.20</Version>
+    <ReleaseDate>16/03/2023</ReleaseDate>
+    <Size>46095523</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\usbcg2dkfw1120_2\usbcg2dkfw1120_2_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1bps03w" name="TPD_R1BPS" description="TI PD Driver - 10 (1903 or later)/11 (21H2 or later)">
+    <FileName>r1bps03w_2_.xml</FileName>
+    <Version>1.0.11.1</Version>
+    <ReleaseDate>29/12/2021</ReleaseDate>
+    <Size>1232007</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1bps03w\r1bps03w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n2xsr05w" name="AMUSC_N2XSR" description="Alcor Micro USB Smart Card Reader Driver - 10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>n2xsr05w_2_.xml</FileName>
+    <Version>1.9.17.2318</Version>
+    <ReleaseDate>31/07/2023</ReleaseDate>
+    <Size>1155037</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n2xsr05w\n2xsr05w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1bmi04w" name="TMF_R1BMI" description="ThinkPad Monitor File (Windows 10 Version 1903 or Later) - 10 [64]">
+    <FileName>r1bmi04w_2_.xml</FileName>
+    <Version>6.14.8.0</Version>
+    <ReleaseDate>15/03/2022</ReleaseDate>
+    <Size>1124680</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1bmi04w\r1bmi04w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1bst13w" name="ULTR_R1BST" description="Synaptics UltraNav Driver (Windows 10 Version 1903 or Later) - 10 [64]">
+    <FileName>r1bst13w_2_.xml</FileName>
+    <Version>19.5.19.67</Version>
+    <ReleaseDate>03/03/2021</ReleaseDate>
+    <Size>6509439</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1bst13w\r1bst13w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1buj77w" name="BIOS_R1BUJ" description="BIOS Update Utility - 10/11">
+    <FileName>r1buj77w_2_.xml</FileName>
+    <Version>1.46</Version>
+    <ReleaseDate>13/11/2023</ReleaseDate>
+    <Size>12073953</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1buj77w\r1buj77w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n25by25w" name="LSS_N25BY" description="Lenovo Smart Standby Driver - 10 (1703 or Later)/11 (21H2 or Later)">
+    <FileName>n25by25w_2_.xml</FileName>
+    <Version>4.2.54.0</Version>
+    <ReleaseDate>10/10/2023</ReleaseDate>
+    <Size>1317051</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n25by25w\n25by25w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1ba148w" name="AKD_R1BA1" description="AMD Kit Driver - 10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>r1ba148w_2_.xml</FileName>
+    <Version>31.0.21024.5005</Version>
+    <ReleaseDate>13/11/2023</ReleaseDate>
+    <Size>334915365</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1ba148w\r1ba148w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n20pe10w" name="DOCK_AUDIO_N20PE" description="Realtek USB Audio for Docking Station - 10/11 (21H2 or later)">
+    <FileName>n20pe10w_2_.xml</FileName>
+    <Version>6.3.9600.2299</Version>
+    <ReleaseDate>16/12/2021</ReleaseDate>
+    <Size>9878756</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n20pe10w\n20pe10w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="tbt3wsdkfw3182_2" name="FWU_TRDOCK_TR_TB" description="ThinkPad Thunderbolt 3 dock Gen2 / Workstation dock Firmware Update Tool - 10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>tbt3wsdkfw3182_2_2_.xml</FileName>
+    <Version>3.1.82</Version>
+    <ReleaseDate>03/07/2023</ReleaseDate>
+    <Size>22982728</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\tbt3wsdkfw3182_2\tbt3wsdkfw3182_2_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="cs18dkdpfw506001_tvsu1" name="FWU_CS18DP_CS18D" description="ThinkPad Ultra/Pro Docking Station DP Hub FW Utility - 10 (1709 or Later)">
+    <FileName>cs18dkdpfw506001_tvsu1_2_.xml</FileName>
+    <Version>5.06.001</Version>
+    <ReleaseDate>28/06/2022</ReleaseDate>
+    <Size>10728807</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\cs18dkdpfw506001_tvsu1\cs18dkdpfw506001_tvsu1_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20W0" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1bcc01w_v2" name="FWU_CAME_R1BCC" description="Integrated IR Camera Firmware - 10 (20H2 or Later) /11 (21H2 or Later)">
+    <FileName>r1bcc01w_v2_2_.xml</FileName>
+    <Version>6318/6301</Version>
+    <ReleaseDate>13/09/2023</ReleaseDate>
+    <Size>1265662</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1bcc01w_v2\r1bcc01w_v2_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="fwnva64" name="FWU_FWSD" description="Lenovo NVMe Solid State Drive Firmware Update Utility - 10 (21H1 or Later)/11 (21H2 or Later)">
+    <FileName>fwnva64_2_.xml</FileName>
+    <Version>64</Version>
+    <ReleaseDate>08/11/2023</ReleaseDate>
+    <Size>102475061</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\fwnva64\fwnva64_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1bmr10w_rtk" name="CR_R1BMR" description="MultiCard Reader Driver for Realtek - 10 (1909 or Later)/11 (21H2 or Later)">
+    <FileName>r1bmr10w_rtk_2_.xml</FileName>
+    <Version>10.0.22000.21354</Version>
+    <ReleaseDate>07/03/2022</ReleaseDate>
+    <Size>3131298</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1bmr10w_rtk\r1bmr10w_rtk_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n3xdy04w_v2" name="LITS_N1ZDY" description="Lenovo Intelligent Thermal Solution Driver - 10 (1607 or Later)/11 (21H2 or Later)">
+    <FileName>n3xdy04w_v2_2_.xml</FileName>
+    <Version>2.0.432.0</Version>
+    <ReleaseDate>25/10/2023</ReleaseDate>
+    <Size>1598394</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n3xdy04w_v2\n3xdy04w_v2_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r18vu52w" name="HOTKEY_CS20_W10" description="Hotkey Features Integration - 10 (1607 or Later)/11 (21H2 or Later)">
+    <FileName>r18vu52w_2_.xml</FileName>
+    <Version>10.7.2.0</Version>
+    <ReleaseDate>30/10/2023</ReleaseDate>
+    <Size>10360474</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r18vu52w\r18vu52w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1amb15w" name="MMBD_R1AMB" description="Mediatek MT7921 Bluetooth Driver - 10 (1909 or Later)/11 (21H2 or Later)">
+    <FileName>r1amb15w_2_.xml</FileName>
+    <Version>23.33.2.204</Version>
+    <ReleaseDate>07/11/2023</ReleaseDate>
+    <Size>4928385</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1amb15w\r1amb15w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="usbcdkfw3704_1" name="FWU_USBDOCK_FUSBCD" description="ThinkPad USB-C Dock FW Package - 7 [64]/10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>usbcdkfw3704_1_2_.xml</FileName>
+    <Version>3.7.04</Version>
+    <ReleaseDate>14/02/2022</ReleaseDate>
+    <Size>14679136</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\usbcdkfw3704_1\usbcdkfw3704_1_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1bra05w" name="AUD_R1BRA" description="Realtek Audio Driver - 11 (21H2 or Later)">
+    <FileName>r1bra05w_2_.xml</FileName>
+    <Version>6.0.9366.1</Version>
+    <ReleaseDate>02/09/2022</ReleaseDate>
+    <Size>97417573</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1bra05w\r1bra05w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1mcc02w_9sf126n3" name="CAMFU_R1MCC_9SF1" description="Integrated Camera Firmware for LVI/9SF126N3 - 10/11">
+    <FileName>r1mcc02w_9sf126n3_2_.xml</FileName>
+    <Version>0006</Version>
+    <ReleaseDate>17/05/2023</ReleaseDate>
+    <Size>4723358</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1mcc02w_9sf126n3\r1mcc02w_9sf126n3_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1ber08w" name="RED_R1BER" description="Realtek LAN Adapter Software (Windows 10 Version 1809 or Later) - 10 [64]">
+    <FileName>r1ber08w_2_.xml</FileName>
+    <Version>10.056.0119.2022</Version>
+    <ReleaseDate>04/07/2022</ReleaseDate>
+    <Size>1514647</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1ber08w\r1ber08w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1mcc02w_cnfjh72" name="CAMFU_R1MCC_CNFJ" description="Integrated Camera Firmware for Chicony/CNFJH72 - 10/11">
+    <FileName>r1mcc02w_cnfjh72_2_.xml</FileName>
+    <Version>2793</Version>
+    <ReleaseDate>17/05/2023</ReleaseDate>
+    <Size>4723358</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1mcc02w_cnfjh72\r1mcc02w_cnfjh72_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1egf08w" name="FP_R1EGF" description="Goodix FingerPrint Driver - 10 (2004 or later)/11 (21H2 or later)">
+    <FileName>r1egf08w_2_.xml</FileName>
+    <Version>3.1.596.517</Version>
+    <ReleaseDate>09/11/2022</ReleaseDate>
+    <Size>2358156</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1egf08w\r1egf08w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r19iw16w" name="IWLD_R19IW" description="Intel WLAN Driver - 10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>r19iw16w_2_.xml</FileName>
+    <Version>22.240.0.6</Version>
+    <ReleaseDate>21/08/2023</ReleaseDate>
+    <Size>13080474</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r19iw16w\r19iw16w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1erw07w" name="WLAN_R1ERW" description="Realtek 8822CE WLAN Driver - 10 (2004 or later)/11 (21H2 or later)">
+    <FileName>r1erw07w_2_.xml</FileName>
+    <Version>2024.0.8.133</Version>
+    <ReleaseDate>21/10/2021</ReleaseDate>
+    <Size>3741864</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1erw07w\r1erw07w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r19a115w" name="AUD_R19A1" description="Realtek Audio Driver (Windows 10 Version 1809 or Later) - 10 [64]">
+    <FileName>r19a115w_2_.xml</FileName>
+    <Version>6.0.9354.1</Version>
+    <ReleaseDate>05/07/2022</ReleaseDate>
+    <Size>143811004</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r19a115w\r19a115w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20U6" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1ech04w" name="CHIP_R1ECH" description="Intel Chipset Device Software - 10 (2004 or later)/11 (21H2 or later)">
+    <FileName>r1ech04w_2_.xml</FileName>
+    <Version>10.1.24.6</Version>
+    <ReleaseDate>18/11/2021</ReleaseDate>
+    <Size>1053653</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1ech04w\r1ech04w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r19x802w_rtk" name="MCD_R19X8_RTK" description="MultiCard Driver for Realtek - 10 (20H1 or Earlier)">
+    <FileName>r19x802w_rtk_2_.xml</FileName>
+    <Version>10.0.19042.21347</Version>
+    <ReleaseDate>06/01/2022</ReleaseDate>
+    <Size>3550506</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r19x802w_rtk\r19x802w_rtk_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20U6" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r17rb06w" name="RRBD_R17RB" description="Bluetooth Driver - 10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>r17rb06w_2_.xml</FileName>
+    <Version>1.10.1058.3002</Version>
+    <ReleaseDate>24/05/2023</ReleaseDate>
+    <Size>1742125</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r17rb06w\r17rb06w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1eme11w" name="MEI_R1EME" description="Intel Management Engine Software - 10 (20H1 or Later)/11 (21H2 or Later)">
+    <FileName>r1eme11w_2_.xml</FileName>
+    <Version>2316.5.0.0</Version>
+    <ReleaseDate>16/11/2023</ReleaseDate>
+    <Size>14577524</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1eme11w\r1eme11w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1erb03w" name="BT_R1ERB" description="Realtek 8822CE Bluetooth Driver - 10 (2004 or later)/11 (21H2 or later)">
+    <FileName>r1erb03w_2_.xml</FileName>
+    <Version>1.9.1038.3002</Version>
+    <ReleaseDate>25/01/2022</ReleaseDate>
+    <Size>1816858</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1erb03w\r1erb03w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r17mb13w" name="MBD_R17MB" description="Mediatek MT7921 Bluetooth Driver - 10 (1909 or Later)/11 (21H2 or Later)">
+    <FileName>r17mb13w_2_.xml</FileName>
+    <Version>22.30.1.154</Version>
+    <ReleaseDate>18/10/2022</ReleaseDate>
+    <Size>1887458</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r17mb13w\r17mb13w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1eib07w" name="BT_R1EIB" description="Intel Bluetooth Driver - 10 (2004 or Later)/11 (21H2 or Later)">
+    <FileName>r1eib07w_2_.xml</FileName>
+    <Version>22.220.0.3</Version>
+    <ReleaseDate>12/06/2023</ReleaseDate>
+    <Size>2988671</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1eib07w\r1eib07w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r19gf02w" name="FP_R19GF" description="Goodix FingerPrint Driver - 10 (1809 or later)/11 (21H2 or later)">
+    <FileName>r19gf02w_2_.xml</FileName>
+    <Version>3.1.55.600</Version>
+    <ReleaseDate>03/12/2021</ReleaseDate>
+    <Size>2356430</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r19gf02w\r19gf02w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="tbtesdkfw1014_1" name="FWU_TBTES" description="Lenovo Thunderbolt 3 Essential Dock Firmware Update Tool - 10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>tbtesdkfw1014_1_2_.xml</FileName>
+    <Version>v1.0.14</Version>
+    <ReleaseDate>10/02/2022</ReleaseDate>
+    <Size>5282971</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\tbtesdkfw1014_1\tbtesdkfw1014_1_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r17rc07w" name="WLAN_R17RC" description="Realtek RTL8852AE WLAN Driver - 10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>r17rc07w_2_.xml</FileName>
+    <Version>6001.10.353.0</Version>
+    <ReleaseDate>22/05/2023</ReleaseDate>
+    <Size>2775362</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r17rc07w\r17rc07w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1atf04w_v5" name="TPFW_R1ATF" description="Elan Touchpad Firmware Update Tool - 10 [64]">
+    <FileName>r1atf04w_v5_2_.xml</FileName>
+    <Version>FW05</Version>
+    <ReleaseDate>06/07/2022</ReleaseDate>
+    <Size>4308757</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1atf04w_v5\r1atf04w_v5_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TA" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1etr04w" name="TC_PDFW_R1ETR" description="Firmware for Type C PDFW Function - 10 (20H1 or Later) /11 (21H2 or Later)">
+    <FileName>r1etr04w_2_.xml</FileName>
+    <Version>R1ETR04W</Version>
+    <ReleaseDate>31/07/2023</ReleaseDate>
+    <Size>1000235</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1etr04w\r1etr04w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1jda20w" name="VGA_R1JDA" description="ThinkPad Video Features Driver - 10 (1903 or Later)/11 (21H2 or Later)">
+    <FileName>r1jda20w_2_.xml</FileName>
+    <Version>31.0.15.2908</Version>
+    <ReleaseDate>24/07/2023</ReleaseDate>
+    <Size>691691241</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1jda20w\r1jda20w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r19fp02w" name="FP_R19FP" description="Synaptics FingerPrint FM3463 Driver - 10 (1809 or later)/11 (21H2 or later)">
+    <FileName>r19fp02w_2_.xml</FileName>
+    <Version>6.0.33.1104</Version>
+    <ReleaseDate>06/12/2021</ReleaseDate>
+    <Size>2625137</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r19fp02w\r19fp02w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="usbcsmdkfw3156_2" name="FWU_USBCSM_DK" description="ThinkPad Universal USB-C Smart Dock FW Package - 10 (1903 or Later)/11 (21H2 or Later)">
+    <FileName>usbcsmdkfw3156_2_2_.xml</FileName>
+    <Version>3.1.56</Version>
+    <ReleaseDate>29/05/2023</ReleaseDate>
+    <Size>3310768</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\usbcsmdkfw3156_2\usbcsmdkfw3156_2_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1ear21w" name="AUD_R1EAR" description="Realtek Audio Driver (Windows 10 Version 2004 or Later) - 10 [64]">
+    <FileName>r1ear21w_2_.xml</FileName>
+    <Version>6.0.9366.1</Version>
+    <ReleaseDate>03/11/2022</ReleaseDate>
+    <Size>250063691</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1ear21w\r1ear21w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TA" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r19er05w" name="MRD_R19ER" description="Realtek Ethernet Driver -10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>r19er05w_2_.xml</FileName>
+    <Version>10.050.0511.2021</Version>
+    <ReleaseDate>29/12/2021</ReleaseDate>
+    <Size>1742702</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r19er05w\r19er05w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1eivb6w" name="VGA_R1EIV" description="Intel UHD Graphics Driver - 10 (2004 or Later)/11 (21H2 or Later)">
+    <FileName>r1eivb6w_2_.xml</FileName>
+    <Version>31.0.101.4255</Version>
+    <ReleaseDate>25/07/2023</ReleaseDate>
+    <Size>372337208</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1eivb6w\r1eivb6w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1emi04w" name="TMD_R1EMI" description="ThinkPad Monitor Driver - 10 (2004 or later)/11 (21H2 or later)">
+    <FileName>r1emi04w_2_.xml</FileName>
+    <Version>6.14.14.0</Version>
+    <ReleaseDate>28/03/2022</ReleaseDate>
+    <Size>1128598</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1emi04w\r1emi04w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r19sb02w" name="APD_R19SB" description="AMD PSP Driver -10 (1809 or Later)/11(21H2 or Later)">
+    <FileName>r19sb02w_2_.xml</FileName>
+    <Version>5.17.0.0</Version>
+    <ReleaseDate>29/12/2021</ReleaseDate>
+    <Size>1570931</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r19sb02w\r19sb02w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r19br02w_bay" name="MCD_R19BR_BAY" description="MultiCard Reader Driver for Bayhub - 10 (20H2 or Later)/11 (21H2 or Later)">
+    <FileName>r19br02w_bay_2_.xml</FileName>
+    <Version>2.1.101.10540</Version>
+    <ReleaseDate>17/01/2022</ReleaseDate>
+    <Size>3533401</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r19br02w_bay\r19br02w_bay_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r17wj13w" name="WWAN_R17WJ" description="Fibocom L850 Wireless WAN Driver - 10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>r17wj13w_2_.xml</FileName>
+    <Version>2.0.1.111</Version>
+    <ReleaseDate>11/08/2022</ReleaseDate>
+    <Size>80506606</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r17wj13w\r17wj13w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1eng04w" name="NGP_R1ENG" description="NVIDIA GFE Package - 10 (2004 or Later)/11 (21H2 or Later)">
+    <FileName>r1eng04w_2_.xml</FileName>
+    <Version>3.27.0.114</Version>
+    <ReleaseDate>06/06/2023</ReleaseDate>
+    <Size>866100789</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1eng04w\r1eng04w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r19uj22w" name="BIOS_R19UJ" description="BIOS Update Utility - 10/11">
+    <FileName>r19uj22w_2_.xml</FileName>
+    <Version>1.32</Version>
+    <ReleaseDate>27/11/2023</ReleaseDate>
+    <Size>11088751</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r19uj22w\r19uj22w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1emu04w" name="FWU_INTE_R1EMU" description="Intel Management Engine Firmware - 10 (1803 or Later)/11 (21H2 or Later)">
+    <FileName>r1emu04w_2_.xml</FileName>
+    <Version>15.0.42.2235</Version>
+    <ReleaseDate>21/11/2022</ReleaseDate>
+    <Size>8932909</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1emu04w\r1emu04w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r19oi04w" name="TMF_R19OI" description="ThinkPad Monitor File - 11 (21H2 or later)">
+    <FileName>r19oi04w_2_.xml</FileName>
+    <Version>6.14.11.0</Version>
+    <ReleaseDate>30/12/2021</ReleaseDate>
+    <Size>1125271</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r19oi04w\r19oi04w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20U6" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1jta09w_e" name="TSF_R1JTA_20H1" description="Thunderbolt Software - 10 (2004 or Later)/11 (21H2 or Later)">
+    <FileName>r1jta09w_e_2_.xml</FileName>
+    <Version>1.41.1353.0</Version>
+    <ReleaseDate>29/05/2023</ReleaseDate>
+    <Size>2058389</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1jta09w_e\r1jta09w_e_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r19x802w_bay" name="MCD_R19X8_BAY" description="MultiCard Driver for BayHub - 10 (20H1 or Earlier)">
+    <FileName>r19x802w_bay_2_.xml</FileName>
+    <Version>1.1.101.10420</Version>
+    <ReleaseDate>06/01/2022</ReleaseDate>
+    <Size>3550506</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r19x802w_bay\r19x802w_bay_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20U6" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1ete06w" name="EMD_R1ETE" description="Elan ThinkPad UltraNav Driver - 10 (2004 or Later)/11 (21H2 or Later)">
+    <FileName>r1ete06w_2_.xml</FileName>
+    <Version>24.21.52.3</Version>
+    <ReleaseDate>26/07/2022</ReleaseDate>
+    <Size>2081379</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1ete06w\r1ete06w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1euj57w" name="BIOS_R1EUJ" description="BIOS Update Utility - 10/11">
+    <FileName>r1euj57w_2_.xml</FileName>
+    <Version>1.57</Version>
+    <ReleaseDate>16/11/2023</ReleaseDate>
+    <Size>12478750</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1euj57w\r1euj57w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r19oi03w" name="TMF_R19OI" description="ThinkPad Monitor File - 10 (1809 or later)">
+    <FileName>r19oi03w_2_.xml</FileName>
+    <Version>6.14.8.0</Version>
+    <ReleaseDate>31/12/2021</ReleaseDate>
+    <Size>1124261</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r19oi03w\r19oi03w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20U6" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r19rb03w" name="AUD_R19RB" description="Realtek Audio Driver - 11 (21H2 or later)">
+    <FileName>r19rb03w_2_.xml</FileName>
+    <Version>6.0.9247.1</Version>
+    <ReleaseDate>14/02/2022</ReleaseDate>
+    <Size>95230275</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r19rb03w\r19rb03w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20U6" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1eiw13w" name="WLAN_R1EIW" description="Intel WLAN Driver - 10 (20H1 or Later)/11 (21H2 or Later)">
+    <FileName>r1eiw13w_2_.xml</FileName>
+    <Version>22.240.0.6</Version>
+    <ReleaseDate>22/08/2023</ReleaseDate>
+    <Size>13081808</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1eiw13w\r1eiw13w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="fhybd1038_1" name="FWU_HYBDOCK_FHYBD" description="ThinkPad Hybrid USB-C with USB-A Dock Firmware - 10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>fhybd1038_1_2_.xml</FileName>
+    <Version>V1.0.38</Version>
+    <ReleaseDate>01/11/2023</ReleaseDate>
+    <Size>6417992</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\fhybd1038_1\fhybd1038_1_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="tbt4dkfw1016_4" name="FWU_TBT4D" description="ThinkPad Thunderbolt 4 Dock Firmware Update Tool - 10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>tbt4dkfw1016_4_2_.xml</FileName>
+    <Version>v1.0.16</Version>
+    <ReleaseDate>25/10/2023</ReleaseDate>
+    <Size>16097434</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\tbt4dkfw1016_4\tbt4dkfw1016_4_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1ehd06w" name="DFTP_R1EHD" description="Intel Dynamic Platform and Thermal Framework Driver - 10 (2004 or later)/11 (21H2 or later)">
+    <FileName>r1ehd06w_2_.xml</FileName>
+    <Version>8.7.10700.22502</Version>
+    <ReleaseDate>21/01/2022</ReleaseDate>
+    <Size>12883506</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1ehd06w\r1ehd06w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r19aq03w" name="AID_R19AQ" description="AMD I2C Driver -10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>r19aq03w_2_.xml</FileName>
+    <Version>1.2.0.118</Version>
+    <ReleaseDate>31/12/2021</ReleaseDate>
+    <Size>1132071</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r19aq03w\r19aq03w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1eli04w" name="SIO_R1ELI" description="Intel(R) Serial IO Driver - 10 (2004 or later)/11 (21H2 or later)">
+    <FileName>r1eli04w_2_.xml</FileName>
+    <Version>30.100.2129.8</Version>
+    <ReleaseDate>25/11/2022</ReleaseDate>
+    <Size>1290086</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1eli04w\r1eli04w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r19br02w_rtk" name="MCD_R19BR_RTK" description="MultiCard Reader Driver for Realtek - 10 (20H2 or Later)/11 (21H2 or Later)">
+    <FileName>r19br02w_rtk_2_.xml</FileName>
+    <Version>10.0.22000.21350</Version>
+    <ReleaseDate>17/01/2022</ReleaseDate>
+    <Size>3533401</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r19br02w_rtk\r19br02w_rtk_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1eaa08w" name="AUD_R1EAA" description="Realtek Audio Driver - 11 (21H2 or later)">
+    <FileName>r1eaa08w_2_.xml</FileName>
+    <Version>6.0.9366.1</Version>
+    <ReleaseDate>03/11/2022</ReleaseDate>
+    <Size>204182317</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1eaa08w\r1eaa08w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r19av25w" name="VGA_R19AV" description="AMD Video Driver - 10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>r19av25w_2_.xml</FileName>
+    <Version>31.0.21024.5005</Version>
+    <ReleaseDate>31/10/2023</ReleaseDate>
+    <Size>332347049</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r19av25w\r19av25w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r19ap02w" name="ASD_R19AP" description="AMD SMBus Driver -10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>r19ap02w_2_.xml</FileName>
+    <Version>5.12.0.38</Version>
+    <ReleaseDate>29/12/2021</ReleaseDate>
+    <Size>1110771</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r19ap02w\r19ap02w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="mcafeehotfix1242" name="MCAFEE_HOTFIX_1242" description="McAfee LiveSafe 16.0.27 Hotfix - 10 (20H2 or Later)/11 (21H2 or Later)">
+    <FileName>mcafeehotfix1242_2_.xml</FileName>
+    <Version>16.0.27</Version>
+    <ReleaseDate>14/07/2022</ReleaseDate>
+    <Size>1053846</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\mcafeehotfix1242\mcafeehotfix1242_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="fwsa14" name="FWU_FWSB" description="Lenovo SATA Solid State Drive and Hard Disk Drive Firmware Update Utility - 10 [64]">
+    <FileName>fwsa14_2_.xml</FileName>
+    <Version>1400</Version>
+    <ReleaseDate>05/12/2022</ReleaseDate>
+    <Size>40989160</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\fwsa14\fwsa14_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20N9" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r19ib12w" name="BT_R19IB" description="Intel Bluetooth Driver - 10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>r19ib12w_2_.xml</FileName>
+    <Version>22.220.0.3</Version>
+    <ReleaseDate>29/05/2023</ReleaseDate>
+    <Size>1728811</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r19ib12w\r19ib12w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r19gg03w" name="MRD_R19GG" description="AMD GPIO Driver -10 (1809 or later)/11(21H2 or later)">
+    <FileName>r19gg03w_2_.xml</FileName>
+    <Version>2.2.0.130</Version>
+    <ReleaseDate>29/12/2021</ReleaseDate>
+    <Size>1133591</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r19gg03w\r19gg03w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r17mw13w" name="MBD_R17MW" description="Mediatek MT7921 WLAN Driver - 10 (1909 or Later)/11 (21H2 or later)">
+    <FileName>r17mw13w_2_.xml</FileName>
+    <Version>22.30.1.1339</Version>
+    <ReleaseDate>18/10/2022</ReleaseDate>
+    <Size>2511512</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r17mw13w\r17mw13w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1eer04w" name="RED_R1EER" description="Realtek LAN Adapter Software - 10 (2004 or later)/11 (21H2 or later)">
+    <FileName>r1eer04w_2_.xml</FileName>
+    <Version>10.50.511.2021</Version>
+    <ReleaseDate>11/02/2022</ReleaseDate>
+    <Size>1483658</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1eer04w\r1eer04w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r16sf12w_2004" name="FP_R16SF_2004" description="Synaptics FingerPrint Driver - 10 (2004 or Later)/11 (21H2 or Later)">
+    <FileName>r16sf12w_2004_2_.xml</FileName>
+    <Version>6.0.32.1108</Version>
+    <ReleaseDate>18/03/2022</ReleaseDate>
+    <Size>2262278</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r16sf12w_2004\r16sf12w_2004_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n34br05w" name="FWU_TBT_N34BR" description="Intel Thunderbolt Retimer Firmware - 10 (1903 or Later) / 11 (21H2 or Later)">
+    <FileName>n34br05w_2_.xml</FileName>
+    <Version>1.2.29.0</Version>
+    <ReleaseDate>04/07/2023</ReleaseDate>
+    <Size>1247598</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n34br05w\n34br05w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n34x802w_r" name="MRD_N34X8_R" description="Realtek MultiCard Reader Driver - 10 (1909 or later)/11 (21H2 or later)">
+    <FileName>n34x802w_r_2_.xml</FileName>
+    <Version>10.0.22000.21350</Version>
+    <ReleaseDate>17/12/2021</ReleaseDate>
+    <Size>3126039</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n34x802w_r\n34x802w_r_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n34gf04w" name="GFP_N34GF" description="Goodix FingerPrint Driver - 10 (20H1 or Later)/11 (21H2 or Later)">
+    <FileName>n34gf04w_2_.xml</FileName>
+    <Version>3.4.55.210</Version>
+    <ReleaseDate>04/11/2022</ReleaseDate>
+    <Size>2200380</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n34gf04w\n34gf04w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n3kgb01w" name="FWU_TPAD_N3KGB" description="Synaptics Touchpad Firmware - 10 (1809 or later)/ 11 (21H2 or later)">
+    <FileName>n3kgb01w_2_.xml</FileName>
+    <Version>3942087</Version>
+    <ReleaseDate>14/12/2022</ReleaseDate>
+    <Size>2214105</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n3kgb01w\n3kgb01w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n34ab02w" name="ITACM_N34AB" description="Intel TXT Authenticated Code Module Driver - 10 (1909 or Later)/11 (21H2 or Later)">
+    <FileName>n34ab02w_2_.xml</FileName>
+    <Version>1.14.39.0</Version>
+    <ReleaseDate>19/08/2022</ReleaseDate>
+    <Size>1159392</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n34ab02w\n34ab02w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n34rw08w" name="IPLAS_N34RW" description="Intel PRO/1000 LAN Adapter Software - 10 (2004 or later)/11 (21H2 or later)">
+    <FileName>n34rw08w_2_.xml</FileName>
+    <Version>12.19.2.45</Version>
+    <ReleaseDate>29/06/2022</ReleaseDate>
+    <Size>1603499</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n34rw08w\n34rw08w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n34iv30w" name="VGA_N34IV" description="Intel Graphics Driver - 10 (1909 or Later)/11 (21H2 or Later)">
+    <FileName>n34iv30w_2_.xml</FileName>
+    <Version>31.0.101.4255</Version>
+    <ReleaseDate>24/06/2023</ReleaseDate>
+    <Size>372482125</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n34iv30w\n34iv30w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n34fc03w" name="FP_N34FC" description="Crossmatch FingerPrint Driver - 10 (1909 or later)/11 (21H2 or later)">
+    <FileName>n34fc03w_2_.xml</FileName>
+    <Version>2.0.2.419</Version>
+    <ReleaseDate>21/12/2021</ReleaseDate>
+    <Size>2296476</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n34fc03w\n34fc03w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n34iw14w" name="IAWLD_N34IW" description="Intel AX210 Wireless LAN Driver - 10 (1909 or Later)/11 (21H2 or Later)">
+    <FileName>n34iw14w_2_.xml</FileName>
+    <Version>22.200.2.1</Version>
+    <ReleaseDate>26/05/2023</ReleaseDate>
+    <Size>13954299</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n34iw14w\n34iw14w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n34sr05w" name="AMUSC_N34SR" description="Alcor Micro USB Smart Card Reader Driver - 10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>n34sr05w_2_.xml</FileName>
+    <Version>1.9.17.2318</Version>
+    <ReleaseDate>04/08/2023</ReleaseDate>
+    <Size>1155276</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n34sr05w\n34sr05w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n2nnv30w" name="VGA_N2NNV" description="ThinkPad Video Features - 10 (1803 or Later)/11 (21H2 or Later)">
+    <FileName>n2nnv30w_2_.xml</FileName>
+    <Version>31.0.15.2908</Version>
+    <ReleaseDate>27/07/2023</ReleaseDate>
+    <Size>691610199</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n2nnv30w\n2nnv30w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n34ch02w" name="CHIP_N34CH" description="Intel Chipset Device Software - 10 (1909 or later)/11 (21H2 or later)">
+    <FileName>n34ch02w_2_.xml</FileName>
+    <Version>10.1.24.6</Version>
+    <ReleaseDate>21/12/2021</ReleaseDate>
+    <Size>1053551</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n34ch02w\n34ch02w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n34rw01w" name="IPLAS_N34RW_O" description="Intel PRO/1000 LAN Adapter Software (Windows 10 Version 1909) - 10 [64]">
+    <FileName>n34rw01w_2_.xml</FileName>
+    <Version>12.18.9.23</Version>
+    <ReleaseDate>10/03/2021</ReleaseDate>
+    <Size>1486061</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n34rw01w\n34rw01w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n34x802w_gen" name="MRD_N34X8_GEN" description="Genesys MultiCard Reader Driver - 10 (1909 or later)/11 (21H2 or later)">
+    <FileName>n34x802w_gen_2_.xml</FileName>
+    <Version>1.1.25.0</Version>
+    <ReleaseDate>17/12/2021</ReleaseDate>
+    <Size>3126039</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n34x802w_gen\n34x802w_gen_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1mst13w" name="ULTR_R1MST" description="Synaptics UltraNav Driver - 10 (1809 or Later)/11(21H2 or Later)">
+    <FileName>r1mst13w_2_.xml</FileName>
+    <Version>19.5.19.95</Version>
+    <ReleaseDate>14/11/2022</ReleaseDate>
+    <Size>6791702</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1mst13w\r1mst13w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n34id07w" name="BT_N34ID" description="Intel AX201 Bluetooth Driver - 10 (1909 or Later)/11 (21H2 or Later)">
+    <FileName>n34id07w_2_.xml</FileName>
+    <Version>22.210.0.3</Version>
+    <ReleaseDate>24/05/2023</ReleaseDate>
+    <Size>2293600</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n34id07w\n34id07w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n34fp04w" name="FP_N34FP" description="Synaptics Fingerprint Reader Driver - 10 (1909 or Later)/11 (21H2 or Later)">
+    <FileName>n34fp04w_2_.xml</FileName>
+    <Version>6.0.59.1105</Version>
+    <ReleaseDate>03/11/2022</ReleaseDate>
+    <Size>2663599</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n34fp04w\n34fp04w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n35a607w" name="AUD_N35A6" description="Realtek Audio Driver - 11 (21H2 or later)">
+    <FileName>n35a607w_2_.xml</FileName>
+    <Version>6.0.9366.1</Version>
+    <ReleaseDate>03/11/2022</ReleaseDate>
+    <Size>204021370</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n35a607w\n35a607w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n35lj01w" name="SIO_N34LI" description="Intel(R) Serial IO Driver - 10 (20H2 or Later)/11 (21H2 or Later)">
+    <FileName>n35lj01w_2_.xml</FileName>
+    <Version>30.100.2129.8</Version>
+    <ReleaseDate>14/02/2022</ReleaseDate>
+    <Size>1175445</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n35lj01w\n35lj01w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n34ib11w" name="BT_N34IB" description="Intel AX210 Bluetooth Driver - 10 (1909 or Later)/11 (21H2 or Later)">
+    <FileName>n34ib11w_2_.xml</FileName>
+    <Version>22.210.0.3</Version>
+    <ReleaseDate>15/06/2023</ReleaseDate>
+    <Size>1826704</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n34ib11w\n34ib11w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n34uj25w" name="BIOS_N34UJ" description="BIOS Update Utility - 10/11">
+    <FileName>n34uj25w_2_.xml</FileName>
+    <Version>1.58/1.10</Version>
+    <ReleaseDate>14/11/2023</ReleaseDate>
+    <Size>18185446</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n34uj25w\n34uj25w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n34oi06w" name="TMFF_N34OI_W11" description="ThinkPad Monitor File - 10 (1909 or Later)/11 (21H2 or Later)">
+    <FileName>n34oi06w_2_.xml</FileName>
+    <Version>6.14.15.0</Version>
+    <ReleaseDate>01/11/2022</ReleaseDate>
+    <Size>1128863</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n34oi06w\n34oi06w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n2yl405w" name="FWU_INTE_N2YL4" description="Integrated Camera Firmware 1M For Luxvision 0SF114N3 - 10 (1709 or Later)">
+    <FileName>n2yl405w_2_.xml</FileName>
+    <Version>0005</Version>
+    <ReleaseDate>08/04/2022</ReleaseDate>
+    <Size>4420207</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n2yl405w\n2yl405w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="tbt4dkkp2fw1006_3" name="FWU_TBT4SMARTDK" description="ThinkPad Thunderbolt 4 Smart Dock Firmware Update Tool - 10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>tbt4dkkp2fw1006_3_2_.xml</FileName>
+    <Version>v1.0.06</Version>
+    <ReleaseDate>25/10/2023</ReleaseDate>
+    <Size>16084657</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\tbt4dkkp2fw1006_3\tbt4dkkp2fw1006_3_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n34rg16w" name="FWU_IME_N35RG" description="Intel Management Engine Firmware - 10 (1803 or Later)/11 (21H2 or Later)">
+    <FileName>n34rg16w_2_.xml</FileName>
+    <Version>15.0.42.2235</Version>
+    <ReleaseDate>29/03/2023</ReleaseDate>
+    <Size>15024964</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n34rg16w\n34rg16w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="nz7wq02w" name="WLAN_N32WJ" description="Quectel EM160R-GL Wireless WAN Driver - 10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>nz7wq02w_2_.xml</FileName>
+    <Version>1.0.0.34</Version>
+    <ReleaseDate>23/10/2023</ReleaseDate>
+    <Size>291824885</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\nz7wq02w\nz7wq02w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n34hd04w" name="IDTTD_N34HD" description="Intel Dynamic Tuning Technology Driver - 10 (1909 or later)/11 (21H2 or later)">
+    <FileName>n34hd04w_2_.xml</FileName>
+    <Version>8.7.10700.22502</Version>
+    <ReleaseDate>13/12/2021</ReleaseDate>
+    <Size>12887231</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n34hd04w\n34hd04w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n34cm23w" name="CAME_N34CM" description="Integrated Camera Driver - 10 (1903 or Later)/11 (21H2 or Later)">
+    <FileName>n34cm23w_2_.xml</FileName>
+    <Version>10.0.22000.20261/10.13.22621.10/5.0.18.169</Version>
+    <ReleaseDate>04/09/2023</ReleaseDate>
+    <Size>155240832</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n34cm23w\n34cm23w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n34a122w" name="AUD_N34A1" description="Realtek Audio Driver - 10 (1909 or Later)">
+    <FileName>n34a122w_2_.xml</FileName>
+    <Version>6.0.9366.1</Version>
+    <ReleaseDate>09/08/2022</ReleaseDate>
+    <Size>250438662</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n34a122w\n34a122w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="nz7wp08w" name="WWAN_NZ7WP" description="Quectel EM05-CE Wireless WAN Driver - 10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>nz7wp08w_2_.xml</FileName>
+    <Version>2.0.0.18</Version>
+    <ReleaseDate>27/03/2023</ReleaseDate>
+    <Size>51953407</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\nz7wp08w\nz7wp08w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="nz7wj11w" name="QEWWD_NZ7WJ" description="Quectel EM120R-GL Wireless WAN Driver - 10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>nz7wj11w_2_.xml</FileName>
+    <Version>1.0.0.36</Version>
+    <ReleaseDate>23/10/2023</ReleaseDate>
+    <Size>291010730</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\nz7wj11w\nz7wj11w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1jta09w_p" name="TSF_R1JTA_1909" description="Thunderbolt Software - 10 (1909 or Later)/11 (21H2 or Later)">
+    <FileName>r1jta09w_p_2_.xml</FileName>
+    <Version>1.41.1353.0</Version>
+    <ReleaseDate>29/05/2023</ReleaseDate>
+    <Size>2058389</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1jta09w_p\r1jta09w_p_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n34he04w" name="IHEFD_N34HE" description="Intel HID Event Filter Driver - 10 (1909 or Later)/11 (21H2 or Later)">
+    <FileName>n34he04w_2_.xml</FileName>
+    <Version>2.2.1.386</Version>
+    <ReleaseDate>02/11/2022</ReleaseDate>
+    <Size>1132448</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n34he04w\n34he04w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="pcieeth05w" name="TBT4DKPCIELAN_PCIEE" description="ThinkPad Thunderbolt 4 Dock Driver - 10 (1507 or Later)/11 (21H2 or Later)">
+    <FileName>pcieeth05w_2_.xml</FileName>
+    <Version>1.1.4.38</Version>
+    <ReleaseDate>31/10/2023</ReleaseDate>
+    <Size>1685368</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\pcieeth05w\pcieeth05w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n34wa03w" name="NFC_N34WA" description="NXP NFC Driver - 10 (1909 or later)/11 (21H2 or later)">
+    <FileName>n34wa03w_2_.xml</FileName>
+    <Version>12.0.6.0</Version>
+    <ReleaseDate>12/01/2022</ReleaseDate>
+    <Size>1463802</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n34wa03w\n34wa03w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n34md14w" name="IMES_N34MD_TS" description="Intel Management Engine Software - 10 (1909 or Later)/11 (21H2 or Later)">
+    <FileName>n34md14w_2_.xml</FileName>
+    <Version>2316.5.0.0</Version>
+    <ReleaseDate>04/09/2023</ReleaseDate>
+    <Size>47580185</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n34md14w\n34md14w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n34iz10w" name="IAWLD_N34IZ" description="Intel AX201 Wireless LAN Driver - 10 (1909 or Later)/11 (21H2 or Later)">
+    <FileName>n34iz10w_2_.xml</FileName>
+    <Version>22.200.2.1</Version>
+    <ReleaseDate>15/06/2023</ReleaseDate>
+    <Size>14069549</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n34iz10w\n34iz10w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r16rw14w" name="RWLD_R16RW" description="Realtek 8822CE Wireless Driver - 10 (1903 or Later)/11 (21H2 or Later)">
+    <FileName>r16rw14w_2_.xml</FileName>
+    <Version>2024.0.8.135</Version>
+    <ReleaseDate>08/07/2022</ReleaseDate>
+    <Size>3757625</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r16rw14w\r16rw14w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r16hd07w_v3" name="IDTD_R16HD" description="Intel Dynamic Tuning Technology Driver - 10 (1903 or Later)/11 (21H2 or Later)">
+    <FileName>r16hd07w_v3_2_.xml</FileName>
+    <Version>8.7.10700.22502</Version>
+    <ReleaseDate>22/02/2022</ReleaseDate>
+    <Size>12886920</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r16hd07w_v3\r16hd07w_v3_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r16cm16w" name="CAME_R16CM" description="Integrated Camera Driver - 10 (1903 or later)/11 (21h2 or later)">
+    <FileName>r16cm16w_2_.xml</FileName>
+    <Version>10.0.22000.20261/10.13.19041.24/5.0.18.169</Version>
+    <ReleaseDate>24/11/2022</ReleaseDate>
+    <Size>90656738</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r16cm16w\r16cm16w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r16ib12w" name="BT_R16IB" description="Intel Bluetooth Driver - 10 (1903 or Later)/11 (21H2 or Later)">
+    <FileName>r16ib12w_2_.xml</FileName>
+    <Version>22.220.1.1</Version>
+    <ReleaseDate>29/05/2023</ReleaseDate>
+    <Size>2990827</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r16ib12w\r16ib12w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r0zsi09w_r6" name="ISDAS_R16SI" description="Intel(R) SGX Device and Software - 10 (1903 or Later)/11 (21H2 or Later)">
+    <FileName>r0zsi09w_r6_2_.xml</FileName>
+    <Version>2.17.100.2</Version>
+    <ReleaseDate>02/02/2023</ReleaseDate>
+    <Size>6623263</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r0zsi09w_r6\r0zsi09w_r6_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r16gf09w" name="FP_R16GF" description="Goodix FingerPrint Driver - 10 (1903 or later)/ 11 (21H2 or later)">
+    <FileName>r16gf09w_2_.xml</FileName>
+    <Version>3.1.586.580</Version>
+    <ReleaseDate>24/02/2023</ReleaseDate>
+    <Size>2443963</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r16gf09w\r16gf09w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r16me10w" name="IMES_R16ME" description="Intel Management Engine Software Driver - 10 (1903 or Later)/11 (21H2 or Later)">
+    <FileName>r16me10w_2_.xml</FileName>
+    <Version>2230.3.20.0</Version>
+    <ReleaseDate>26/04/2023</ReleaseDate>
+    <Size>14810041</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r16me10w\r16me10w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="nz7wp09w" name="WWAN_NZ7WP" description="Quectel EM05-CE Wireless WAN Driver - 10 (1809 or Later)/11 (21H2 or Later)">
+    <FileName>nz7wp09w_2_.xml</FileName>
+    <Version>2.0.0.19</Version>
+    <ReleaseDate>04/12/2023</ReleaseDate>
+    <Size>52096910</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\nz7wp09w\nz7wp09w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r16mi05w" name="TMF_R16MI" description="ThinkPad Monitor INF File - 10 (1903 or Later)/11 (21H2 or Later)">
+    <FileName>r16mi05w_2_.xml</FileName>
+    <Version>6.14.14.0</Version>
+    <ReleaseDate>16/03/2022</ReleaseDate>
+    <Size>1127851</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r16mi05w\r16mi05w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r16iv17w" name="INTEL_VGA_R16IV" description="Intel UHD Graphics - 10 (1709 or Later)/11 (21H2 or Later)">
+    <FileName>r16iv17w_2_.xml</FileName>
+    <Version>30.0.101.1122</Version>
+    <ReleaseDate>06/01/2022</ReleaseDate>
+    <Size>337244207</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r16iv17w\r16iv17w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r16sf12w" name="FP_R16SF" description="Synaptics FingerPrint Driver - 10 (1903 or Later)/11 (21H2 or Later)">
+    <FileName>r16sf12w_2_.xml</FileName>
+    <Version>6.0.32.1108</Version>
+    <ReleaseDate>18/03/2022</ReleaseDate>
+    <Size>2262278</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r16sf12w\r16sf12w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r16te06w" name="ULTR_R16TE" description="Elan Ultranav Driver - 10 [64]( 1903 or Later) /11 (21H2 or later)">
+    <FileName>r16te06w_2_.xml</FileName>
+    <Version>24.21.52.3</Version>
+    <ReleaseDate>27/07/2022</ReleaseDate>
+    <Size>2082056</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r16te06w\r16te06w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r0yvu37w" name="HOTKEYPACK4_W10" description="ThinkPad Hotkey Features Integration Package Setup - 10/11">
+    <FileName>r0yvu37w_2_.xml</FileName>
+    <Version>9.2.0.5</Version>
+    <ReleaseDate>07/04/2022</ReleaseDate>
+    <Size>14775176</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r0yvu37w\r0yvu37w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r16rs08w" name="IRST_R16RS" description="Intel Rapid Storage Technology Driver - 10 (1903 or Later)/11 (21H2 or Later)">
+    <FileName>r16rs08w_2_.xml</FileName>
+    <Version>18.36.1.1016</Version>
+    <ReleaseDate>11/01/2022</ReleaseDate>
+    <Size>3530023</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r16rs08w\r16rs08w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r16er05w" name="RED_R16ER" description="Realtek Ethernet Driver - 10 (1903 or Later)/11 (21H2 or Later)">
+    <FileName>r16er05w_2_.xml</FileName>
+    <Version>10.050.0511.2021</Version>
+    <ReleaseDate>11/02/2022</ReleaseDate>
+    <Size>1730488</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r16er05w\r16er05w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r16av12w" name="AMD_VGA_R16AV" description="AMD Video Driver - 10 (1903 or Later)/11 (21H2 or Later)">
+    <FileName>r16av12w_2_.xml</FileName>
+    <Version>27.20.11022.12006</Version>
+    <ReleaseDate>25/05/2022</ReleaseDate>
+    <Size>174011765</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r16av12w\r16av12w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n34uj26w" name="BIOS_N34UJ" description="BIOS Update Utility - 10/11">
+    <FileName>n34uj26w_2_.xml</FileName>
+    <Version>1.59/1.11</Version>
+    <ReleaseDate>30/11/2023</ReleaseDate>
+    <Size>17115117</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n34uj26w\n34uj26w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r16ch02w" name="CHIP_R16CH" description="Intel Chipset Device Software - 10 (1903 or Later)/11 (21H2 or Later)">
+    <FileName>r16ch02w_2_.xml</FileName>
+    <Version>10.1.27.2</Version>
+    <ReleaseDate>01/03/2022</ReleaseDate>
+    <Size>1263970</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r16ch02w\r16ch02w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r16mu07w" name="FWU_INTE_R16MU" description="Intel Management Engine Firmware - 10/11 (21H2 or Later)">
+    <FileName>r16mu07w_2_.xml</FileName>
+    <Version>14.1.67.2046</Version>
+    <ReleaseDate>30/11/2022</ReleaseDate>
+    <Size>8721104</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r16mu07w\r16mu07w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r16iw19w" name="IWLD_R16IW" description="Intel WLAN Driver - 10 (1903 or Later)/11 (21H2 or Later)">
+    <FileName>r16iw19w_2_.xml</FileName>
+    <Version>22.240.0.6</Version>
+    <ReleaseDate>21/08/2023</ReleaseDate>
+    <Size>13083321</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r16iw19w\r16iw19w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r16ac16w" name="AUD_R16AC" description="Synaptics Audio Driver - 10 (1903 or Later) /11 (21H2 or Later)">
+    <FileName>r16ac16w_2_.xml</FileName>
+    <Version>9.0.285.40/10.25.0.8130</Version>
+    <ReleaseDate>28/11/2022</ReleaseDate>
+    <Size>125472926</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r16ac16w\r16ac16w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r16uj22w" name="BIOS_R16UJ" description="BIOS Update Utility - 10/11">
+    <FileName>r16uj22w_2_.xml</FileName>
+    <Version>1.25</Version>
+    <ReleaseDate>24/11/2023</ReleaseDate>
+    <Size>15071188</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r16uj22w\r16uj22w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r16rb14w" name="BT_R16RB" description="Realtek Bluetooth Driver - 10 (1903 or Later)/11 (21H2 or Later)">
+    <FileName>r16rb14w_2_.xml</FileName>
+    <Version>1.9.1038.3002</Version>
+    <ReleaseDate>11/02/2022</ReleaseDate>
+    <Size>1817819</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r16rb14w\r16rb14w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r16uj23w" name="BIOS_R16UJ" description="BIOS Update Utility - 10/11">
+    <FileName>r16uj23w_2_.xml</FileName>
+    <Version>1.26</Version>
+    <ReleaseDate>12/12/2023</ReleaseDate>
+    <Size>15102244</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r16uj23w\r16uj23w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m43jy24usa" name="BIOS_M43JY" description="BIOS Update Utility - 10/11">
+    <FileName>m43jy24usa_2_.xml</FileName>
+    <Version>M43KT24A</Version>
+    <ReleaseDate>31/10/2023</ReleaseDate>
+    <Size>14360996</Size>
+    <URL>https://download.lenovo.com/pccbbs/thinkcentre_bios/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m43jy24usa\m43jy24usa_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11T4" os="Windows 10" />
+      <System mtm="11T4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m4blt05us14_tc_m70qgen3_10" name="BT_U4BLT0Q_TC_M70QGEN3_10" description="Realtek Bluetooth Driver - 10 [64]">
+    <FileName>m4blt05us14_tc_m70qgen3_10_2_.xml</FileName>
+    <Version>1.9.1051.3005/1.9.1051.3008</Version>
+    <ReleaseDate>09/03/2023</ReleaseDate>
+    <Size>2582126</Size>
+    <URL>https://download.lenovo.com/pccbbs/thinkcentre_drivers/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m4blt05us14_tc_m70qgen3_10\m4blt05us14_tc_m70qgen3_10_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11T4" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m2hid00us14_tc_m70qgen3_10" name="I_M2HID00_TC_M70QGEN3_10" description="Intel HID Event Filter Driver - 10 [64]">
+    <FileName>m2hid00us14_tc_m70qgen3_10_2_.xml</FileName>
+    <Version>2.2.1.386</Version>
+    <ReleaseDate>25/03/2022</ReleaseDate>
+    <Size>2311402</Size>
+    <URL>https://download.lenovo.com/pccbbs/thinkcentre_drivers/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m2hid00us14_tc_m70qgen3_10\m2hid00us14_tc_m70qgen3_10_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11T4" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m4wlg25us14_tc_m75qgen2acn" name="RWD_U4WLG2K_TC_M75QGEN2ACN2200" description="Realtek WLAN Driver - 11 (21H2 or Later)">
+    <FileName>m4wlg25us14_tc_m75qgen2acn_2_.xml</FileName>
+    <Version>2024.0.8.136/6001.10.350.300/6001.15.123.306/6001.16.126.305</Version>
+    <ReleaseDate>09/11/2023</ReleaseDate>
+    <Size>9064285</Size>
+    <URL>https://download.lenovo.com/pccbbs/desktop/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m4wlg25us14_tc_m75qgen2acn\m4wlg25us14_tc_m75qgen2acn_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11JQ" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m7aud25us17_tc_m70qgen3_10" name="AUD_G7AUDK9_TC_M70QGEN3_10" description="Realtek Audio Driver - 10 [64]">
+    <FileName>m7aud25us17_tc_m70qgen3_10_2_.xml</FileName>
+    <Version>6.0.9441.1</Version>
+    <ReleaseDate>08/03/2023</ReleaseDate>
+    <Size>86133650</Size>
+    <URL>https://download.lenovo.com/pccbbs/thinkcentre_drivers/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m7aud25us17_tc_m70qgen3_10\m7aud25us17_tc_m70qgen3_10_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11T4" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="u2chp57us14_tc_m70qgen3" name="CHIP_U2CHP57_TC_M70QGEN3_22000" description="Intel Chipset Driver - 11 (21H2 or Later)">
+    <FileName>u2chp57us14_tc_m70qgen3_2_.xml</FileName>
+    <Version>10.1.18836.8283</Version>
+    <ReleaseDate>28/12/2021</ReleaseDate>
+    <Size>1911247</Size>
+    <URL>https://download.lenovo.com/pccbbs/thinkcentre_drivers/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\u2chp57us14_tc_m70qgen3\u2chp57us14_tc_m70qgen3_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11T4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m47jy33usa" name="BIOS_M47JY" description="BIOS Update Utility - 10/11">
+    <FileName>m47jy33usa_2_.xml</FileName>
+    <Version>M47KT33A</Version>
+    <ReleaseDate>11/12/2023</ReleaseDate>
+    <Size>11306406</Size>
+    <URL>https://download.lenovo.com/pccbbs/thinkcentre_bios/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m47jy33usa\m47jy33usa_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11JQ" os="Windows 10" />
+      <System mtm="11JQ" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m4wlg23us14_tc_m70qgen3_10" name="WLAN_U4WLG2U_TC_M70QGEN3_10" description="Realtek WLAN Driver - 10 [64]">
+    <FileName>m4wlg23us14_tc_m70qgen3_10_2_.xml</FileName>
+    <Version>2024.0.8.136/6001.10.350.300/6001.15.123.301/6001.16.117.0</Version>
+    <ReleaseDate>09/03/2023</ReleaseDate>
+    <Size>8961869</Size>
+    <URL>https://download.lenovo.com/pccbbs/thinkcentre_drivers/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m4wlg23us14_tc_m70qgen3_10\m4wlg23us14_tc_m70qgen3_10_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11T4" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="u1txt05us14_tc_m70qgen3_10" name="ITD_U1TXT05_TC_M70QGEN3_10" description="Intel TxT Driver - 10 [64]">
+    <FileName>u1txt05us14_tc_m70qgen3_10_2_.xml</FileName>
+    <Version>1.18.4.0</Version>
+    <ReleaseDate>25/03/2022</ReleaseDate>
+    <Size>1873542</Size>
+    <URL>https://download.lenovo.com/pccbbs/desktop/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\u1txt05us14_tc_m70qgen3_10\u1txt05us14_tc_m70qgen3_10_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11T4" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m7aud30us17_tc_m70qgen3" name="AUD_G7AUDL1_TC_M70QGEN3_22000" description="Realtek Audio Driver - 11 (21H2 or Later)">
+    <FileName>m7aud30us17_tc_m70qgen3_2_.xml</FileName>
+    <Version>6.0.9537.1</Version>
+    <ReleaseDate>25/08/2023</ReleaseDate>
+    <Size>88893486</Size>
+    <URL>https://download.lenovo.com/pccbbs/thinkcentre_drivers/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m7aud30us17_tc_m70qgen3\m7aud30us17_tc_m70qgen3_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11T4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="u4etn2fus17_tc_m75qgen2acn" name="DRED_U4ETN2C_TC_M75QGEN2ACN190" description="Dash Realtek Ethernet Driver - 10 [64]">
+    <FileName>u4etn2fus17_tc_m75qgen2acn_2_.xml</FileName>
+    <Version>10.051.0811.2021</Version>
+    <ReleaseDate>22/12/2022</ReleaseDate>
+    <Size>2206532</Size>
+    <URL>https://download.lenovo.com/pccbbs/desktop/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\u4etn2fus17_tc_m75qgen2acn\u4etn2fus17_tc_m75qgen2acn_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11JQ" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m4blt02us14_tc_m75qacn_10" name="BT_U4BLT0K_TC_M75QGEN2ACN19042" description="Realtek Bluetooth Driver - 10 [64]">
+    <FileName>m4blt02us14_tc_m75qacn_10_2_.xml</FileName>
+    <Version>1.9.1051.3002/1.9.1051.3008</Version>
+    <ReleaseDate>19/12/2022</ReleaseDate>
+    <Size>2529302</Size>
+    <URL>https://download.lenovo.com/pccbbs/thinkcentre_drivers/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m4blt02us14_tc_m75qacn_10\m4blt02us14_tc_m75qacn_10_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11JQ" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m2hid00us14_tc_m70qgen3_11" name="I_M2HID00_TC_M70QGEN3_11" description="Intel HID Event Filter Driver - 11 (21H2 or later)">
+    <FileName>m2hid00us14_tc_m70qgen3_11_2_.xml</FileName>
+    <Version>2.2.1.386</Version>
+    <ReleaseDate>07/05/2022</ReleaseDate>
+    <Size>2311402</Size>
+    <URL>https://download.lenovo.com/pccbbs/thinkcentre_drivers/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m2hid00us14_tc_m70qgen3_11\m2hid00us14_tc_m70qgen3_11_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11T4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m2blt16us14_tc_m75qacn" name="BT_U2BLT0S_TC_M75Q2ACN_22000" description="Intel Bluetooth Driver - 11 (21H2 or Later)">
+    <FileName>m2blt16us14_tc_m75qacn_2_.xml</FileName>
+    <Version>22.250.0.2</Version>
+    <ReleaseDate>20/10/2023</ReleaseDate>
+    <Size>3923765</Size>
+    <URL>https://download.lenovo.com/pccbbs/desktop/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m2blt16us14_tc_m75qacn\m2blt16us14_tc_m75qacn_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11JQ" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m2blt16us14_tc_m70qgen3" name="BT_U2BLT0V_TC_M70QGEN3_22000" description="Intel Bluetooth Driver - 11 (21H2 or Later)">
+    <FileName>m2blt16us14_tc_m70qgen3_2_.xml</FileName>
+    <Version>22.250.0.2</Version>
+    <ReleaseDate>20/10/2023</ReleaseDate>
+    <Size>3923765</Size>
+    <URL>https://download.lenovo.com/pccbbs/desktop/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m2blt16us14_tc_m70qgen3\m2blt16us14_tc_m70qgen3_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11T4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m8amt10us14_tc_m70qgen3" name="IMD_U8AMT94_TC_M70QGEN3_22000" description="Intel Management Engine Driver - 11 (21H2 or Later)">
+    <FileName>m8amt10us14_tc_m70qgen3_2_.xml</FileName>
+    <Version>2247.3.5.0</Version>
+    <ReleaseDate>25/08/2023</ReleaseDate>
+    <Size>123533706</Size>
+    <URL>https://download.lenovo.com/pccbbs/thinkcentre_drivers/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m8amt10us14_tc_m70qgen3\m8amt10us14_tc_m70qgen3_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11T4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m2vdob0us14_tc_m70qgen3" name="VGA_K2VD208_TC_M70QGEN3_22000" description="Intel HD Graphics Driver - 11">
+    <FileName>m2vdob0us14_tc_m70qgen3_2_.xml</FileName>
+    <Version>31.0.101.4255</Version>
+    <ReleaseDate>29/05/2023</ReleaseDate>
+    <Size>300737889</Size>
+    <URL>https://download.lenovo.com/pccbbs/thinkcentre_drivers/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m2vdob0us14_tc_m70qgen3\m2vdob0us14_tc_m70qgen3_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11T4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m2vdob0us14_tc_m70qgen3_10" name="VGA_M2VDO02_TC_M70QGEN3_10" description="Intel HD Graphics Driver - 10 [64]">
+    <FileName>m2vdob0us14_tc_m70qgen3_10_2_.xml</FileName>
+    <Version>31.0.101.4255</Version>
+    <ReleaseDate>29/05/2023</ReleaseDate>
+    <Size>300737889</Size>
+    <URL>https://download.lenovo.com/pccbbs/thinkcentre_drivers/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m2vdob0us14_tc_m70qgen3_10\m2vdob0us14_tc_m70qgen3_10_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11T4" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="u6vdoe6us17_tc_m75qgen2acn_10" name="VGA_U6VDODJ_TC_M75QGEN2ACN1904" description="AMD Onboard Graphics Driver - 10 [64]">
+    <FileName>u6vdoe6us17_tc_m75qgen2acn_10_2_.xml</FileName>
+    <Version>31.0.12018.16003</Version>
+    <ReleaseDate>12/06/2023</ReleaseDate>
+    <Size>270749906</Size>
+    <URL>https://download.lenovo.com/pccbbs/thinkcentre_drivers/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\u6vdoe6us17_tc_m75qgen2acn_10\u6vdoe6us17_tc_m75qgen2acn_10_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11JQ" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m4blt05us14_tc_m70qgen3" name="BT_U4BLT0Q_TC_M70QGEN3_22000" description="Realtek Bluetooth Driver - 11 (21H2 or Later)">
+    <FileName>m4blt05us14_tc_m70qgen3_2_.xml</FileName>
+    <Version>1.9.1051.3005/1.9.1051.3008</Version>
+    <ReleaseDate>25/08/2023</ReleaseDate>
+    <Size>2582126</Size>
+    <URL>https://download.lenovo.com/pccbbs/thinkcentre_drivers/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m4blt05us14_tc_m70qgen3\m4blt05us14_tc_m70qgen3_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11T4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r1euj58w" name="BIOS_R1EUJ" description="BIOS Update Utility - 10/11">
+    <FileName>r1euj58w_2_.xml</FileName>
+    <Version>1.58</Version>
+    <ReleaseDate>12/12/2023</ReleaseDate>
+    <Size>12480179</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r1euj58w\r1euj58w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m2wlg13us14_tc_m70qgen3" name="IWD_U2WLG0Y_TC_M70QGEN3_22000" description="Intel WLAN Driver - 11 (21H2 or Later)">
+    <FileName>m2wlg13us14_tc_m70qgen3_2_.xml</FileName>
+    <Version>22.220.0.4</Version>
+    <ReleaseDate>25/08/2023</ReleaseDate>
+    <Size>13659441</Size>
+    <URL>https://download.lenovo.com/pccbbs/desktop/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m2wlg13us14_tc_m70qgen3\m2wlg13us14_tc_m70qgen3_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11T4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m7aud33us17_tc_m75qgen2acn" name="AUD_G7AUDI8_TC_M75Q_2ACN_22000" description="Realtek Audio Driver - 11 (21H2 or Later)">
+    <FileName>m7aud33us17_tc_m75qgen2acn_2_.xml</FileName>
+    <Version>6.0.9576.1</Version>
+    <ReleaseDate>09/11/2023</ReleaseDate>
+    <Size>87449509</Size>
+    <URL>https://download.lenovo.com/pccbbs/desktop/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m7aud33us17_tc_m75qgen2acn\m7aud33us17_tc_m75qgen2acn_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11JQ" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m2blt16us14_tc_m75qacn_10" name="BT_U2BLT0M_TC_M75QGEN2ACN19042" description="Intel Bluetooth Driver - 10 ">
+    <FileName>m2blt16us14_tc_m75qacn_10_2_.xml</FileName>
+    <Version>22.250.0.2</Version>
+    <ReleaseDate>20/10/2023</ReleaseDate>
+    <Size>3923765</Size>
+    <URL>https://download.lenovo.com/pccbbs/desktop/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m2blt16us14_tc_m75qacn_10\m2blt16us14_tc_m75qacn_10_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11JQ" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m4blt01us14_tc_m75qgen2acn" name="BT_M4BLT01_TC_M75QGEN2ACN" description="Realtek BlueTooth Driver - 11 (21H2 or Later)">
+    <FileName>m4blt01us14_tc_m75qgen2acn_2_.xml</FileName>
+    <Version>1.9.1051.3002/1.9.1051.3004</Version>
+    <ReleaseDate>22/09/2022</ReleaseDate>
+    <Size>2514006</Size>
+    <URL>https://download.lenovo.com/pccbbs/desktop/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m4blt01us14_tc_m75qgen2acn\m4blt01us14_tc_m75qgen2acn_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11JQ" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="u8amt94us14_tc_m70qgen3_10" name="IMD_U8AMT94_TC_M70QGEN3_10" description="Intel ME Driver - 10 [64]">
+    <FileName>u8amt94us14_tc_m70qgen3_10_2_.xml</FileName>
+    <Version>2131.1.4.0</Version>
+    <ReleaseDate>25/03/2022</ReleaseDate>
+    <Size>44856721</Size>
+    <URL>https://download.lenovo.com/pccbbs/desktop/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\u8amt94us14_tc_m70qgen3_10\u8amt94us14_tc_m70qgen3_10_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11T4" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="u1dpf21us14_tc_m70qgen3_10" name="DPTF_U1DPF20_TC_M70QGEN3_10" description="Intel DPTF Driver - 10 [64]">
+    <FileName>u1dpf21us14_tc_m70qgen3_10_2_.xml</FileName>
+    <Version>1.0.10701.24404</Version>
+    <ReleaseDate>09/03/2023</ReleaseDate>
+    <Size>14733885</Size>
+    <URL>https://download.lenovo.com/pccbbs/thinkcentre_drivers/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\u1dpf21us14_tc_m70qgen3_10\u1dpf21us14_tc_m70qgen3_10_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11T4" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="u2chp59us14_tc_m70qgen3_10" name="CHIP_U2CHP59_TC_M70QGEN3_10" description="Intel Chipset Driver - 10 [64]">
+    <FileName>u2chp59us14_tc_m70qgen3_10_2_.xml</FileName>
+    <Version>10.1.18836.8283</Version>
+    <ReleaseDate>01/03/2022</ReleaseDate>
+    <Size>1913413</Size>
+    <URL>https://download.lenovo.com/pccbbs/thinkcentre_drivers/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\u2chp59us14_tc_m70qgen3_10\u2chp59us14_tc_m70qgen3_10_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11T4" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m7dpfa5us14_tc_m70qgen3" name="IDD_U1DPF19_TC_M70QGEN3_22000" description="Intel DPTF Driver - 11 (21H2 or Later)">
+    <FileName>m7dpfa5us14_tc_m70qgen3_2_.xml</FileName>
+    <Version>1.0.11203.34112</Version>
+    <ReleaseDate>04/08/2023</ReleaseDate>
+    <Size>6159700</Size>
+    <URL>https://download.lenovo.com/pccbbs/thinkcentre_drivers/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m7dpfa5us14_tc_m70qgen3\m7dpfa5us14_tc_m70qgen3_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11T4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n3yku02w" name="PMD_N3XKU" description="Lenovo Power Management Driver - 10 (1607 or Later)/11 (21H2 or Later)">
+    <FileName>n3yku02w_2_.xml</FileName>
+    <Version>1.69.15.0</Version>
+    <ReleaseDate>29/11/2023</ReleaseDate>
+    <Size>1792117</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n3yku02w\n3yku02w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20RB" os="Windows 10" />
+      <System mtm="20RB" os="Windows 11" />
+      <System mtm="20TA" os="Windows 10" />
+      <System mtm="20TA" os="Windows 11" />
+      <System mtm="20TB" os="Windows 10" />
+      <System mtm="20TB" os="Windows 11" />
+      <System mtm="20U6" os="Windows 10" />
+      <System mtm="20U6" os="Windows 11" />
+      <System mtm="20UD" os="Windows 10" />
+      <System mtm="20UD" os="Windows 11" />
+      <System mtm="20UE" os="Windows 10" />
+      <System mtm="20UE" os="Windows 11" />
+      <System mtm="20W0" os="Windows 10" />
+      <System mtm="20W0" os="Windows 11" />
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m2wlg08us14_tc_m75qgen2acn" name="IWD_U2WLG0W_TC_M75Q2ACN_22000" description="Intel WiFi Driver - 11 (21H2 or Later)">
+    <FileName>m2wlg08us14_tc_m75qgen2acn_2_.xml</FileName>
+    <Version>22.160.0.4</Version>
+    <ReleaseDate>22/09/2022</ReleaseDate>
+    <Size>12653726</Size>
+    <URL>https://download.lenovo.com/pccbbs/desktop/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m2wlg08us14_tc_m75qgen2acn\m2wlg08us14_tc_m75qgen2acn_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11JQ" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m7aud16us17_tc_m75qgen2acn" name="AUD_M7AUD16_TC_M75QGEN2ACN" description="Realtek Audio Driver - 10 [64]">
+    <FileName>m7aud16us17_tc_m75qgen2acn_2_.xml</FileName>
+    <Version>6.0.9376.1</Version>
+    <ReleaseDate>26/07/2022</ReleaseDate>
+    <Size>22256874</Size>
+    <URL>https://download.lenovo.com/pccbbs/desktop/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m7aud16us17_tc_m75qgen2acn\m7aud16us17_tc_m75qgen2acn_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11JQ" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="u4etn2sus17_tc_m70qgen3" name="LAN_U4ETN2H_TC_M70QGEN3_11" description="Realtek Ethernet Driver - 11 (21H2 or Later)">
+    <FileName>u4etn2sus17_tc_m70qgen3_2_.xml</FileName>
+    <Version>10.065.0421.2023</Version>
+    <ReleaseDate>25/08/2023</ReleaseDate>
+    <Size>2233036</Size>
+    <URL>https://download.lenovo.com/pccbbs/desktop/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\u4etn2sus17_tc_m70qgen3\u4etn2sus17_tc_m70qgen3_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11T4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="u1txt05us14_tc_m70qgen3" name="ITD_U1TXT05_TC_M70QGEN3_22000" description="Intel TxT Driver - 11 (21H2 or Later)">
+    <FileName>u1txt05us14_tc_m70qgen3_2_.xml</FileName>
+    <Version>1.18.04.0</Version>
+    <ReleaseDate>28/12/2021</ReleaseDate>
+    <Size>1873542</Size>
+    <URL>https://download.lenovo.com/pccbbs/desktop/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\u1txt05us14_tc_m70qgen3\u1txt05us14_tc_m70qgen3_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11T4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m2wlg17us14_tc_m70qgen3_10" name="IWD_U2WLG0Y_TC_M70QGEN3_10" description="Intel WLAN Driver - 10 ">
+    <FileName>m2wlg17us14_tc_m70qgen3_10_2_.xml</FileName>
+    <Version>22.250.1.2</Version>
+    <ReleaseDate>19/10/2023</ReleaseDate>
+    <Size>13737112</Size>
+    <URL>https://download.lenovo.com/pccbbs/desktop/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m2wlg17us14_tc_m70qgen3_10\m2wlg17us14_tc_m70qgen3_10_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11T4" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m2etna5us14_tc_m70qgen3_10" name="LAN_U2ETN36_TC_M70QGEN3_10" description="Intel(R) Ethernet Gigabit Adapters - 10 [64]">
+    <FileName>m2etna5us14_tc_m70qgen3_10_2_.xml</FileName>
+    <Version>12.19.2.50</Version>
+    <ReleaseDate>13/03/2023</ReleaseDate>
+    <Size>2084407</Size>
+    <URL>https://download.lenovo.com/pccbbs/thinkcentre_drivers/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m2etna5us14_tc_m70qgen3_10\m2etna5us14_tc_m70qgen3_10_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11T4" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m2wlg17us14_tc_m75qacn_10" name="IWD_U2WLG0P_TC_M75QGEN2ACN1904" description="Intel WLAN Driver - 10 ">
+    <FileName>m2wlg17us14_tc_m75qacn_10_2_.xml</FileName>
+    <Version>22.250.1.2</Version>
+    <ReleaseDate>19/10/2023</ReleaseDate>
+    <Size>13737112</Size>
+    <URL>https://download.lenovo.com/pccbbs/desktop/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m2wlg17us14_tc_m75qacn_10\m2wlg17us14_tc_m75qacn_10_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11JQ" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m4wlg23us14_tc_m75qacn_10" name="RWD_U4WLG2G_TC_M75QGEN2ACN1904" description="Realtek WLAN Driver - 10 [64]">
+    <FileName>m4wlg23us14_tc_m75qacn_10_2_.xml</FileName>
+    <Version>2024.0.8.136/6001.10.350.300/6001.15.123.301/6001.16.117.0</Version>
+    <ReleaseDate>19/12/2022</ReleaseDate>
+    <Size>8961869</Size>
+    <URL>https://download.lenovo.com/pccbbs/thinkcentre_drivers/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m4wlg23us14_tc_m75qacn_10\m4wlg23us14_tc_m75qacn_10_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11JQ" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="u4etn2vus17_tc_m75qgen2acn" name="LAN_U4ETN2O_TC_M75QGEN2ACN" description="Dash Realtek Ethernet Driver - 11 (21H2 or Later)">
+    <FileName>u4etn2vus17_tc_m75qgen2acn_2_.xml</FileName>
+    <Version>10.066.0621.2023</Version>
+    <ReleaseDate>09/11/2023</ReleaseDate>
+    <Size>2276283</Size>
+    <URL>https://download.lenovo.com/pccbbs/desktop/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\u4etn2vus17_tc_m75qgen2acn\u4etn2vus17_tc_m75qgen2acn_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11JQ" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m2blt16us14_tc_m70qgen3_10" name="BT_U2BLT0V_TC_M70QGEN3_10" description="Intel Bluetooth Driver - 10 ">
+    <FileName>m2blt16us14_tc_m70qgen3_10_2_.xml</FileName>
+    <Version>22.250.0.2</Version>
+    <ReleaseDate>20/10/2023</ReleaseDate>
+    <Size>3923765</Size>
+    <URL>https://download.lenovo.com/pccbbs/desktop/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m2blt16us14_tc_m70qgen3_10\m2blt16us14_tc_m70qgen3_10_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11T4" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="u6vdoeaus17_tc_m75qgen2acn" name="AOG_U6VDOE1_TC_M75QGEN2ACN" description="AMD Onboard Graphics Driver - 11 (21H2 or Later)">
+    <FileName>u6vdoeaus17_tc_m75qgen2acn_2_.xml</FileName>
+    <Version>31.0.14058.6003</Version>
+    <ReleaseDate>09/11/2023</ReleaseDate>
+    <Size>323845776</Size>
+    <URL>https://download.lenovo.com/pccbbs/desktop/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\u6vdoeaus17_tc_m75qgen2acn\u6vdoeaus17_tc_m75qgen2acn_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11JQ" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m2etna6us14_tc_m70qgen3" name="ILD_U2ETN35_TC_M70QGEN3_22000" description="Intel LAN Driver - 11 (21H2 or Later)">
+    <FileName>m2etna6us14_tc_m70qgen3_2_.xml</FileName>
+    <Version>12.19.2.50</Version>
+    <ReleaseDate>25/08/2023</ReleaseDate>
+    <Size>2089579</Size>
+    <URL>https://download.lenovo.com/pccbbs/thinkcentre_drivers/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m2etna6us14_tc_m70qgen3\m2etna6us14_tc_m70qgen3_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11T4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="m4wlg25us14_tc_m70qgen3" name="WLAN_U4WLG27_TC_M70QGEN3_22000" description="Realtek WLAN Driver - 11 (21H2 or Later)">
+    <FileName>m4wlg25us14_tc_m70qgen3_2_.xml</FileName>
+    <Version>2024.0.8.136/6001.10.350.300/6001.15.123.306/6001.16.126.305</Version>
+    <ReleaseDate>25/08/2023</ReleaseDate>
+    <Size>9064285</Size>
+    <URL>https://download.lenovo.com/pccbbs/desktop/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\m4wlg25us14_tc_m70qgen3\m4wlg25us14_tc_m70qgen3_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="11T4" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r0yav08w_e490" name="VGA_R0YAV_E490" description="AMD Video Driver - 10 (1803 or Later)/11 (21H2 or Later)">
+    <FileName>r0yav08w_e490_2_.xml</FileName>
+    <Version>30.0.14030.0</Version>
+    <ReleaseDate>14/03/2022</ReleaseDate>
+    <Size>202158299</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r0yav08w_e490\r0yav08w_e490_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r0ymi08w" name="TMF_R0YMI" description="ThinkPad Monitor INF File - 10 (1709 or Later)/11 (21H2 or Later)">
+    <FileName>r0ymi08w_2_.xml</FileName>
+    <Version>6.13.0.0</Version>
+    <ReleaseDate>10/02/2023</ReleaseDate>
+    <Size>1109401</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r0ymi08w\r0ymi08w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r0yrw14w_e490" name="RWD_R0YRW_E490" description="Realtek Wireless Driver - 10 (1709 or later)/11 (21H2 or later)">
+    <FileName>r0yrw14w_e490_2_.xml</FileName>
+    <Version>2024.0.8.134</Version>
+    <ReleaseDate>18/01/2022</ReleaseDate>
+    <Size>3985722</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r0yrw14w_e490\r0yrw14w_e490_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r0yer04w_e490" name="RED_R0YER_E490" description="Realtek Ethernet Driver (Windows 10 Version 1709 or Later) - 10 [64]">
+    <FileName>r0yer04w_e490_2_.xml</FileName>
+    <Version>10.31.828.2018</Version>
+    <ReleaseDate>17/04/2020</ReleaseDate>
+    <Size>1845939</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r0yer04w_e490\r0yer04w_e490_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20N9" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r11st11w" name="ULTR_R11ST" description="Synaptics Ultranav Driver - 10 (1703 or Later)/11 (21H2 or Later)">
+    <FileName>r11st11w_2_.xml</FileName>
+    <Version>19.5.19.91</Version>
+    <ReleaseDate>24/06/2022</ReleaseDate>
+    <Size>6772282</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r11st11w\r11st11w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r0yib12w_e490" name="BT_R0YIB_E490" description="Intel Bluetooth Driver - 10 (1709 or Later)/11 (21H2 or Later)">
+    <FileName>r0yib12w_e490_2_.xml</FileName>
+    <Version>22.220.1.1</Version>
+    <ReleaseDate>11/08/2023</ReleaseDate>
+    <Size>2006369</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r0yib12w_e490\r0yib12w_e490_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r0yuj29w" name="BIOS_R0YUJ" description="BIOS Update Utility - 10/11">
+    <FileName>r0yuj29w_2_.xml</FileName>
+    <Version>1.36</Version>
+    <ReleaseDate>27/11/2023</ReleaseDate>
+    <Size>11111488</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r0yuj29w\r0yuj29w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r0yhd05w_e490" name="DFTP_R0YHD_E490" description="Intel Dynamic Platform And Thermal Framework Driver - 10 (1709 or Later)/11 (21H2 or Later)">
+    <FileName>r0yhd05w_e490_2_.xml</FileName>
+    <Version>8.6.10401.9906</Version>
+    <ReleaseDate>01/03/2022</ReleaseDate>
+    <Size>4342786</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r0yhd05w_e490\r0yhd05w_e490_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r0ybm04w_bht_e490" name="MTCD_BHT_R0YBM_E490" description="Multicard Reader Driver for BayHubTech - 10 (1709 or Later)/11 (21H2 or Later)">
+    <FileName>r0ybm04w_bht_e490_2_.xml</FileName>
+    <Version>1.1.101.1032</Version>
+    <ReleaseDate>27/01/2022</ReleaseDate>
+    <Size>3219201</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r0ybm04w_bht_e490\r0ybm04w_bht_e490_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r0yfp10w_e490" name="FP_R0YFP_E490" description="Synaptics FingerPrint Driver - 10 (1709 or Later)/11 (21H2 or Later)">
+    <FileName>r0yfp10w_e490_2_.xml</FileName>
+    <Version>5.2.326.26</Version>
+    <ReleaseDate>06/02/2023</ReleaseDate>
+    <Size>7293014</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r0yfp10w_e490\r0yfp10w_e490_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r0yac25w" name="AUD_R0YAC" description="Synaptics Audio (Windows 10 Version 1709 or Later) - 10 [64]">
+    <FileName>r0yac25w_2_.xml</FileName>
+    <Version>9.0.285.40</Version>
+    <ReleaseDate>29/12/2020</ReleaseDate>
+    <Size>149806057</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r0yac25w\r0yac25w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20N9" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="n2icm20w" name="CAME_N2ICM" description="Integrated Camera Driver - 10 (1709 or Later)/11(21H2 or Later)">
+    <FileName>n2icm20w_2_.xml</FileName>
+    <Version>10.0.22000.20272/10.13.19041.4/5.0.18.168</Version>
+    <ReleaseDate>20/03/2023</ReleaseDate>
+    <Size>70604891</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\n2icm20w\n2icm20w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r0yiw17w_e490" name="IWLD_R0YIW_E490" description="Intel Wireless LAN Driver - 10 (1709 or Later)/11 (21H2 or Later)">
+    <FileName>r0yiw17w_e490_2_.xml</FileName>
+    <Version>22.240.0.6</Version>
+    <ReleaseDate>18/08/2023</ReleaseDate>
+    <Size>13084160</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r0yiw17w_e490\r0yiw17w_e490_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r0yme13w_e490" name="IMES_R0YME_E490" description="Intel Management Engine Software - 10 (1709 or Later)/11 (21H2 or Later)">
+    <FileName>r0yme13w_e490_2_.xml</FileName>
+    <Version>2141.15.0.2511</Version>
+    <ReleaseDate>17/02/2022</ReleaseDate>
+    <Size>14571573</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r0yme13w_e490\r0yme13w_e490_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r0ymu08w" name="FWU_IME_R0YMU" description="Intel Management Engine Firmware - 10/11">
+    <FileName>r0ymu08w_2_.xml</FileName>
+    <Version>12.0.92.2145</Version>
+    <ReleaseDate>12/12/2022</ReleaseDate>
+    <Size>11354435</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r0ymu08w\r0ymu08w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r0yli02w" name="INTELIO_R0YLI" description="Intel(R) Serial IO Driver (Windows 10 Version 1709 and 1803) - 10 [64]">
+    <FileName>r0yli02w_2_.xml</FileName>
+    <Version>30.100.1727.1</Version>
+    <ReleaseDate>17/04/2020</ReleaseDate>
+    <Size>1684012</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r0yli02w\r0yli02w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20N9" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r0zsi09w_r3" name="INTE_R0ZSI_R3" description="Intel(R) SGX Device and Software - 10 (1709 or Later)/11 (21H2 or Later)">
+    <FileName>r0zsi09w_r3_2_.xml</FileName>
+    <Version>2.17.100.2</Version>
+    <ReleaseDate>02/02/2023</ReleaseDate>
+    <Size>6623263</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r0zsi09w_r3\r0zsi09w_r3_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r0yay01w" name="AMDADO_APP_R0YAY" description="AMD Video Driver UI  for Windows 10 64bit  (Version 1709) -10 [64]">
+    <FileName>r0yay01w_2_.xml</FileName>
+    <Version>2018.0516.1451.24901</Version>
+    <ReleaseDate>18/04/2019</ReleaseDate>
+    <Size>132568233</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r0yay01w\r0yay01w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20N9" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r0zrs08w" name="IRST_R0ZRS" description="Intel Rapid Storage Technology Driver - 10 (1809 or later)/11 (21H2 or later)">
+    <FileName>r0zrs08w_2_.xml</FileName>
+    <Version>17.11.0.1000</Version>
+    <ReleaseDate>04/07/2022</ReleaseDate>
+    <Size>3483508</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r0zrs08w\r0zrs08w_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r0yaw01w" name="AMDVDO_R0YAW" description="AMD Video Driver for Windows 10 64bit  (Version 1709) - 10 [64]">
+    <FileName>r0yaw01w_2_.xml</FileName>
+    <Version>24.20.11016.4</Version>
+    <ReleaseDate>18/04/2019</ReleaseDate>
+    <Size>104930228</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r0yaw01w\r0yaw01w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20N9" os="Windows 10" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r0ziv17w" name="VGA_R0ZIV" description="Intel UHD Graphics - 10 (1709 or Later)/11 (21H2 or Later)">
+    <FileName>r0ziv17w_2_.xml</FileName>
+    <Version>27.20.100.9749</Version>
+    <ReleaseDate>05/11/2021</ReleaseDate>
+    <Size>257035757</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r0ziv17w\r0ziv17w_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r0ych03w_e490" name="CHIP_R0YCH_E490" description="Intel Chipset Device Software - 10 (1709 or Later)/11 (21H2 or Later)">
+    <FileName>r0ych03w_e490_2_.xml</FileName>
+    <Version>10.1.15.5</Version>
+    <ReleaseDate>03/03/2022</ReleaseDate>
+    <Size>1402567</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r0ych03w_e490\r0ych03w_e490_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r0yrb07w_e490" name="BT_R0YRB_E490" description="Realtek Bluetooth Package - 10 (1709 or later)/11 (21H2 or later)">
+    <FileName>r0yrb07w_e490_2_.xml</FileName>
+    <Version>1.8.1039.3000</Version>
+    <ReleaseDate>19/01/2022</ReleaseDate>
+    <Size>2052002</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r0yrb07w_e490\r0yrb07w_e490_2_.xml</LocalPath>
+    <Severity>Critical</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+  <Package id="r0ybm04w_rtk_e490" name="MTCD_RTK_R0YBM_E490" description="Multicard Reader Driver for Realtek - 10 (1709 or Later)/11 (21H2 or Later)">
+    <FileName>r0ybm04w_rtk_e490_2_.xml</FileName>
+    <Version>10.0.18362.21317</Version>
+    <ReleaseDate>27/01/2022</ReleaseDate>
+    <Size>3219201</Size>
+    <URL>https://download.lenovo.com/pccbbs/mobiles/</URL>
+    <Mode>
+    </Mode>
+    <Type>Quest</Type>
+    <Status>Active</Status>
+    <PreviousStatus>None</PreviousStatus>
+    <LocalPath>\r0ybm04w_rtk_e490\r0ybm04w_rtk_e490_2_.xml</LocalPath>
+    <Severity>Recommended</Severity>
+    <DisplayLicense>NotDisplay</DisplayLicense>
+    <SystemCompatibility>
+      <System mtm="20N9" os="Windows 10" />
+      <System mtm="20N9" os="Windows 11" />
+    </SystemCompatibility>
+  </Package>
+</Database>
