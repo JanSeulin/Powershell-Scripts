@@ -32,6 +32,30 @@ if (($CHECK1 -eq 1) -or ($CHECK2 -eq 1)) {
   exit
 }
 
+# CHECAR EM QUE AUTOPILOT MÁQUINA ESTÁ, SE EM ALGUM
+$AUTOPILOT_TENANT_DOMAIN = Get-ItemPropertyValue -Path HKLM:\SOFTWARE\Microsoft\Provisioning\Diagnostics\Autopilot CloudAssignedTenantDomain
+
+$DOMAIN_SIMPLE = ""
+
+if ($AUTOPILOT_TENANT_DOMAIN -like "*mdias*") {
+  $DOMAIN_SIMPLE = "(MDIAS)"
+} elseif ($AUTOPILOT_TENANT_DOMAIN -like "*roullier*") {
+  $DOMAIN_SIMPLE = "(TIMAC)"
+}
+
+
+if ($AUTOPILOT_TENANT_DOMAIN) {
+  Write-Host -ForegroundColor red "Atenção: Máquina já está registrada no seguinte domínio: $AUTOPILOT_TENANT_DOMAIN $DOMAIN_SIMPLE`n"
+  Write-Host -ForegroundColor yellow "O processo de importação não será finalizado com sucesso se prosseguir."
+  Write-Host -ForegroundColor yellow "Verificar se esse é o domínio desejado, caso contrário, entrar em contato com o time de Imagem para que seja solicitada a remoção da máquina do domínio atual.`n`n"
+
+  $KEY_DOMAIN = ""
+  while ($KEY_DOMAIN -ne 'E') {
+    Write-Host -ForegroundColor Blue "Pressione E para prosseguir com a execução."
+    $KEY_DOMAIN = [Console]::ReadKey($true).Key
+  }
+}
+
 Start-Transcript -Path "C:\PerfLogs\Transcript.txt" -Force | Out-Null
 
 $ErrorActionPreference = 'Stop'

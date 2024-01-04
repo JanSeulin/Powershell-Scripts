@@ -521,9 +521,9 @@ While ($PATRIMONIO_LOOP -eq "true") {
 
     Write-Host "PATRIMONIO: $PATRIMONIO"
 
-    if (($PATRIMONIO.Length -lt 4) -or ($PATRIMONIO.Length -gt 6) -or ($PATRIMONIO -match "[^0-9]")) {
+    if (($PATRIMONIO.Length -lt 5) -or ($PATRIMONIO.Length -gt 6) -or ($PATRIMONIO -match "[^0-9]")) {
       $Params_Patrimonio_Erro=@{
-        Content="Valor inválido. O patrimônio deve ter entre 4 e 6 caracteres numéricos."
+        Content="Valor inválido. O patrimônio deve ter entre 5 e 6 caracteres numéricos."
         Title="Erro"
         TitleBackground="DarkRed"
         TitleFontSize=20
@@ -727,14 +727,40 @@ $PARAMS_SUCCESS = @{
   Timeout=4
 }
 
+$PARAMS_DUPLICATE = @{
+  Title="Duplicado"
+  Content="Log duplicado, encerrando..."
+  TitleBackground="DarkRed"
+  TitleFontSize=20
+  TitleFontWeight='Bold'
+  TitleTextForeground='White'
+  ButtonType='None'
+  ButtonTextForeground="DarkRed"
+  BorderThickness=2
+  ShadowDepth=4
+  ContentFontSize=16
+  Timeout=4
+}
+
 $SAVING_LOOP = 'true';
 
 if ($LINES -eq 0) {
   "PATRIMONIO;IMAGEM;SERIAL;MODELO;CPU;MEMORIA;ARMAZENAMENTO;PRODUZIDO POR;SETOR;HORA;DIA" | Add-Content $FULL_PATH
 }
 
+# Loop de save dos dados, até que seja bem-sucedido.
 while ($SAVING_LOOP) {
   try {
+    # CHECA SE VALOR É DUPLICADO (MESMO PATRIMÔNIO, SERIAL E HORA QUE ALGUMA LINHA JÁ EXISTENTE)
+    # Criado para evitar possível bug quando há instabilidade no servidor na hora de salvar os dados
+    $INPUT_CSV = Import-Csv $FULL_PATH
+    foreach ($LINE in $INPUT_CSV) {
+      if (($LINE -like "*$PATRIMONIO*") -and ($LINE -like "*$SERIAL*") -and ($LINE -like "*$HOUR_MINUTE*")) {
+        New-WPFMessageBox @PARAMS_DUPLICATE
+        exit
+      }
+    }
+
     "$PATRIMONIO;$CLIENTE;$SERIAL;$NOTEBOOK_STRING;$CPU;$MEMORY_STRING;$STORAGE_STRING;$COLABORADOR;$SETOR;$HOUR_MINUTE;$DAY_MONTH" | Add-Content $FULL_PATH -ErrorAction Stop
 
     New-WPFMessageBox @PARAMS_SUCCESS
